@@ -1,0 +1,116 @@
+Metadata-Version: 2.4
+Name: browser-use-trace-lab
+Version: 0.1.0
+Summary: Standalone browser-use experiment runner with OttoAuth-compatible trace output
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: browser-use>=0.1.45
+Requires-Dist: langchain-openai>=0.2.14
+Requires-Dist: openai>=1.40.0
+Requires-Dist: playwright>=1.45.0
+Requires-Dist: python-dotenv>=1.0.1
+
+# browser_use
+
+Standalone browser-use experiment repository for generating prompt datasets and collecting OttoAuth-compatible traces.
+
+## What this repo does
+
+- Generates prompt datasets into `prompt_datasets/` with filename pattern:
+  - `{task}_{number_of_examples}_{prompt_id}.json`
+- Runs browser-use tasks from a dataset and writes trace folders to `browser_traces/` with pattern:
+  - `{task}_{number_of_examples}_{prompt_id}/run_{run_number}/{example_number}`
+- Writes `task.json` and `trace.json` in each run folder using the same top-level schema used by the Chrome extension trace recorder in the source project.
+
+## Setup
+
+```bash
+cd /Users/abhayp/Documents/browser_use
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -U pip
+pip install -e .
+```
+
+Optional Playwright/browser dependencies (often required by browser-use):
+
+```bash
+python -m playwright install
+```
+
+Create env file:
+
+```bash
+cp .env.example .env
+# then set OPENAI_API_KEY
+```
+
+## Usage
+
+### 1) Generate a prompt dataset
+
+```bash
+python scripts/generate_prompts.py \
+  --task amazon_single_item_purchase \
+  --n 20
+```
+
+This creates a file such as:
+
+- `prompt_datasets/amazon_single_item_purchase_20_p001.json`
+
+If `OPENAI_API_KEY` is not set, the script falls back to a built-in template generator.
+
+### 2) Run browser-use on that dataset and collect traces
+
+```bash
+python scripts/run_browser_use.py \
+  --dataset prompt_datasets/amazon_single_item_purchase_20_p001.json
+```
+
+Example output folders:
+
+- `browser_traces/amazon_single_item_purchase_20_p001/run_001/001/`
+- `browser_traces/amazon_single_item_purchase_20_p001/run_001/002/`
+- `browser_traces/amazon_single_item_purchase_20_p001/run_002/001/`
+- ...
+
+Each folder contains:
+
+- `task.json`
+- `trace.json`
+
+## Helpful options
+
+Generate prompts without any model call:
+
+```bash
+python scripts/generate_prompts.py --task amazon_single_item_purchase --n 20 --template-only
+```
+
+Dry run trace generation (no browser-use call):
+
+```bash
+python scripts/run_browser_use.py \
+  --dataset prompt_datasets/amazon_single_item_purchase_20_p001.json \
+  --dry-run
+```
+
+Show browser while running:
+
+```bash
+python scripts/run_browser_use.py \
+  --dataset prompt_datasets/amazon_single_item_purchase_20_p001.json \
+  --show-browser
+```
+
+## Notes on trace compatibility
+
+This repo mirrors the OttoAuth extension trace structure at the schema/key level, including:
+
+- `task.json`: `schemaVersion`, `recordedAt`, `task`, `goal`, `sessionId`, `serverUrl`, `deviceId`
+- `trace.json`: `schemaVersion`, `startedAt`, `completedAt`, `status`, `result`, `error`, `taskId`, `taskType`, `goal`, `url`, `sessionId`, `serverUrl`, `deviceId`, `traceFolder`, `events`, `messages`
+- `events` include `tool_use` and `tool_result` payloads (`toolUseId`, `name`, `input`, `durationMs`, `text`, `imageCount`) for compatibility with `toolcalltokenization` ingestion.
+- compact message block shapes (`text`, `tool_use`, `tool_result`, `screenshot`)
+
+This makes downstream parsing consistent with traces from the original project.

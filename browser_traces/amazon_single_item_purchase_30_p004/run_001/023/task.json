@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:28:32.546233Z",
+  "task": {
+    "id": "task_023",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a car phone mount that attaches to the dashboard from Amazon.",
+    "taskPrompt": "Buy a car phone mount that attaches to the dashboard from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:23:02.734201Z"
+  },
+  "goal": "Buy a car phone mount that attaches to the dashboard from Amazon.",
+  "sessionId": "session_023",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

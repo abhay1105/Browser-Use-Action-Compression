@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:48:52.086543Z",
+  "task": {
+    "id": "task_010",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a portable phone charger with at least 10000mAh capacity from Amazon.",
+    "taskPrompt": "Purchase a portable phone charger with at least 10000mAh capacity from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:46:16.131833Z"
+  },
+  "goal": "Purchase a portable phone charger with at least 10000mAh capacity from Amazon.",
+  "sessionId": "session_010",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

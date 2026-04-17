@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:54:05.989304Z",
+  "task": {
+    "id": "task_012",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a pack of AA batteries from a well-known brand on Amazon.",
+    "taskPrompt": "Order a pack of AA batteries from a well-known brand on Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:51:40.968988Z"
+  },
+  "goal": "Order a pack of AA batteries from a well-known brand on Amazon.",
+  "sessionId": "session_012",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

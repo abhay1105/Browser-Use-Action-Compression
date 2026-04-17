@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-06T02:18:58.629629Z",
+  "task": {
+    "id": "task_001",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase.",
+    "taskPrompt": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-06T02:17:00.824317Z"
+  },
+  "goal": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase.",
+  "sessionId": "session_001",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

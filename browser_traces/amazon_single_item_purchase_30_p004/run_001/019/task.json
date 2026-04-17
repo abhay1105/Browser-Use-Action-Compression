@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:15:04.986306Z",
+  "task": {
+    "id": "task_019",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a digital kitchen scale with at least 11lb capacity from Amazon.",
+    "taskPrompt": "Purchase a digital kitchen scale with at least 11lb capacity from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:12:04.932165Z"
+  },
+  "goal": "Purchase a digital kitchen scale with at least 11lb capacity from Amazon.",
+  "sessionId": "session_019",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

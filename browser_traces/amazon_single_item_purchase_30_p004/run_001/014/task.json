@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:59:53.730255Z",
+  "task": {
+    "id": "task_014",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a pair of running socks with moisture-wicking material from Amazon.",
+    "taskPrompt": "Buy a pair of running socks with moisture-wicking material from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:56:40.708623Z"
+  },
+  "goal": "Buy a pair of running socks with moisture-wicking material from Amazon.",
+  "sessionId": "session_014",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

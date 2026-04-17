@@ -1,0 +1,134 @@
+```json
+{
+  "macros": [
+    {
+      "name": "amazon_search",
+      "description": "Navigate to Amazon and perform a product search by entering a query into the search box and clicking the search button.",
+      "one_shot_example": "amazon_search(query=\"wireless Bluetooth headset noise cancellation\")",
+      "when_to_use": "At the start of any Amazon shopping task when you need to find a product by keyword search.",
+      "parameters": [
+        {
+          "name": "query",
+          "type": "string",
+          "meaning": "The product search terms to type into Amazon's search bar",
+          "required": true,
+          "example": "wireless Bluetooth headset noise cancellation"
+        },
+        {
+          "name": "search_box_index",
+          "type": "integer",
+          "meaning": "The DOM index of the Amazon search input field (varies per page load)",
+          "required": true,
+          "example": "61"
+        },
+        {
+          "name": "search_button_index",
+          "type": "integer",
+          "meaning": "The DOM index of the Amazon search/submit button",
+          "required": true,
+          "example": "247"
+        }
+      ],
+      "action_sequence_pattern": ["navigate", "input", "click"],
+      "confidence": 0.98
+    },
+    {
+      "name": "select_product_and_add_to_cart",
+      "description": "From Amazon search results, click on a product listing to open its detail page, then click the Add to Cart button on the product page.",
+      "one_shot_example": "select_product_and_add_to_cart(product_index=10615, add_to_cart_index=9612)",
+      "when_to_use": "After viewing Amazon search results and identifying a suitable product, use this to open the product and add it to cart in one step.",
+      "parameters": [
+        {
+          "name": "product_index",
+          "type": "integer",
+          "meaning": "The DOM index of the product listing link in search results to click on",
+          "required": true,
+          "example": "10615"
+        },
+        {
+          "name": "add_to_cart_index",
+          "type": "integer",
+          "meaning": "The DOM index of the 'Add to Cart' button on the product detail page",
+          "required": true,
+          "example": "9612"
+        }
+      ],
+      "action_sequence_pattern": ["click", "click"],
+      "confidence": 0.92
+    },
+    {
+      "name": "add_to_cart_and_proceed_to_checkout",
+      "description": "After viewing a product detail page, click Add to Cart and then click the Proceed to Checkout button on the cart confirmation page.",
+      "one_shot_example": "add_to_cart_and_proceed_to_checkout(add_to_cart_index=26898, checkout_index=49017)",
+      "when_to_use": "When you are on an Amazon product page and want to add the item to cart and immediately proceed to checkout in one macro call.",
+      "parameters": [
+        {
+          "name": "add_to_cart_index",
+          "type": "integer",
+          "meaning": "The DOM index of the 'Add to Cart' button on the product page",
+          "required": true,
+          "example": "26898"
+        },
+        {
+          "name": "checkout_index",
+          "type": "integer",
+          "meaning": "The DOM index of the 'Proceed to Checkout' button on the cart/confirmation page",
+          "required": true,
+          "example": "49017"
+        }
+      ],
+      "action_sequence_pattern": ["click", "click"],
+      "confidence": 0.90
+    },
+    {
+      "name": "init_todo_and_navigate",
+      "description": "Create a todo.md tracking file for the task and then navigate to the target website. Used by the agent to maintain structured progress tracking.",
+      "one_shot_example": "init_todo_and_navigate(todo_content=\"# Amazon Purchase Task\\n...\\n- [ ] Navigate to Amazon.com\\n...\", url=\"https://www.amazon.com\")",
+      "when_to_use": "At the very beginning of a shopping task when the agent wants to create a progress-tracking file before starting the browsing workflow.",
+      "parameters": [
+        {
+          "name": "todo_content",
+          "type": "string",
+          "meaning": "The markdown content for the todo.md file outlining the task plan and checklist",
+          "required": true,
+          "example": "# Amazon Headset Purchase Task\\n\\n## Tasks:\\n- [ ] Navigate to Amazon.com\\n- [ ] Search for product"
+        },
+        {
+          "name": "url",
+          "type": "string",
+          "meaning": "The URL to navigate to after creating the todo file",
+          "required": true,
+          "example": "https://www.amazon.com"
+        }
+      ],
+      "action_sequence_pattern": ["write_file", "navigate"],
+      "confidence": 0.85
+    },
+    {
+      "name": "search_wait_and_scroll",
+      "description": "After submitting a search query, wait for results to load and optionally scroll down to see more product listings before selecting one.",
+      "one_shot_example": "search_wait_and_scroll(wait_seconds=3, scroll_pages=1.0)",
+      "when_to_use": "Immediately after clicking the search button on Amazon, to ensure results are fully loaded and to reveal more product options below the fold.",
+      "parameters": [
+        {
+          "name": "wait_seconds",
+          "type": "integer",
+          "meaning": "Number of seconds to wait for search results to load",
+          "required": true,
+          "example": "3"
+        },
+        {
+          "name": "scroll_pages",
+          "type": "number",
+          "meaning": "Number of pages to scroll down to see more results (0 to skip scrolling)",
+          "required": false,
+          "example": "1.0"
+        }
+      ],
+      "action_sequence_pattern": ["wait", "scroll"],
+      "confidence": 0.82
+    }
+  ],
+  "notes": "All 28 traces follow the same Amazon shopping workflow: navigate → search → browse results → select product → add to cart → proceed to checkout → blocked by login. The most impactful macro is 'amazon_search' (navigate+input+click) which appears in every single trace. Some traces include todo.md file management interleaved with browsing actions; the 'init_todo_and_navigate' macro captures that pattern. The replace_file calls for todo tracking are too variable in content to compress into a reliable macro. Element indices vary across page loads so they must remain parameters."
+}
+```

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+<rect width="100%" height="100%" fill="white"/>
+<text x="640.0" y="30" font-size="20" text-anchor="middle" font-family="Arial">Top BPE merge supports</text>
+<line x1="80" y1="500.00" x2="1240" y2="500.00" stroke="#d0d7de"/>
+<text x="70" y="504.00" font-size="11" text-anchor="end">0.0</text>
+<line x1="80" y1="412.00" x2="1240" y2="412.00" stroke="#d0d7de"/>
+<text x="70" y="416.00" font-size="11" text-anchor="end">7.8</text>
+<line x1="80" y1="324.00" x2="1240" y2="324.00" stroke="#d0d7de"/>
+<text x="70" y="328.00" font-size="11" text-anchor="end">15.6</text>
+<line x1="80" y1="236.00" x2="1240" y2="236.00" stroke="#d0d7de"/>
+<text x="70" y="240.00" font-size="11" text-anchor="end">23.4</text>
+<line x1="80" y1="148.00" x2="1240" y2="148.00" stroke="#d0d7de"/>
+<text x="70" y="152.00" font-size="11" text-anchor="end">31.2</text>
+<line x1="80" y1="60.00" x2="1240" y2="60.00" stroke="#d0d7de"/>
+<text x="70" y="64.00" font-size="11" text-anchor="end">39.0</text>
+<line x1="80" y1="500" x2="1240" y2="500" stroke="#333"/>
+<line x1="80" y1="60" x2="80" y2="500" stroke="#333"/>
+<rect x="80.00" y="60.00" width="52.00" height="440.00" fill="#2f6fed" />
+<rect x="138.00" y="184.10" width="52.00" height="315.90" fill="#2f6fed" />
+<rect x="196.00" y="251.79" width="52.00" height="248.21" fill="#2f6fed" />
+<rect x="254.00" y="296.92" width="52.00" height="203.08" fill="#2f6fed" />
+<rect x="312.00" y="330.77" width="52.00" height="169.23" fill="#2f6fed" />
+<rect x="370.00" y="364.62" width="52.00" height="135.38" fill="#2f6fed" />
+<rect x="428.00" y="398.46" width="52.00" height="101.54" fill="#2f6fed" />
+<rect x="486.00" y="409.74" width="52.00" height="90.26" fill="#2f6fed" />
+<rect x="544.00" y="409.74" width="52.00" height="90.26" fill="#2f6fed" />
+<rect x="602.00" y="421.03" width="52.00" height="78.97" fill="#2f6fed" />
+<rect x="660.00" y="421.03" width="52.00" height="78.97" fill="#2f6fed" />
+<rect x="718.00" y="421.03" width="52.00" height="78.97" fill="#2f6fed" />
+<rect x="776.00" y="421.03" width="52.00" height="78.97" fill="#2f6fed" />
+<rect x="834.00" y="421.03" width="52.00" height="78.97" fill="#2f6fed" />
+<rect x="892.00" y="432.31" width="52.00" height="67.69" fill="#2f6fed" />
+<rect x="950.00" y="443.59" width="52.00" height="56.41" fill="#2f6fed" />
+<rect x="1008.00" y="443.59" width="52.00" height="56.41" fill="#2f6fed" />
+<rect x="1066.00" y="454.87" width="52.00" height="45.13" fill="#2f6fed" />
+<rect x="1124.00" y="454.87" width="52.00" height="45.13" fill="#2f6fed" />
+<rect x="1182.00" y="454.87" width="52.00" height="45.13" fill="#2f6fed" />
+<text x="106.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 106.00,520)">1:replace_file(file_name,new_str,old_str)+click(index)</text>
+<text x="164.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 164.00,520)">2:input(clear,index,text)+click(index)</text>
+<text x="222.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 222.00,520)">3:click(index)+click(index)</text>
+<text x="280.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 280.00,520)">4:navigate(new_tab,url)+@M0002</text>
+<text x="338.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 338.00,520)">5:@M0001+@M0001</text>
+<text x="396.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 396.00,520)">6:@M0004+wait(seconds)</text>
+<text x="454.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 454.00,520)">7:replace_file(file_name,new_str,old_str)+done(files_to_display,success,text)</text>
+<text x="512.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 512.00,520)">8:click(index)+wait(seconds)</text>
+<text x="570.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 570.00,520)">9:@M0002+replace_file(file_name,new_str,old_str)</text>
+<text x="628.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 628.00,520)">10:@M0007+done(files_to_display,success,text)</text>
+<text x="686.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 686.00,520)">11:click(index)+done(files_to_display,success,text)</text>
+<text x="744.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 744.00,520)">12:@M0003+done(files_to_display,success,text)</text>
+<text x="802.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 802.00,520)">13:write_file(append,content,file_name,leading_newline,trailing_newline)+navigate(new_tab,url)</text>
+<text x="860.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 860.00,520)">14:@M0013+replace_file(file_name,new_str,old_str)</text>
+<text x="918.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 918.00,520)">15:@M0014+@M0009</text>
+<text x="976.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 976.00,520)">16:wait(seconds)+@M0001</text>
+<text x="1034.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 1034.00,520)">17:scroll(down,pages)+@M0003</text>
+<text x="1092.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 1092.00,520)">18:replace_file(file_name,new_str,old_str)+@M0001</text>
+<text x="1150.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 1150.00,520)">19:wait(seconds)+scroll(down,pages)</text>
+<text x="1208.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 1208.00,520)">20:@M0005+done(files_to_display,success,text)</text>
+</svg>

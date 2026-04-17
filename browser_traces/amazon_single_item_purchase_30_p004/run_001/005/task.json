@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:36:10.990067Z",
+  "task": {
+    "id": "task_005",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a set of resistance bands for home workouts from Amazon.",
+    "taskPrompt": "Buy a set of resistance bands for home workouts from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:33:48.588675Z"
+  },
+  "goal": "Buy a set of resistance bands for home workouts from Amazon.",
+  "sessionId": "session_005",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:23:02.732420Z",
+  "task": {
+    "id": "task_022",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a reusable grocery bag made from eco-friendly materials on Amazon.",
+    "taskPrompt": "Purchase a reusable grocery bag made from eco-friendly materials on Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:20:40.684425Z"
+  },
+  "goal": "Purchase a reusable grocery bag made from eco-friendly materials on Amazon.",
+  "sessionId": "session_022",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

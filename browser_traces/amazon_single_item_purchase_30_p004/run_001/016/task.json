@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:06:45.992293Z",
+  "task": {
+    "id": "task_016",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a wireless computer mouse with ergonomic design from Amazon.",
+    "taskPrompt": "Purchase a wireless computer mouse with ergonomic design from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:03:06.463756Z"
+  },
+  "goal": "Purchase a wireless computer mouse with ergonomic design from Amazon.",
+  "sessionId": "session_016",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

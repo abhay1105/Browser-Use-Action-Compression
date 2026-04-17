@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-04-08T01:14:10.039831Z",
+  "completedAt": "2026-04-08T01:14:10.039840Z",
+  "status": "completed",
+  "result": {
+    "status": "completed",
+    "final_result": "dry-run completed",
+    "browser_use": {
+      "dry_run": true,
+      "model_actions": [
+        {
+          "navigate": {
+            "url": "https://www.amazon.com/"
+          }
+        }
+      ]
+    }
+  },
+  "error": null,
+  "taskId": "task_001",
+  "taskType": "start_local_agent_goal",
+  "goal": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase.",
+  "url": "https://www.amazon.com/",
+  "sessionId": "session_001",
+  "serverUrl": null,
+  "deviceId": "browser-use-local",
+  "traceFolder": "001",
+  "events": [
+    {
+      "timestamp": 1775610850039,
+      "type": "task_received",
+      "payload": {
+        "taskId": "task_001",
+        "taskType": "start_local_agent_goal",
+        "goal": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase.",
+        "url": "https://www.amazon.com/",
+        "sessionId": "session_001"
+      }
+    },
+    {
+      "timestamp": 1775610850040,
+      "type": "tool_use",
+      "payload": {
+        "toolUseId": "tool_001",
+        "name": "navigate",
+        "input": {
+          "url": "https://www.amazon.com/"
+        }
+      }
+    },
+    {
+      "timestamp": 1775610850041,
+      "type": "tool_result",
+      "payload": {
+        "toolUseId": "tool_001",
+        "name": "navigate",
+        "durationMs": 0,
+        "text": "dry-run simulated action",
+        "imageCount": 0
+      }
+    },
+    {
+      "timestamp": 1775610850042,
+      "type": "task_completed",
+      "payload": {
+        "taskId": "task_001",
+        "hasResult": true
+      }
+    }
+  ],
+  "messages": [
+    {
+      "id": "user_1775610850039",
+      "role": "user",
+      "timestamp": 1775610850039,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase."
+        }
+      ]
+    },
+    {
+      "id": "asst_1775610850039",
+      "role": "assistant",
+      "timestamp": 1775610850042,
+      "blocks": [
+        {
+          "type": "tool_use",
+          "id": "tool_001",
+          "name": "navigate",
+          "input": {
+            "url": "https://www.amazon.com/"
+          }
+        },
+        {
+          "type": "tool_result",
+          "toolUseId": "tool_001",
+          "text": "dry-run simulated action",
+          "hasImage": false
+        },
+        {
+          "type": "text",
+          "text": "dry-run completed"
+        }
+      ]
+    }
+  ]
+}

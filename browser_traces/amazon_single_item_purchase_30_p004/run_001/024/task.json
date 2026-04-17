@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:31:06.642471Z",
+  "task": {
+    "id": "task_024",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a pack of protein bars with at least 15g protein per bar from Amazon.",
+    "taskPrompt": "Order a pack of protein bars with at least 15g protein per bar from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:28:32.548007Z"
+  },
+  "goal": "Order a pack of protein bars with at least 15g protein per bar from Amazon.",
+  "sessionId": "session_024",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

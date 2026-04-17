@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:26:22.351875Z",
+  "task": {
+    "id": "task_001",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a wireless Bluetooth headset with noise cancellation under $100 from Amazon.",
+    "taskPrompt": "Purchase a wireless Bluetooth headset with noise cancellation under $100 from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:22:26.535877Z"
+  },
+  "goal": "Purchase a wireless Bluetooth headset with noise cancellation under $100 from Amazon.",
+  "sessionId": "session_001",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

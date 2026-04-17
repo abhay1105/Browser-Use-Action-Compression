@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:38:38.503030Z",
+  "task": {
+    "id": "task_006",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a coffee mug with a capacity of at least 12oz from Amazon.",
+    "taskPrompt": "Order a coffee mug with a capacity of at least 12oz from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:36:10.991709Z"
+  },
+  "goal": "Order a coffee mug with a capacity of at least 12oz from Amazon.",
+  "sessionId": "session_006",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

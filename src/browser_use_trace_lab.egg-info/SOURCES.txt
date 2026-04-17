@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/browser_use_lab/__init__.py
+src/browser_use_lab/browser_runner.py
+src/browser_use_lab/ids.py
+src/browser_use_lab/io_utils.py
+src/browser_use_lab/prompt_generator.py
+src/browser_use_lab/trace_format.py
+src/browser_use_trace_lab.egg-info/PKG-INFO
+src/browser_use_trace_lab.egg-info/SOURCES.txt
+src/browser_use_trace_lab.egg-info/dependency_links.txt
+src/browser_use_trace_lab.egg-info/requires.txt
+src/browser_use_trace_lab.egg-info/top_level.txt

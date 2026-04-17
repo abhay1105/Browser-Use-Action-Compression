@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-04-08T01:14:15.100783Z",
+  "completedAt": "2026-04-08T01:14:16.026208Z",
+  "status": "failed",
+  "result": null,
+  "error": "[Errno 1] Operation not permitted\nTraceback (most recent call last):\n  File \"/Users/abhayp/Documents/browser_use/src/browser_use_lab/browser_runner.py\", line 310, in run_single_prompt\n    history = await _run_browser_use_task(prompt_text, model, provider, headless)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/src/browser_use_lab/browser_runner.py\", line 278, in _run_browser_use_task\n    return await run_result\n           ^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/observability.py\", line 73, in async_wrapper\n    return await func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/utils.py\", line 401, in wrapper\n    result = await func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/agent/service.py\", line 2639, in run\n    raise e\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/agent/service.py\", line 2542, in run\n    await self.browser_session.start()\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/observability.py\", line 73, in async_wrapper\n    return await func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/browser/session.py\", line 677, in start\n    await start_event.event_result(raise_if_any=True, raise_if_none=False)\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/models.py\", line 574, in event_result\n    valid_results = await self.event_results_filtered(\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        timeout=timeout, include=include, raise_if_any=raise_if_any, raise_if_none=raise_if_none\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/models.py\", line 516, in event_results_filtered\n    raise original_error\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/models.py\", line 490, in event_results_filtered\n    await event_result\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/models.py\", line 889, in wait_for_handler_to_complete_and_return_result\n    raise self.error if isinstance(self.error, BaseException) else Exception(self.error)  # pyright: ignore[reportUnnecessaryIsInstance]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/service.py\", line 1070, in _execute_handlers\n    await self.execute_handler(event, handler, timeout=timeout)\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/service.py\", line 1128, in execute_handler\n    result_value: Any = await asyncio.wait_for(handler_task, timeout=event_result.timeout)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/miniconda3/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/browser/watchdog_base.py\", line 153, in unique_handler\n    result = await actual_handler(event)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/observability.py\", line 73, in async_wrapper\n    return await func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/browser/session.py\", line 764, in on_BrowserStartEvent\n    BrowserLaunchResult, await launch_event.event_result(raise_if_none=True, raise_if_any=True)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/models.py\", line 574, in event_result\n    valid_results = await self.event_results_filtered(\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        timeout=timeout, include=include, raise_if_any=raise_if_any, raise_if_none=raise_if_none\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/models.py\", line 516, in event_results_filtered\n    raise original_error\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/models.py\", line 490, in event_results_filtered\n    await event_result\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/models.py\", line 889, in wait_for_handler_to_complete_and_return_result\n    raise self.error if isinstance(self.error, BaseException) else Exception(self.error)  # pyright: ignore[reportUnnecessaryIsInstance]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/service.py\", line 1070, in _execute_handlers\n    await self.execute_handler(event, handler, timeout=timeout)\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/bubus/service.py\", line 1128, in execute_handler\n    result_value: Any = await asyncio.wait_for(handler_task, timeout=event_result.timeout)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/miniconda3/lib/python3.13/asyncio/tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/browser/watchdog_base.py\", line 153, in unique_handler\n    result = await actual_handler(event)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/observability.py\", line 73, in async_wrapper\n    return await func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/browser/watchdogs/local_browser_watchdog.py\", line 56, in on_BrowserLaunchEvent\n    process, cdp_url = await self._launch_browser()\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/observability.py\", line 73, in async_wrapper\n    return await func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/browser/watchdogs/local_browser_watchdog.py\", line 112, in _launch_browser\n    debug_port = self._find_free_port()\n  File \"/Users/abhayp/Documents/browser_use/.venv/lib/python3.13/site-packages/browser_use/browser/watchdogs/local_browser_watchdog.py\", line 402, in _find_free_port\n    s.bind(('127.0.0.1', 0))\n    ~~~~~~^^^^^^^^^^^^^^^^^^\nPermissionError: [Errno 1] Operation not permitted",
+  "taskId": "task_001",
+  "taskType": "start_local_agent_goal",
+  "goal": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase.",
+  "url": "https://www.amazon.com/",
+  "sessionId": "session_001",
+  "serverUrl": null,
+  "deviceId": "browser-use-local",
+  "traceFolder": "001",
+  "events": [
+    {
+      "timestamp": 1775610855101,
+      "type": "task_received",
+      "payload": {
+        "taskId": "task_001",
+        "taskType": "start_local_agent_goal",
+        "goal": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase.",
+        "url": "https://www.amazon.com/",
+        "sessionId": "session_001"
+      }
+    },
+    {
+      "timestamp": 1775610855101,
+      "type": "session_initialized",
+      "payload": {
+        "sessionId": "session_001"
+      }
+    },
+    {
+      "timestamp": 1775610855101,
+      "type": "agent_loop_started",
+      "payload": {
+        "sessionId": "session_001",
+        "userPrompt": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase."
+      }
+    },
+    {
+      "timestamp": 1775610855101,
+      "type": "user_prompt",
+      "payload": {
+        "text": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase."
+      }
+    },
+    {
+      "timestamp": 1775610855101,
+      "type": "browser_use_run_started",
+      "payload": {
+        "model": "claude-sonnet-4-20250514",
+        "provider": "anthropic",
+        "headless": true
+      }
+    },
+    {
+      "timestamp": 1775610856024,
+      "type": "task_failed",
+      "payload": {
+        "taskId": "task_001",
+        "error": "[Errno 1] Operation not permitted"
+      }
+    },
+    {
+      "timestamp": 1775610856024,
+      "type": "agent_loop_error",
+      "payload": {
+        "error": "[Errno 1] Operation not permitted"
+      }
+    },
+    {
+      "timestamp": 1775610856024,
+      "type": "agent_loop_finished",
+      "payload": {
+        "sessionId": "session_001",
+        "error": "[Errno 1] Operation not permitted"
+      }
+    }
+  ],
+  "messages": [
+    {
+      "id": "user_1775610855101",
+      "role": "user",
+      "timestamp": 1775610855101,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase."
+        }
+      ]
+    },
+    {
+      "id": "asst_1775610855101",
+      "role": "assistant",
+      "timestamp": 1775610856024,
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Task failed: [Errno 1] Operation not permitted"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:03:06.461904Z",
+  "task": {
+    "id": "task_015",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a notebook with lined pages and at least 200 sheets from Amazon.",
+    "taskPrompt": "Order a notebook with lined pages and at least 200 sheets from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:59:53.732989Z"
+  },
+  "goal": "Order a notebook with lined pages and at least 200 sheets from Amazon.",
+  "sessionId": "session_015",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

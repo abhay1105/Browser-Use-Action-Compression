@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:36:20.205415Z",
+  "task": {
+    "id": "task_026",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a pair of blue light blocking glasses from Amazon.",
+    "taskPrompt": "Buy a pair of blue light blocking glasses from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:34:07.022692Z"
+  },
+  "goal": "Buy a pair of blue light blocking glasses from Amazon.",
+  "sessionId": "session_026",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

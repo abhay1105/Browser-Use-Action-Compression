@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:56:40.706417Z",
+  "task": {
+    "id": "task_013",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a kitchen cutting board made of bamboo from Amazon.",
+    "taskPrompt": "Purchase a kitchen cutting board made of bamboo from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:54:05.991392Z"
+  },
+  "goal": "Purchase a kitchen cutting board made of bamboo from Amazon.",
+  "sessionId": "session_013",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

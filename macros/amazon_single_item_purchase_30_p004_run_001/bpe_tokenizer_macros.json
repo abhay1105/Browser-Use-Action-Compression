@@ -1,0 +1,2114 @@
+{
+  "generated_at": "2026-04-10T03:41:29.435065Z",
+  "trace_run_dir": "/Users/abhayp/Documents/browser_use/browser_traces/amazon_single_item_purchase_30_p004/run_001",
+  "settings": {
+    "num_merges": 80,
+    "min_pair_support": 3,
+    "min_macro_support": 3,
+    "min_macro_length": 3,
+    "max_macros": 20,
+    "use_llm": true,
+    "llm_provider": "anthropic",
+    "llm_model": "claude-sonnet-4-6"
+  },
+  "stats": {
+    "episodes": 28,
+    "primitive_tokens": 348,
+    "bpe_merges_applied": 31,
+    "compression_ratio": 3.445545
+  },
+  "macros": [
+    {
+      "id": "M001",
+      "bpe_symbol": "@M0004",
+      "name": "macro_001_navigate_input_click",
+      "description": "Reusable action chain (navigate -> input -> click) observed 18 times. Estimated primitive-call reduction if used as one macro: 36.",
+      "support": 18,
+      "length": 3,
+      "estimated_saved_calls": 36,
+      "parameters": [
+        {
+          "name": "p1_url",
+          "action_index": 0,
+          "path": "url",
+          "required": true,
+          "observed_values": [
+            "https://www.amazon.com",
+            "https://amazon.com"
+          ],
+          "description": "Value for action 1 (navigate) field 'url'."
+        },
+        {
+          "name": "p2_index",
+          "action_index": 1,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            61,
+            59,
+            136,
+            95,
+            112,
+            86,
+            160,
+            165,
+            56,
+            127
+          ],
+          "description": "Value for action 2 (input) field 'index'."
+        },
+        {
+          "name": "p2_text",
+          "action_index": 1,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "wireless Bluetooth headset noise cancellation",
+            "stainless steel water bottle 32oz",
+            "USB-C charging cable 6 feet",
+            "resistance bands",
+            "coffee mug 12oz",
+            "yoga mat",
+            "portable phone charger 10000mAh",
+            "lined notebook 200 sheets",
+            "travel pillow airplane comfort",
+            "microfiber cleaning cloths"
+          ],
+          "description": "Value for action 2 (input) field 'text'."
+        },
+        {
+          "name": "p3_index",
+          "action_index": 2,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            247,
+            227,
+            273,
+            221,
+            271,
+            251,
+            207,
+            235,
+            252,
+            258
+          ],
+          "description": "Value for action 3 (click) field 'index'."
+        }
+      ],
+      "sequence_tokens": [
+        "navigate(new_tab,url)",
+        "input(clear,index,text)",
+        "click(index)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "navigate",
+            "input": {
+              "new_tab": false,
+              "url": "{{p1_url}}"
+            }
+          },
+          {
+            "action": "input",
+            "input": {
+              "clear": true,
+              "index": "{{p2_index}}",
+              "text": "{{p2_text}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p3_index}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_001",
+        "task_002",
+        "task_003",
+        "task_005",
+        "task_006",
+        "task_009",
+        "task_010",
+        "task_015"
+      ]
+    },
+    {
+      "id": "M005",
+      "bpe_symbol": "@M0006",
+      "name": "macro_005_navigate_input_click",
+      "description": "Reusable action chain (navigate -> input -> click -> wait) observed 12 times. Estimated primitive-call reduction if used as one macro: 36.",
+      "support": 12,
+      "length": 4,
+      "estimated_saved_calls": 36,
+      "parameters": [
+        {
+          "name": "p1_url",
+          "action_index": 0,
+          "path": "url",
+          "required": true,
+          "observed_values": [
+            "https://www.amazon.com",
+            "https://amazon.com"
+          ],
+          "description": "Value for action 1 (navigate) field 'url'."
+        },
+        {
+          "name": "p2_index",
+          "action_index": 1,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            59,
+            136,
+            95,
+            112,
+            86,
+            160,
+            165,
+            56,
+            116,
+            83
+          ],
+          "description": "Value for action 2 (input) field 'index'."
+        },
+        {
+          "name": "p2_text",
+          "action_index": 1,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "stainless steel water bottle 32oz",
+            "USB-C charging cable 6 feet",
+            "resistance bands",
+            "coffee mug 12oz",
+            "yoga mat",
+            "portable phone charger 10000mAh",
+            "lined notebook 200 sheets",
+            "travel pillow airplane comfort",
+            "smartphone tempered glass screen protector",
+            "eco-friendly reusable grocery bag"
+          ],
+          "description": "Value for action 2 (input) field 'text'."
+        },
+        {
+          "name": "p3_index",
+          "action_index": 2,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            227,
+            273,
+            221,
+            271,
+            251,
+            247,
+            207,
+            235,
+            252,
+            258
+          ],
+          "description": "Value for action 3 (click) field 'index'."
+        }
+      ],
+      "sequence_tokens": [
+        "navigate(new_tab,url)",
+        "input(clear,index,text)",
+        "click(index)",
+        "wait(seconds)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "navigate",
+            "input": {
+              "new_tab": false,
+              "url": "{{p1_url}}"
+            }
+          },
+          {
+            "action": "input",
+            "input": {
+              "clear": true,
+              "index": "{{p2_index}}",
+              "text": "{{p2_text}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p3_index}}"
+            }
+          },
+          {
+            "action": "wait",
+            "input": {
+              "seconds": 3
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_002",
+        "task_003",
+        "task_005",
+        "task_006",
+        "task_009",
+        "task_010",
+        "task_015",
+        "task_017"
+      ]
+    },
+    {
+      "id": "M010",
+      "bpe_symbol": "@M0015",
+      "name": "macro_010_write_file_navigate_replace_file",
+      "description": "Reusable action chain (write_file -> navigate -> replace_file -> input -> click -> replace_file) observed 6 times. Estimated primitive-call reduction if used as one macro: 30.",
+      "support": 6,
+      "length": 6,
+      "estimated_saved_calls": 30,
+      "parameters": [
+        {
+          "name": "p1_content",
+          "action_index": 0,
+          "path": "content",
+          "required": true,
+          "observed_values": [
+            "# Amazon Bestselling Fiction Book Purchase\n\n## Goal: Purchase a bestselling fiction book in paperback format\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for bestselling fiction books\n- [ ] Filter results for paperback format\n- [ ] Select a highly-rated bestselling book\n- [ ] Add book to cart\n- [ ] Proceed to checkout\n- [ ] Complete purchase",
+            "# iPhone 14 Pro Phone Case Purchase Task\n\n## Goal: Purchase a compatible phone case from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for iPhone 14 Pro phone case\n- [ ] Browse and select a suitable phone case\n- [ ] Add selected case to cart\n- [ ] Proceed through checkout process\n- [ ] Complete purchase",
+            "# Amazon Blue Gel Pens Purchase Task\n\n## Goal: Buy a pack of blue gel pens for office use from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for blue gel pens for office use\n- [ ] Review and filter search results for suitable products\n- [ ] Select appropriate pack of blue gel pens\n- [ ] Add selected item to cart\n- [ ] Proceed to checkout\n- [ ] Complete purchase process",
+            "# Amazon AA Battery Order Task\n\n## Goal: Order a pack of AA batteries from a well-known brand\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for AA batteries from well-known brands (Duracell, Energizer, etc.)\n- [ ] Filter/browse results to find suitable pack\n- [ ] Select appropriate AA battery pack\n- [ ] Add to cart\n- [ ] Proceed to checkout\n- [ ] Complete order",
+            "# Amazon Running Socks Purchase Task\n\n## Goal: Buy running socks with moisture-wicking material from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for 'running socks moisture wicking'\n- [ ] Review search results and apply filters if needed\n- [ ] Select appropriate running socks product\n- [ ] Add selected socks to cart\n- [ ] Proceed to checkout\n- [ ] Complete purchase",
+            "# Amazon Mouse Purchase Task\n\n## Goal: Purchase a wireless computer mouse with ergonomic design from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for 'wireless ergonomic computer mouse'\n- [ ] Browse search results and find suitable product\n- [ ] Click on product to view details\n- [ ] Add product to cart\n- [ ] Proceed to checkout/purchase"
+          ],
+          "description": "Value for action 1 (write_file) field 'content'."
+        },
+        {
+          "name": "p2_url",
+          "action_index": 1,
+          "path": "url",
+          "required": true,
+          "observed_values": [
+            "https://www.amazon.com",
+            "https://amazon.com"
+          ],
+          "description": "Value for action 2 (navigate) field 'url'."
+        },
+        {
+          "name": "p4_index",
+          "action_index": 3,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            86,
+            60,
+            31,
+            66,
+            138,
+            156
+          ],
+          "description": "Value for action 4 (input) field 'index'."
+        },
+        {
+          "name": "p4_text",
+          "action_index": 3,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "bestselling fiction books paperback",
+            "iPhone 14 Pro phone case",
+            "blue gel pens for office use",
+            "AA batteries Duracell Energizer",
+            "running socks moisture wicking",
+            "wireless ergonomic computer mouse"
+          ],
+          "description": "Value for action 4 (input) field 'text'."
+        },
+        {
+          "name": "p5_index",
+          "action_index": 4,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            245,
+            227,
+            158,
+            244,
+            273
+          ],
+          "description": "Value for action 5 (click) field 'index'."
+        },
+        {
+          "name": "p6_new_str",
+          "action_index": 5,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Search for bestselling fiction books",
+            "- [x] Search for iPhone 14 Pro phone case",
+            "- [x] Search for blue gel pens for office use",
+            "- [x] Search for AA batteries from well-known brands (Duracell, Energizer, etc.)",
+            "- [x] Search for 'running socks moisture wicking'",
+            "- [x] Search for 'wireless ergonomic computer mouse'"
+          ],
+          "description": "Value for action 6 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p6_old_str",
+          "action_index": 5,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Search for bestselling fiction books",
+            "- [ ] Search for iPhone 14 Pro phone case",
+            "- [ ] Search for blue gel pens for office use",
+            "- [ ] Search for AA batteries from well-known brands (Duracell, Energizer, etc.)",
+            "- [ ] Search for 'running socks moisture wicking'",
+            "- [ ] Search for 'wireless ergonomic computer mouse'"
+          ],
+          "description": "Value for action 6 (replace_file) field 'old_str'."
+        }
+      ],
+      "sequence_tokens": [
+        "write_file(append,content,file_name,leading_newline,trailing_newline)",
+        "navigate(new_tab,url)",
+        "replace_file(file_name,new_str,old_str)",
+        "input(clear,index,text)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "write_file",
+            "input": {
+              "append": false,
+              "content": "{{p1_content}}",
+              "file_name": "todo.md",
+              "leading_newline": false,
+              "trailing_newline": true
+            }
+          },
+          {
+            "action": "navigate",
+            "input": {
+              "new_tab": false,
+              "url": "{{p2_url}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "- [x] Navigate to Amazon.com",
+              "old_str": "- [ ] Navigate to Amazon.com"
+            }
+          },
+          {
+            "action": "input",
+            "input": {
+              "clear": true,
+              "index": "{{p4_index}}",
+              "text": "{{p4_text}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p5_index}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p6_new_str}}",
+              "old_str": "{{p6_old_str}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_004",
+        "task_007",
+        "task_008",
+        "task_012",
+        "task_014",
+        "task_016"
+      ]
+    },
+    {
+      "id": "M008",
+      "bpe_symbol": "@M0012",
+      "name": "macro_008_click_click_done",
+      "description": "Reusable action chain (click -> click -> done) observed 12 times. Estimated primitive-call reduction if used as one macro: 24.",
+      "support": 12,
+      "length": 3,
+      "estimated_saved_calls": 24,
+      "parameters": [
+        {
+          "name": "p1_index",
+          "action_index": 0,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            9612,
+            22080,
+            9029,
+            24747,
+            26898,
+            30474,
+            9624,
+            33683,
+            31745,
+            28374
+          ],
+          "description": "Value for action 1 (click) field 'index'."
+        },
+        {
+          "name": "p2_index",
+          "action_index": 1,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            29248,
+            34487,
+            27726,
+            45135,
+            49017,
+            48639,
+            32837,
+            50742,
+            51044,
+            49895
+          ],
+          "description": "Value for action 2 (click) field 'index'."
+        },
+        {
+          "name": "p3_text",
+          "action_index": 2,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "I have successfully found and added a stainless steel water bottle to your Amazon cart that meets your requirements:\n\n**Product Selected: CIVAGO 32oz Stainless Steel Water Bottle**\n- Price: $14.95\n- Capacity: 32oz (meets your minimum requirement)\n- Material: Stainless steel\n- Customer rating: Good reviews visible on the product page\n\nThe water bottle has been successfully added to your Amazon cart. When I attempted to proceed to checkout, Amazon redirected to a login page requiring you to sign in to your Amazon account to complete the purchase.\n\nTo finish the purchase, you would need to:\n1. Sign in to your Amazon account (or create one if needed)\n2. Complete the checkout process with your preferred payment method and shipping address\n\nThe product selection phase of your request has been completed successfully - I found a high-quality stainless steel water bottle that meets your 32oz minimum capacity requirement at a competitive price.",
+            "I successfully found and added a USB-C charging cable to your Amazon cart that meets your requirements:\n\n**Selected Product:**\n- Anker USB C to USB C Cable (6 FT, 2Pack) \n- Price: $9.99\n- Length: 6 feet (as requested)\n- Rating: 4.7 stars with 79.8K reviews\n- Marked as \"Overall Pick\" and \"#1 Best Seller\"\n\n**What I Accomplished:**\n1. \u2705 Navigated to Amazon.com\n2. \u2705 Searched for \"USB-C charging cable 6 feet\"\n3. \u2705 Applied 6-foot length filter to narrow results\n4. \u2705 Selected high-quality cable meeting your specifications\n5. \u2705 Added the cable to your cart\n6. \u2705 Proceeded to checkout\n\n**What Requires Your Action:**\nThe checkout process requires Amazon account authentication (sign-in), which I cannot complete without your login credentials. The cable is ready in your cart and you can complete the purchase by:\n\n1. Signing into your Amazon account on the current page\n2. Reviewing the cart contents\n3. Proceeding through checkout with your payment method\n4. Placing the final order\n\nThe cable I selected is an excellent choice - it's a 2-pack of 6-foot Anker cables (a highly trusted brand) at a great price point with outstanding customer reviews.",
+            "I successfully completed most of the resistance band shopping process on Amazon:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for \"resistance bands\" (found 80,000+ results)\n- Selected the Fit Simplify Resistance Loop Exercise Bands\n- Product details: $9.98, 4.5-star rating, 135,000+ reviews, marked as \"#1 Best Seller\" and \"Overall Pick\"\n- Successfully added the product to cart\n- Proceeded to checkout\n\n\u274c **Unable to Complete:**\n- Final purchase completion is blocked by Amazon's mandatory sign-in requirement\n- The checkout process requires entering email/mobile number and account authentication\n- I don't have login credentials to complete the actual transaction\n\n**Summary:** I successfully identified and selected an excellent resistance band set for home workouts and got it ready for purchase in the cart. The product chosen (Fit Simplify set) is highly rated, affordable, and suitable for home fitness routines. However, completing the actual purchase requires user authentication that I cannot provide.",
+            "I have successfully identified and added a yoga mat that meets your requirements to the Amazon shopping cart:\n\n\u2705 **Product Found**: Retrospec Solana Yoga Mat\n\u2705 **Size**: 72 x 24 inches (exactly 6 feet long - meets your minimum requirement)\n\u2705 **Price**: $24.99\n\u2705 **Rating**: 4.4 stars\n\u2705 **Availability**: In stock and Prime eligible\n\u2705 **Added to Cart**: Successfully added to Amazon cart\n\n**Progress Completed:**\n1. Navigated to Amazon.com\n2. Searched for yoga mats\n3. Identified suitable product meeting 6+ feet length requirement\n4. Added product to cart\n5. Initiated checkout process\n\n**Unable to Complete:**\nThe checkout process requires Amazon account login credentials, which I do not have access to. To complete the actual order, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Complete the checkout process with your preferred payment method and shipping address\n\nThe product is ready in your cart and meets all your specified requirements. The Retrospec Solana Yoga Mat at 72 inches (6 feet) long is an excellent choice that fulfills your criteria for a yoga mat at least 6 feet in length.",
+            "I successfully found and selected a suitable portable phone charger on Amazon that meets your requirements:\n\n**Product Selected: INIU Portable Charger**\n- Capacity: 10,000mAh (meets the 10000mAh+ requirement)\n- Price: $19.98\n- Rating: 4.5/5 stars with 76,000+ reviews\n- Status: Marked as \"Overall Pick\" by Amazon\n- Successfully added to cart\n\nI was able to complete most of the purchase process:\n1. \u2705 Navigated to Amazon.com\n2. \u2705 Searched for \"portable phone charger 10000mAh\"\n3. \u2705 Found multiple suitable options\n4. \u2705 Selected the highest-rated INIU charger\n5. \u2705 Added product to cart ($19.98 subtotal confirmed)\n6. \u274c Cannot complete checkout - Amazon requires account login\n\nThe checkout process was initiated but requires Amazon account credentials to complete the purchase. The product is ready in your cart and you can complete the purchase by:\n1. Signing into your Amazon account\n2. Proceeding through the checkout process\n3. Adding payment and shipping information\n\nThe selected charger perfectly matches your criteria with excellent reviews and competitive pricing.",
+            "I have successfully completed the travel pillow selection and shopping cart process on Amazon:\n\n\u2705 **Product Selected**: Purroch Travel Neck Pillow\n- Rating: 4.8 stars (159 reviews) - marked as \"Top Reviewed for Comfort\"\n- Price: $25.98 (35% off original price)\n- Features: G-shaped ergonomic design for airplane comfort\n- Includes: Eye mask and ear plugs\n- Prime eligible for fast delivery\n\n\u2705 **Actions Completed**:\n1. Navigated to Amazon.com\n2. Searched for \"travel pillow airplane comfort\"\n3. Evaluated multiple options from search results\n4. Selected the highest-rated pillow (4.8 stars)\n5. Successfully added item to cart\n6. Proceeded to checkout\n\n\u274c **Purchase Blocked**: The checkout process requires Amazon account sign-in/authentication. I cannot complete the actual purchase without user login credentials.\n\n**Current Status**: The Purroch Travel Neck Pillow ($25.98) is in your Amazon cart and ready for purchase. To complete the buying process, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Proceed through checkout\n3. Enter payment and shipping information\n4. Complete the purchase\n\nThe product selection phase has been completed successfully with an excellent choice for airplane comfort travel.",
+            "I successfully completed most of the microfiber cleaning cloths ordering process on Amazon:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for \"microfiber cleaning cloths\" (found over 20,000 results)\n- Browsed and selected Amazon Basics Microfiber Cleaning Cloths 24-pack\n- Product details: $9.99, 4.7-star rating with 85K+ reviews\n- Successfully added item to cart\n- Proceeded to checkout\n\n\u274c **Unable to Complete:**\n- Amazon requires sign-in/account authentication to complete the order\n- I don't have valid login credentials to proceed with checkout\n\n**Current Status:** The microfiber cleaning cloths are in your Amazon cart and ready for purchase. You'll need to:\n1. Sign in to your Amazon account (or create one)\n2. Complete the checkout process with your preferred payment method and shipping address\n\nThe selected product (Amazon Basics 24-pack for $9.99) offers good value with high customer ratings and is ready for immediate purchase once you complete the authentication.",
+            "I have successfully completed the product selection and cart preparation portions of your request to purchase an eco-friendly reusable grocery bag on Amazon:\n\n\u2713 **Product Found & Selected**: VeraMia Canvas Grocery Bag 3-piece set\n\u2713 **Price**: $27.98 \n\u2713 **Rating**: 4.8/5 stars (marked as \"Overall Pick\")\n\u2713 **Eco-Friendly Materials**: Made from 100% cotton canvas - fully sustainable and reusable\n\u2713 **Added to Cart**: Successfully added to Amazon shopping cart\n\n**Purchase Status**: The item is ready for checkout, but Amazon requires account login to complete the actual purchase transaction. I reached the checkout process but encountered the standard Amazon sign-in requirement.\n\n**Next Steps**: To complete the purchase, you would need to:\n1. Sign in to your Amazon account (or create one if needed)\n2. Proceed through the checkout process with your payment method\n3. Complete the order\n\nThe eco-friendly grocery bag I selected meets all your requirements - it's made from sustainable cotton canvas material, has excellent reviews, and is ready for purchase in your cart.",
+            "I have successfully completed the product selection and cart addition portion of your request to buy a car phone mount that attaches to the dashboard from Amazon.\n\nHere's what I accomplished:\n\n\u2705 **Product Found & Selected**: Loncaster Car Phone Holder\n- Price: $11.98\n- Rating: 4.2 stars (marked as \"Overall Pick\")\n- Type: Dashboard-mounted car phone holder\n- Successfully added to Amazon cart\n\n\u2705 **Shopping Process Completed Up To Checkout**:\n1. Navigated to Amazon.com\n2. Searched for \"car phone mount dashboard\"\n3. Applied dashboard mounting filter to ensure proper attachment type\n4. Selected highly-rated product that matches your requirements\n5. Added item to cart successfully\n6. Initiated checkout process\n\n\u274c **Purchase Completion Blocked**: When I attempted to proceed to checkout, Amazon redirected to a sign-in page requiring either an email address or mobile number to create an account or sign in to an existing account. Since I don't have login credentials for Amazon, I cannot complete the actual purchase transaction.\n\n**Next Steps for You**: To complete the purchase, you would need to:\n1. Sign in to your existing Amazon account, or\n2. Create a new Amazon account\n3. Complete the checkout process with your payment and shipping information\n\nThe product I selected (Loncaster Car Phone Holder) is an excellent choice that meets your requirements for a dashboard-attached car phone mount at a reasonable price with good customer reviews.",
+            "I successfully found and added protein bars to your Amazon cart that meet your requirements:\n\n**Selected Product:**\n- CLIF BUILDERS Protein Bars\n- 20g protein per bar (exceeds your 15g minimum requirement)\n- 12-count pack\n- Price: $19.98\n- Successfully added to cart\n\n**Progress Completed:**\n1. \u2705 Navigated to Amazon.com\n2. \u2705 Searched for \"protein bars\"\n3. \u2705 Found multiple options with 15g+ protein\n4. \u2705 Selected CLIF BUILDERS (20g protein per bar)\n5. \u2705 Added to cart successfully\n6. \u2705 Initiated checkout process\n\n**Unable to Complete:**\nThe checkout process requires Amazon account login credentials, which I don't have access to. The product is in your cart and ready for purchase once you sign in to your Amazon account.\n\n**Next Steps:**\nTo complete the order, you'll need to:\n1. Sign in to your Amazon account\n2. Review the cart (CLIF BUILDERS Protein Bars should be there)\n3. Complete the checkout process with your payment and shipping information\n\nThe selected protein bars meet your criteria with 20g of protein per bar, well above your 15g minimum requirement."
+          ],
+          "description": "Value for action 3 (done) field 'text'."
+        }
+      ],
+      "sequence_tokens": [
+        "click(index)",
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p1_index}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p2_index}}"
+            }
+          },
+          {
+            "action": "done",
+            "input": {
+              "success": false,
+              "text": "{{p3_text}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_002",
+        "task_003",
+        "task_005",
+        "task_009",
+        "task_010",
+        "task_017",
+        "task_018",
+        "task_022"
+      ]
+    },
+    {
+      "id": "M013",
+      "bpe_symbol": "@M0029",
+      "name": "macro_013_navigate_input_click",
+      "description": "Reusable action chain (navigate -> input -> click -> wait -> click -> wait -> click -> click -> done) observed 3 times. Estimated primitive-call reduction if used as one macro: 24.",
+      "support": 3,
+      "length": 9,
+      "estimated_saved_calls": 24,
+      "parameters": [
+        {
+          "name": "p2_index",
+          "action_index": 1,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            86,
+            160,
+            56
+          ],
+          "description": "Value for action 2 (input) field 'index'."
+        },
+        {
+          "name": "p2_text",
+          "action_index": 1,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "yoga mat",
+            "portable phone charger 10000mAh",
+            "travel pillow airplane comfort"
+          ],
+          "description": "Value for action 2 (input) field 'text'."
+        },
+        {
+          "name": "p3_index",
+          "action_index": 2,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            227,
+            251,
+            207
+          ],
+          "description": "Value for action 3 (click) field 'index'."
+        },
+        {
+          "name": "p5_index",
+          "action_index": 4,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            10482,
+            11221,
+            12106
+          ],
+          "description": "Value for action 5 (click) field 'index'."
+        },
+        {
+          "name": "p6_seconds",
+          "action_index": 5,
+          "path": "seconds",
+          "required": true,
+          "observed_values": [
+            5,
+            3
+          ],
+          "description": "Value for action 6 (wait) field 'seconds'."
+        },
+        {
+          "name": "p7_index",
+          "action_index": 6,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            24747,
+            26898,
+            30474
+          ],
+          "description": "Value for action 7 (click) field 'index'."
+        },
+        {
+          "name": "p8_index",
+          "action_index": 7,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            45135,
+            49017,
+            48639
+          ],
+          "description": "Value for action 8 (click) field 'index'."
+        },
+        {
+          "name": "p9_text",
+          "action_index": 8,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "I have successfully identified and added a yoga mat that meets your requirements to the Amazon shopping cart:\n\n\u2705 **Product Found**: Retrospec Solana Yoga Mat\n\u2705 **Size**: 72 x 24 inches (exactly 6 feet long - meets your minimum requirement)\n\u2705 **Price**: $24.99\n\u2705 **Rating**: 4.4 stars\n\u2705 **Availability**: In stock and Prime eligible\n\u2705 **Added to Cart**: Successfully added to Amazon cart\n\n**Progress Completed:**\n1. Navigated to Amazon.com\n2. Searched for yoga mats\n3. Identified suitable product meeting 6+ feet length requirement\n4. Added product to cart\n5. Initiated checkout process\n\n**Unable to Complete:**\nThe checkout process requires Amazon account login credentials, which I do not have access to. To complete the actual order, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Complete the checkout process with your preferred payment method and shipping address\n\nThe product is ready in your cart and meets all your specified requirements. The Retrospec Solana Yoga Mat at 72 inches (6 feet) long is an excellent choice that fulfills your criteria for a yoga mat at least 6 feet in length.",
+            "I successfully found and selected a suitable portable phone charger on Amazon that meets your requirements:\n\n**Product Selected: INIU Portable Charger**\n- Capacity: 10,000mAh (meets the 10000mAh+ requirement)\n- Price: $19.98\n- Rating: 4.5/5 stars with 76,000+ reviews\n- Status: Marked as \"Overall Pick\" by Amazon\n- Successfully added to cart\n\nI was able to complete most of the purchase process:\n1. \u2705 Navigated to Amazon.com\n2. \u2705 Searched for \"portable phone charger 10000mAh\"\n3. \u2705 Found multiple suitable options\n4. \u2705 Selected the highest-rated INIU charger\n5. \u2705 Added product to cart ($19.98 subtotal confirmed)\n6. \u274c Cannot complete checkout - Amazon requires account login\n\nThe checkout process was initiated but requires Amazon account credentials to complete the purchase. The product is ready in your cart and you can complete the purchase by:\n1. Signing into your Amazon account\n2. Proceeding through the checkout process\n3. Adding payment and shipping information\n\nThe selected charger perfectly matches your criteria with excellent reviews and competitive pricing.",
+            "I have successfully completed the travel pillow selection and shopping cart process on Amazon:\n\n\u2705 **Product Selected**: Purroch Travel Neck Pillow\n- Rating: 4.8 stars (159 reviews) - marked as \"Top Reviewed for Comfort\"\n- Price: $25.98 (35% off original price)\n- Features: G-shaped ergonomic design for airplane comfort\n- Includes: Eye mask and ear plugs\n- Prime eligible for fast delivery\n\n\u2705 **Actions Completed**:\n1. Navigated to Amazon.com\n2. Searched for \"travel pillow airplane comfort\"\n3. Evaluated multiple options from search results\n4. Selected the highest-rated pillow (4.8 stars)\n5. Successfully added item to cart\n6. Proceeded to checkout\n\n\u274c **Purchase Blocked**: The checkout process requires Amazon account sign-in/authentication. I cannot complete the actual purchase without user login credentials.\n\n**Current Status**: The Purroch Travel Neck Pillow ($25.98) is in your Amazon cart and ready for purchase. To complete the buying process, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Proceed through checkout\n3. Enter payment and shipping information\n4. Complete the purchase\n\nThe product selection phase has been completed successfully with an excellent choice for airplane comfort travel."
+          ],
+          "description": "Value for action 9 (done) field 'text'."
+        }
+      ],
+      "sequence_tokens": [
+        "navigate(new_tab,url)",
+        "input(clear,index,text)",
+        "click(index)",
+        "wait(seconds)",
+        "click(index)",
+        "wait(seconds)",
+        "click(index)",
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "navigate",
+            "input": {
+              "new_tab": false,
+              "url": "https://www.amazon.com"
+            }
+          },
+          {
+            "action": "input",
+            "input": {
+              "clear": true,
+              "index": "{{p2_index}}",
+              "text": "{{p2_text}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p3_index}}"
+            }
+          },
+          {
+            "action": "wait",
+            "input": {
+              "seconds": 3
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p5_index}}"
+            }
+          },
+          {
+            "action": "wait",
+            "input": {
+              "seconds": "{{p6_seconds}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p7_index}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p8_index}}"
+            }
+          },
+          {
+            "action": "done",
+            "input": {
+              "success": false,
+              "text": "{{p9_text}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_009",
+        "task_010",
+        "task_017"
+      ]
+    },
+    {
+      "id": "M011",
+      "bpe_symbol": "@M0027",
+      "name": "macro_011_wait_scroll_replace_file",
+      "description": "Reusable action chain (wait -> scroll -> replace_file -> click -> replace_file -> click -> replace_file -> click) observed 3 times. Estimated primitive-call reduction if used as one macro: 21.",
+      "support": 3,
+      "length": 8,
+      "estimated_saved_calls": 21,
+      "parameters": [
+        {
+          "name": "p2_pages",
+          "action_index": 1,
+          "path": "pages",
+          "required": true,
+          "observed_values": [
+            1.0,
+            2.0
+          ],
+          "description": "Value for action 2 (scroll) field 'pages'."
+        },
+        {
+          "name": "p3_new_str",
+          "action_index": 2,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Browse and select a suitable phone case (selected SUPFINE Magnetic case)",
+            "- [x] Search for bamboo kitchen cutting board",
+            "- [x] Search for 'black permanent markers'"
+          ],
+          "description": "Value for action 3 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p3_old_str",
+          "action_index": 2,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Browse and select a suitable phone case",
+            "- [ ] Search for bamboo kitchen cutting board",
+            "- [ ] Search for 'black permanent markers'"
+          ],
+          "description": "Value for action 3 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p4_index",
+          "action_index": 3,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            11033,
+            11880,
+            11003
+          ],
+          "description": "Value for action 4 (click) field 'index'."
+        },
+        {
+          "name": "p5_new_str",
+          "action_index": 4,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Add selected case to cart",
+            "- [x] Add selected cutting board to cart",
+            "- [x] Add selected markers to cart"
+          ],
+          "description": "Value for action 5 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p5_old_str",
+          "action_index": 4,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Add selected case to cart",
+            "- [ ] Add selected cutting board to cart",
+            "- [ ] Add selected markers to cart"
+          ],
+          "description": "Value for action 5 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p6_index",
+          "action_index": 5,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            9872,
+            10939,
+            9559
+          ],
+          "description": "Value for action 6 (click) field 'index'."
+        },
+        {
+          "name": "p7_new_str",
+          "action_index": 6,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Add selected case to cart\n- [>] Proceed through checkout process",
+            "- [>] Proceed to checkout",
+            "- [x] Browse and select appropriate pack of markers"
+          ],
+          "description": "Value for action 7 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p7_old_str",
+          "action_index": 6,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Add selected case to cart",
+            "- [ ] Proceed to checkout",
+            "- [ ] Browse and select appropriate pack of markers"
+          ],
+          "description": "Value for action 7 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p8_index",
+          "action_index": 7,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            29366,
+            29608,
+            28956
+          ],
+          "description": "Value for action 8 (click) field 'index'."
+        }
+      ],
+      "sequence_tokens": [
+        "wait(seconds)",
+        "scroll(down,pages)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "wait",
+            "input": {
+              "seconds": 3
+            }
+          },
+          {
+            "action": "scroll",
+            "input": {
+              "down": true,
+              "pages": "{{p2_pages}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p3_new_str}}",
+              "old_str": "{{p3_old_str}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p4_index}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p5_new_str}}",
+              "old_str": "{{p5_old_str}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p6_index}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p7_new_str}}",
+              "old_str": "{{p7_old_str}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p8_index}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_007",
+        "task_013",
+        "task_021"
+      ]
+    },
+    {
+      "id": "M009",
+      "bpe_symbol": "@M0025",
+      "name": "macro_009_write_file_navigate_replace_file",
+      "description": "Reusable action chain (write_file -> navigate -> replace_file -> input -> click -> replace_file -> scroll) observed 3 times. Estimated primitive-call reduction if used as one macro: 18.",
+      "support": 3,
+      "length": 7,
+      "estimated_saved_calls": 18,
+      "parameters": [
+        {
+          "name": "p1_content",
+          "action_index": 0,
+          "path": "content",
+          "required": true,
+          "observed_values": [
+            "# Amazon Bestselling Fiction Book Purchase\n\n## Goal: Purchase a bestselling fiction book in paperback format\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for bestselling fiction books\n- [ ] Filter results for paperback format\n- [ ] Select a highly-rated bestselling book\n- [ ] Add book to cart\n- [ ] Proceed to checkout\n- [ ] Complete purchase",
+            "# Amazon AA Battery Order Task\n\n## Goal: Order a pack of AA batteries from a well-known brand\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for AA batteries from well-known brands (Duracell, Energizer, etc.)\n- [ ] Filter/browse results to find suitable pack\n- [ ] Select appropriate AA battery pack\n- [ ] Add to cart\n- [ ] Proceed to checkout\n- [ ] Complete order",
+            "# Amazon Mouse Purchase Task\n\n## Goal: Purchase a wireless computer mouse with ergonomic design from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for 'wireless ergonomic computer mouse'\n- [ ] Browse search results and find suitable product\n- [ ] Click on product to view details\n- [ ] Add product to cart\n- [ ] Proceed to checkout/purchase"
+          ],
+          "description": "Value for action 1 (write_file) field 'content'."
+        },
+        {
+          "name": "p4_index",
+          "action_index": 3,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            86,
+            66,
+            156
+          ],
+          "description": "Value for action 4 (input) field 'index'."
+        },
+        {
+          "name": "p4_text",
+          "action_index": 3,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "bestselling fiction books paperback",
+            "AA batteries Duracell Energizer",
+            "wireless ergonomic computer mouse"
+          ],
+          "description": "Value for action 4 (input) field 'text'."
+        },
+        {
+          "name": "p5_index",
+          "action_index": 4,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            245,
+            273
+          ],
+          "description": "Value for action 5 (click) field 'index'."
+        },
+        {
+          "name": "p6_new_str",
+          "action_index": 5,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Search for bestselling fiction books",
+            "- [x] Search for AA batteries from well-known brands (Duracell, Energizer, etc.)",
+            "- [x] Search for 'wireless ergonomic computer mouse'"
+          ],
+          "description": "Value for action 6 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p6_old_str",
+          "action_index": 5,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Search for bestselling fiction books",
+            "- [ ] Search for AA batteries from well-known brands (Duracell, Energizer, etc.)",
+            "- [ ] Search for 'wireless ergonomic computer mouse'"
+          ],
+          "description": "Value for action 6 (replace_file) field 'old_str'."
+        }
+      ],
+      "sequence_tokens": [
+        "write_file(append,content,file_name,leading_newline,trailing_newline)",
+        "navigate(new_tab,url)",
+        "replace_file(file_name,new_str,old_str)",
+        "input(clear,index,text)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "scroll(down,pages)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "write_file",
+            "input": {
+              "append": false,
+              "content": "{{p1_content}}",
+              "file_name": "todo.md",
+              "leading_newline": false,
+              "trailing_newline": true
+            }
+          },
+          {
+            "action": "navigate",
+            "input": {
+              "new_tab": false,
+              "url": "https://www.amazon.com"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "- [x] Navigate to Amazon.com",
+              "old_str": "- [ ] Navigate to Amazon.com"
+            }
+          },
+          {
+            "action": "input",
+            "input": {
+              "clear": true,
+              "index": "{{p4_index}}",
+              "text": "{{p4_text}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p5_index}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p6_new_str}}",
+              "old_str": "{{p6_old_str}}"
+            }
+          },
+          {
+            "action": "scroll",
+            "input": {
+              "down": true,
+              "pages": 2.0
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_004",
+        "task_012",
+        "task_016"
+      ]
+    },
+    {
+      "id": "M014",
+      "bpe_symbol": "@M0031",
+      "name": "macro_014_replace_file_click_replace_file",
+      "description": "Reusable action chain (replace_file -> click -> replace_file -> click -> replace_file -> done -> done) observed 3 times. Estimated primitive-call reduction if used as one macro: 18.",
+      "support": 3,
+      "length": 7,
+      "estimated_saved_calls": 18,
+      "parameters": [
+        {
+          "name": "p1_new_str",
+          "action_index": 0,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Select appropriate running socks product",
+            "- [x] Filter results for notebooks with 200+ sheets\n- [x] Select appropriate notebook product (Five Star 200-sheet college ruled)",
+            "- [x] Read product details to confirm specifications"
+          ],
+          "description": "Value for action 1 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p1_old_str",
+          "action_index": 0,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Select appropriate running socks product",
+            "- [ ] Filter results for notebooks with 200+ sheets\n- [ ] Select appropriate notebook product",
+            "- [ ] Read product details to confirm specifications"
+          ],
+          "description": "Value for action 1 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p2_index",
+          "action_index": 1,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            32659,
+            26855,
+            27995
+          ],
+          "description": "Value for action 2 (click) field 'index'."
+        },
+        {
+          "name": "p3_new_str",
+          "action_index": 2,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Add selected socks to cart",
+            "- [x] Add to cart",
+            "- [x] Add the selected scale to cart"
+          ],
+          "description": "Value for action 3 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p3_old_str",
+          "action_index": 2,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Add selected socks to cart",
+            "- [ ] Add to cart",
+            "- [ ] Add the selected scale to cart"
+          ],
+          "description": "Value for action 3 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p4_index",
+          "action_index": 3,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            53160,
+            46432,
+            51126
+          ],
+          "description": "Value for action 4 (click) field 'index'."
+        },
+        {
+          "name": "p5_new_str",
+          "action_index": 4,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Proceed to checkout",
+            "- [x] Proceed through checkout process (blocked by login requirement)\n- [-] Complete order (cannot complete without Amazon account credentials)",
+            "- [x] Proceed to checkout (reached sign-in page - cannot complete without credentials)"
+          ],
+          "description": "Value for action 5 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p5_old_str",
+          "action_index": 4,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Proceed to checkout",
+            "- [ ] Proceed through checkout process\n- [ ] Complete order",
+            "- [ ] Proceed to checkout and complete purchase"
+          ],
+          "description": "Value for action 5 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p6_text",
+          "action_index": 5,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "I have successfully completed most of the Amazon running socks purchase process:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for 'running socks moisture wicking'\n- Reviewed 217 search results \n- Selected BULLIANT Men Running Socks (6-pack, $7.99 with 20% limited time deal)\n- Product features: 4.6-star rating, moisture-wicking material, cushioned design\n- Added socks to cart successfully \n- Initiated checkout process\n\n\u274c **Unable to Complete:**\nThe purchase cannot be completed because Amazon requires signing in with valid account credentials. I have reached the Amazon sign-in page (https://www.amazon.com/ap/signin) but cannot proceed without:\n- Valid Amazon account email/username\n- Account password\n\n**Current Status:** \nThe BULLIANT running socks with moisture-wicking material are in your Amazon cart ready for purchase. To complete the transaction, you would need to:\n1. Sign in to your Amazon account\n2. Proceed through the checkout process\n3. Enter payment and shipping information\n4. Complete the purchase\n\nThe selected product perfectly matches your requirements: running socks with moisture-wicking material at a competitive price of $7.99 (originally $9.99 with 20% discount).",
+            "I successfully found and added a notebook that meets all your requirements to the Amazon cart:\n\n**Product Selected: Five Star Spiral Notebook**\n- \u2705 Has lined pages (college ruled)\n- \u2705 Has exactly 200 sheets (meets 200+ requirement)\n- \u2705 Available on Amazon\n- \u2705 Price: $6.98\n- \u2705 Successfully added to cart\n\n**What was completed:**\n1. Navigated to Amazon.com\n2. Searched for lined notebooks with 200+ sheets\n3. Found and selected Five Star Spiral Notebook that exactly matches requirements\n4. Added product to cart successfully (cart shows $6.98 subtotal)\n5. Attempted to proceed to checkout\n\n**Limitation encountered:**\nWhen attempting to proceed to checkout, Amazon redirected to a sign-in page requiring account authentication. To complete the actual order, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Complete the checkout process with shipping and payment information\n\nThe notebook is currently in your cart and ready to purchase once you sign in. The product perfectly matches your criteria of lined pages and at least 200 sheets.",
+            "I successfully found and selected a digital kitchen scale that meets your requirements:\n\n**Selected Product**: Ultrean Food Scale\n- **Capacity**: 11lb (meets the 11lb+ requirement)\n- **Price**: $6.98\n- **Rating**: 4.6 stars\n- **Status**: Amazon's Choice\n\nI was able to:\n1. Search Amazon for digital kitchen scales with 11lb+ capacity\n2. Browse through 739 search results\n3. Select the Ultrean Food Scale which meets your capacity requirement\n4. Add it to the shopping cart\n5. Proceed to checkout\n\nHowever, I cannot complete the actual purchase because Amazon requires user authentication (sign-in) to process orders, and I don't have valid login credentials. The product is in your cart and ready for purchase once you sign in to your Amazon account.\n\nThe task has been completed up to the checkout stage, but the final purchase transaction requires your personal Amazon account credentials to proceed."
+          ],
+          "description": "Value for action 6 (done) field 'text'."
+        },
+        {
+          "name": "p7_text",
+          "action_index": 6,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "I have successfully completed most of the running socks purchase process on Amazon, but cannot finish the actual purchase without account credentials.\n\n**What was accomplished:**\n- Navigated to Amazon.com\n- Searched for 'running socks moisture wicking' (217 results found)\n- Selected BULLIANT Men Running Socks - 6 Pairs Ankle Athletic Socks\n- Product details: $7.99 (with 20% limited time deal), 4.6-star rating, moisture-wicking cushioned material\n- Successfully added the socks to cart\n- Initiated checkout process\n- Reached the sign-in page\n\n**Current Status:**\nThe running socks are in your Amazon cart and ready for purchase. The product perfectly matches your requirements for moisture-wicking material. To complete the purchase, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Review the order and shipping details\n3. Complete payment\n\nThe selected BULLIANT running socks meet your criteria with explicit moisture-wicking features and have excellent customer ratings (4.6/5 stars) at a competitive price of $7.99.",
+            "I successfully completed most of the notebook ordering process on Amazon but was unable to complete the final order due to login requirements.\n\n**What I accomplished:**\n\n\u2705 **Product Selection:** Found a Five Star Spiral Notebook that perfectly meets all your requirements:\n- **Lined pages:** College ruled (lined) format\n- **Sheet count:** Exactly 200 sheets (exceeds your minimum requirement)\n- **Source:** Available on Amazon\n- **Price:** $6.98\n- **Quality:** Best Seller product with good customer ratings\n\n\u2705 **Cart Addition:** Successfully added the notebook to your Amazon cart\n\n\u2705 **Checkout Attempt:** Proceeded to checkout process\n\n**Limitation encountered:**\nAmazon requires account login to complete the purchase. When I clicked \"Proceed to checkout,\" Amazon redirected to their sign-in page. I cannot proceed with the actual order completion without Amazon account credentials.\n\n**Next steps for you:**\nTo complete this order, you would need to:\n1. Log into your Amazon account (or create one if needed)\n2. The Five Star Spiral Notebook should still be in your cart\n3. Proceed through checkout to complete the purchase for $6.98\n\nThe product I selected is an excellent match for your requirements and is ready for purchase once you authenticate with Amazon.",
+            "I have successfully completed the digital kitchen scale shopping task on Amazon up to the checkout process. Here's what I accomplished:\n\n\u2705 **Product Found & Selected:**\n- **Ultrean Food Scale** - $6.98\n- **Capacity:** 11lb (meets the 11lb+ requirement)\n- **Rating:** 4.6 stars (Amazon's Choice)\n- **Successfully added to cart**\n\n\u2705 **Shopping Process Completed:**\n1. Navigated to Amazon.com\n2. Searched for \"digital kitchen scale 11lb capacity\"\n3. Browsed 739 search results\n4. Selected the Ultrean Food Scale based on capacity requirements and value\n5. Verified product specifications (11lb capacity confirmed)\n6. Added product to cart ($6.98 subtotal)\n7. Proceeded to checkout\n\n\u26a0\ufe0f **Cannot Complete Final Purchase:**\nI reached Amazon's sign-in page, which is the expected next step in the checkout process. However, I cannot complete the actual purchase transaction as it requires valid login credentials that I don't have access to.\n\n**Next Steps for User:**\nTo complete the purchase, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Complete the checkout process with your payment method\n3. Confirm the order\n\nThe product I selected (Ultrean Food Scale, 11lb capacity, $6.98) is currently in your cart and ready for purchase once you sign in."
+          ],
+          "description": "Value for action 7 (done) field 'text'."
+        }
+      ],
+      "sequence_tokens": [
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "done(files_to_display,success,text)",
+        "done(files_to_display,success,text)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p1_new_str}}",
+              "old_str": "{{p1_old_str}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p2_index}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p3_new_str}}",
+              "old_str": "{{p3_old_str}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p4_index}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p5_new_str}}",
+              "old_str": "{{p5_old_str}}"
+            }
+          },
+          {
+            "action": "done",
+            "input": {
+              "files_to_display": [
+                "todo.md"
+              ],
+              "success": false,
+              "text": "{{p6_text}}"
+            }
+          },
+          {
+            "action": "done",
+            "input": {
+              "files_to_display": [
+                "todo.md"
+              ],
+              "success": false,
+              "text": "{{p7_text}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_014",
+        "task_015",
+        "task_019"
+      ]
+    },
+    {
+      "id": "M007",
+      "bpe_symbol": "@M0024",
+      "name": "macro_007_navigate_input_click",
+      "description": "Reusable action chain (navigate -> input -> click -> wait -> click -> click) observed 3 times. Estimated primitive-call reduction if used as one macro: 15.",
+      "support": 3,
+      "length": 6,
+      "estimated_saved_calls": 15,
+      "parameters": [
+        {
+          "name": "p1_url",
+          "action_index": 0,
+          "path": "url",
+          "required": true,
+          "observed_values": [
+            "https://www.amazon.com",
+            "https://amazon.com"
+          ],
+          "description": "Value for action 1 (navigate) field 'url'."
+        },
+        {
+          "name": "p2_index",
+          "action_index": 1,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            136,
+            95,
+            158
+          ],
+          "description": "Value for action 2 (input) field 'index'."
+        },
+        {
+          "name": "p2_text",
+          "action_index": 1,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "USB-C charging cable 6 feet",
+            "resistance bands",
+            "car phone mount dashboard"
+          ],
+          "description": "Value for action 2 (input) field 'text'."
+        },
+        {
+          "name": "p3_index",
+          "action_index": 2,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            273,
+            221,
+            258
+          ],
+          "description": "Value for action 3 (click) field 'index'."
+        },
+        {
+          "name": "p5_index",
+          "action_index": 4,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            15640,
+            10001,
+            14852
+          ],
+          "description": "Value for action 5 (click) field 'index'."
+        },
+        {
+          "name": "p6_index",
+          "action_index": 5,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            22905,
+            9029,
+            23138
+          ],
+          "description": "Value for action 6 (click) field 'index'."
+        }
+      ],
+      "sequence_tokens": [
+        "navigate(new_tab,url)",
+        "input(clear,index,text)",
+        "click(index)",
+        "wait(seconds)",
+        "click(index)",
+        "click(index)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "navigate",
+            "input": {
+              "new_tab": false,
+              "url": "{{p1_url}}"
+            }
+          },
+          {
+            "action": "input",
+            "input": {
+              "clear": true,
+              "index": "{{p2_index}}",
+              "text": "{{p2_text}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p3_index}}"
+            }
+          },
+          {
+            "action": "wait",
+            "input": {
+              "seconds": 3
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p5_index}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p6_index}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_003",
+        "task_005",
+        "task_023"
+      ]
+    },
+    {
+      "id": "M012",
+      "bpe_symbol": "@M0028",
+      "name": "macro_012_replace_file_replace_file_click",
+      "description": "Reusable action chain (replace_file -> replace_file -> click -> replace_file -> click -> done) observed 3 times. Estimated primitive-call reduction if used as one macro: 15.",
+      "support": 3,
+      "length": 6,
+      "estimated_saved_calls": 15,
+      "parameters": [
+        {
+          "name": "p1_new_str",
+          "action_index": 0,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Select appropriate pack of blue gel pens",
+            "- [x] Check product details and reviews",
+            "- [x] Browse and select a suitable product with good ratings"
+          ],
+          "description": "Value for action 1 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p1_old_str",
+          "action_index": 0,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Select appropriate pack of blue gel pens",
+            "- [ ] Check product details and reviews",
+            "- [ ] Browse and select a suitable product with good ratings"
+          ],
+          "description": "Value for action 1 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p2_new_str",
+          "action_index": 1,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Add selected item to cart",
+            "- [x] Verify adjustable brightness feature",
+            "- [x] Add selected product to cart"
+          ],
+          "description": "Value for action 2 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p2_old_str",
+          "action_index": 1,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Add selected item to cart",
+            "- [ ] Verify adjustable brightness feature",
+            "- [ ] Add selected product to cart"
+          ],
+          "description": "Value for action 2 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p3_index",
+          "action_index": 2,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            10490,
+            34767,
+            10871
+          ],
+          "description": "Value for action 3 (click) field 'index'."
+        },
+        {
+          "name": "p4_new_str",
+          "action_index": 3,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Add selected item to cart\n- [x] Proceed to checkout",
+            "- [x] Add selected lamp to cart",
+            "- [>] Proceed through checkout process"
+          ],
+          "description": "Value for action 4 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p4_old_str",
+          "action_index": 3,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Add selected item to cart\n- [ ] Proceed to checkout",
+            "- [ ] Add selected lamp to cart",
+            "- [ ] Proceed through checkout process"
+          ],
+          "description": "Value for action 4 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p5_index",
+          "action_index": 4,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            28378,
+            54849,
+            22385
+          ],
+          "description": "Value for action 5 (click) field 'index'."
+        },
+        {
+          "name": "p6_text",
+          "action_index": 5,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "I successfully completed the Amazon shopping process up to the final purchase step:\n\n**Completed Steps:**\n\u2705 Navigated to Amazon.com\n\u2705 Searched for 'blue gel pens for office use'\n\u2705 Reviewed search results and identified top options\n\u2705 Selected PILOT G2 Premium 12-pack blue gel pens ($13.95) - marked as 'Overall Pick' on Amazon\n\u2705 Added item to cart\n\u2705 Proceeded to checkout\n\n**Final Status:**\nThe purchase process was blocked by Amazon's login requirement. To complete the actual purchase transaction, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Add payment method\n3. Confirm shipping address\n4. Complete the purchase\n\nThe selected product (PILOT G2 Premium 12-pack blue gel pens for $13.95) is currently in the cart and ready for purchase once you sign in. This was identified as the 'Overall Pick' among the search results, making it an excellent choice for office use.\n\nNote: I cannot complete the login process as no credentials were provided, and the browser rules prohibit attempting login without proper credentials.",
+            "I successfully completed the Amazon desk lamp shopping task with the following results:\n\n\u2705 **Product Found**: Airlonv LED Desk Lamp for Office\n- **Price**: $20.97\n- **Rating**: 4.6 stars (7,400+ reviews)\n- **Key Feature**: Stepless Dimming with 1%-100% brightness adjustment (meets your adjustable brightness requirement)\n- **Status**: Successfully added to Amazon cart\n\n\u2705 **Shopping Steps Completed**:\n1. Navigated to Amazon.com\n2. Searched for \"desk lamp adjustable brightness\"\n3. Browsed search results (over 9,000 options)\n4. Selected highly-rated Airlonv LED lamp marked as \"Overall Pick\"\n5. Verified adjustable brightness feature (stepless dimming 1%-100%)\n6. Added product to cart\n7. Proceeded to checkout\n\n\u274c **Purchase Not Completed**: Amazon requires user login to complete the purchase transaction. I reached the \"Sign in or create account\" page but cannot proceed without your Amazon login credentials.\n\n**Next Steps for You**: To complete the purchase, you would need to:\n1. Sign into your Amazon account\n2. Review the cart (Airlonv LED Desk Lamp - $20.97)\n3. Complete checkout with your preferred payment method and shipping address\n\nThe lamp I found perfectly matches your requirements with its stepless brightness adjustment feature at a reasonable price with excellent reviews.",
+            "I successfully found and selected a high-quality smartphone tempered glass screen protector on Amazon:\n\n**Product Selected:** Ailun Screen Protector\n- Price: $5.98 (3-pack)\n- Rating: 4.6 out of 5 stars\n- Reviews: Over 1.1 million reviews\n- Marked as \"Overall Pick\" and \"#1 Best Seller\"\n- Successfully added to cart\n\nI was able to complete all steps up to checkout:\n1. \u2705 Navigated to Amazon.com\n2. \u2705 Searched for \"smartphone tempered glass screen protector\"\n3. \u2705 Found and selected a highly-rated product with excellent reviews\n4. \u2705 Added the product to cart\n5. \u2705 Proceeded to checkout\n\n**Checkout Status:** The checkout process requires Amazon account login credentials to complete the purchase. Since no login information was provided, I cannot proceed with the final transaction. The product is ready in the cart and can be purchased once proper authentication is provided.\n\nThe selected Ailun screen protector is an excellent choice with outstanding customer ratings and represents great value as a 3-pack for under $6."
+          ],
+          "description": "Value for action 6 (done) field 'text'."
+        }
+      ],
+      "sequence_tokens": [
+        "replace_file(file_name,new_str,old_str)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p1_new_str}}",
+              "old_str": "{{p1_old_str}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p2_new_str}}",
+              "old_str": "{{p2_old_str}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p3_index}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p4_new_str}}",
+              "old_str": "{{p4_old_str}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p5_index}}"
+            }
+          },
+          {
+            "action": "done",
+            "input": {
+              "files_to_display": [
+                "todo.md"
+              ],
+              "success": false,
+              "text": "{{p6_text}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_008",
+        "task_011",
+        "task_020"
+      ]
+    },
+    {
+      "id": "M003",
+      "bpe_symbol": "@M0018",
+      "name": "macro_003_replace_file_replace_file_click",
+      "description": "Reusable action chain (replace_file -> replace_file -> click) observed 7 times. Estimated primitive-call reduction if used as one macro: 14.",
+      "support": 7,
+      "length": 3,
+      "estimated_saved_calls": 14,
+      "parameters": [
+        {
+          "name": "p1_new_str",
+          "action_index": 0,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Review search results and find suitable product (Selected Soundcore Q20i - $39.99, 4.6\u2605, noise cancelling)",
+            "- [x] Select a highly-rated bestselling book",
+            "- [x] Add book to cart",
+            "- [x] Select appropriate pack of blue gel pens",
+            "- [x] Check product details and reviews",
+            "- [x] Navigate to Amazon.com",
+            "- [x] Browse and select a suitable product with good ratings"
+          ],
+          "description": "Value for action 1 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p1_old_str",
+          "action_index": 0,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Review search results and find suitable product",
+            "- [ ] Select a highly-rated bestselling book",
+            "- [>] 4: Add book to cart",
+            "- [ ] Select appropriate pack of blue gel pens",
+            "- [ ] Check product details and reviews",
+            "- [ ] Navigate to Amazon.com",
+            "- [ ] Browse and select a suitable product with good ratings"
+          ],
+          "description": "Value for action 1 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p2_new_str",
+          "action_index": 1,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Select product with good reviews and noise cancellation (Q20i meets all requirements)",
+            "- [x] Add book to cart",
+            "- [x] Proceed to checkout",
+            "- [x] Add selected item to cart",
+            "- [x] Verify adjustable brightness feature",
+            "- [x] Search for smartphone tempered glass screen protector",
+            "- [x] Add selected product to cart"
+          ],
+          "description": "Value for action 2 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p2_old_str",
+          "action_index": 1,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Select product with good reviews and noise cancellation",
+            "- [ ] Add book to cart",
+            "- [ ] Proceed to checkout",
+            "- [ ] Add selected item to cart",
+            "- [ ] Verify adjustable brightness feature",
+            "- [ ] Search for smartphone tempered glass screen protector",
+            "- [ ] Add selected product to cart"
+          ],
+          "description": "Value for action 2 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p3_index",
+          "action_index": 2,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            27006,
+            9799,
+            22953,
+            10490,
+            34767,
+            12011,
+            10871
+          ],
+          "description": "Value for action 3 (click) field 'index'."
+        }
+      ],
+      "sequence_tokens": [
+        "replace_file(file_name,new_str,old_str)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p1_new_str}}",
+              "old_str": "{{p1_old_str}}"
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p2_new_str}}",
+              "old_str": "{{p2_old_str}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p3_index}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_001",
+        "task_004",
+        "task_008",
+        "task_011",
+        "task_020"
+      ]
+    },
+    {
+      "id": "M004",
+      "bpe_symbol": "@M0010",
+      "name": "macro_004_replace_file_done_done",
+      "description": "Reusable action chain (replace_file -> done -> done) observed 7 times. Estimated primitive-call reduction if used as one macro: 14.",
+      "support": 7,
+      "length": 3,
+      "estimated_saved_calls": 14,
+      "parameters": [
+        {
+          "name": "p1_new_str",
+          "action_index": 0,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Proceed through checkout process (reached sign-in page - cannot complete without credentials)",
+            "- [x] Proceed to checkout",
+            "- [x] Proceed through checkout process (blocked by login requirement)\n- [-] Complete order (cannot complete without Amazon account credentials)",
+            "- [x] Browse search results and find suitable product",
+            "- [x] Proceed to checkout (reached sign-in page - cannot complete without credentials)",
+            "- [x] Proceed to checkout (reached sign-in page - login required to complete)",
+            "- [-] Complete purchase process (blocked: requires Amazon login credentials)"
+          ],
+          "description": "Value for action 1 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p1_old_str",
+          "action_index": 0,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Proceed through checkout process",
+            "- [ ] Proceed to checkout",
+            "- [ ] Proceed through checkout process\n- [ ] Complete order",
+            "- [ ] Browse search results and find suitable product",
+            "- [ ] Proceed to checkout and complete purchase",
+            "- [x] Proceed to checkout (reached sign-in page)",
+            "- [ ] Complete purchase process"
+          ],
+          "description": "Value for action 1 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p2_success",
+          "action_index": 1,
+          "path": "success",
+          "required": true,
+          "observed_values": [
+            false,
+            true
+          ],
+          "description": "Value for action 2 (done) field 'success'."
+        },
+        {
+          "name": "p2_text",
+          "action_index": 1,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "I successfully found and added a wireless Bluetooth headset with noise cancellation under $100 to your Amazon cart. Here are the details:\n\n**Product Selected: Soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones**\n- Price: $39.99 (43% off from $69.99)\n- Rating: 4.6 stars with 59,000+ reviews\n- Features: Wireless Bluetooth, Hybrid Active Noise Cancelling (90% noise reduction)\n- Marked as \"Overall Pick\" for noise cancellation\n- Qualifies for FREE delivery\n- Successfully added to Amazon cart\n\n**What was completed:**\n\u2705 Navigated to Amazon.com\n\u2705 Searched for wireless Bluetooth headsets with noise cancellation\n\u2705 Found products already under $100 price range\n\u2705 Selected the best-rated product meeting all requirements\n\u2705 Added Soundcore Q20i headphones to cart ($39.99)\n\u2705 Proceeded to checkout\n\n**Current status:** The checkout process reached the Amazon sign-in page, which requires login credentials to complete the purchase. Since no login information was provided, I cannot complete the actual purchase transaction. However, the product is successfully added to your cart and ready for purchase once you sign in to your Amazon account.\n\nThe selected headphones meet all your requirements: wireless Bluetooth connectivity, active noise cancellation, excellent reviews (4.6/5 stars), and well under the $100 budget at just $39.99.",
+            "I have successfully completed most of the Amazon running socks purchase process:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for 'running socks moisture wicking'\n- Reviewed 217 search results \n- Selected BULLIANT Men Running Socks (6-pack, $7.99 with 20% limited time deal)\n- Product features: 4.6-star rating, moisture-wicking material, cushioned design\n- Added socks to cart successfully \n- Initiated checkout process\n\n\u274c **Unable to Complete:**\nThe purchase cannot be completed because Amazon requires signing in with valid account credentials. I have reached the Amazon sign-in page (https://www.amazon.com/ap/signin) but cannot proceed without:\n- Valid Amazon account email/username\n- Account password\n\n**Current Status:** \nThe BULLIANT running socks with moisture-wicking material are in your Amazon cart ready for purchase. To complete the transaction, you would need to:\n1. Sign in to your Amazon account\n2. Proceed through the checkout process\n3. Enter payment and shipping information\n4. Complete the purchase\n\nThe selected product perfectly matches your requirements: running socks with moisture-wicking material at a competitive price of $7.99 (originally $9.99 with 20% discount).",
+            "I successfully found and added a notebook that meets all your requirements to the Amazon cart:\n\n**Product Selected: Five Star Spiral Notebook**\n- \u2705 Has lined pages (college ruled)\n- \u2705 Has exactly 200 sheets (meets 200+ requirement)\n- \u2705 Available on Amazon\n- \u2705 Price: $6.98\n- \u2705 Successfully added to cart\n\n**What was completed:**\n1. Navigated to Amazon.com\n2. Searched for lined notebooks with 200+ sheets\n3. Found and selected Five Star Spiral Notebook that exactly matches requirements\n4. Added product to cart successfully (cart shows $6.98 subtotal)\n5. Attempted to proceed to checkout\n\n**Limitation encountered:**\nWhen attempting to proceed to checkout, Amazon redirected to a sign-in page requiring account authentication. To complete the actual order, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Complete the checkout process with shipping and payment information\n\nThe notebook is currently in your cart and ready to purchase once you sign in. The product perfectly matches your criteria of lined pages and at least 200 sheets.",
+            "I have successfully completed all possible steps for purchasing a wireless ergonomic computer mouse from Amazon:\n\n\u2705 **Completed Actions:**\n- Navigated to Amazon.com\n- Searched for 'wireless ergonomic computer mouse'\n- Browsed 70,000+ search results \n- Selected the TECKNET Wireless Mouse (excellent choice with 4.5 stars from 77,000 reviews)\n- Viewed detailed product specifications: $9.99 (38% off), ergonomic design, 6 buttons, 2600 DPI, Amazon's Choice\n- Successfully added the product to cart\n- Initiated checkout process\n\n\u274c **Unable to Complete:**\nThe final purchase transaction cannot be completed because Amazon requires login credentials. I reached the sign-in page where Amazon asks for email/mobile number to continue with checkout.\n\n**Product Ready for Purchase:**\n- **Item:** TECKNET Wireless Ergonomic Computer Mouse\n- **Price:** $9.99 (38% discount applied)\n- **Rating:** 4.5/5 stars (77,000+ reviews)\n- **Status:** Added to cart, ready for checkout\n- **Features:** Wireless 2.4G, 6-button ergonomic design, 2600 DPI\n\nTo complete the purchase, you would need to:\n1. Sign in to your Amazon account on the current page\n2. Complete the checkout process with your payment and shipping information\n\nThe mouse is an excellent choice based on its high ratings, ergonomic design, and affordable price point.",
+            "I successfully found and selected a digital kitchen scale that meets your requirements:\n\n**Selected Product**: Ultrean Food Scale\n- **Capacity**: 11lb (meets the 11lb+ requirement)\n- **Price**: $6.98\n- **Rating**: 4.6 stars\n- **Status**: Amazon's Choice\n\nI was able to:\n1. Search Amazon for digital kitchen scales with 11lb+ capacity\n2. Browse through 739 search results\n3. Select the Ultrean Food Scale which meets your capacity requirement\n4. Add it to the shopping cart\n5. Proceed to checkout\n\nHowever, I cannot complete the actual purchase because Amazon requires user authentication (sign-in) to process orders, and I don't have valid login credentials. The product is in your cart and ready for purchase once you sign in to your Amazon account.\n\nThe task has been completed up to the checkout stage, but the final purchase transaction requires your personal Amazon account credentials to proceed.",
+            "Successfully completed the shopping process for black permanent markers on Amazon:\n\n\u2705 Found and selected: Sharpie Permanent Markers 4-pack for $6.95\n\u2705 Added to cart successfully \n\u2705 Initiated checkout process\n\nCurrent Status: The markers are now in your Amazon cart and ready for purchase. The checkout process has been initiated and you've reached the Amazon sign-in page.\n\nNext Steps Required: To complete the order, you'll need to:\n1. Sign in to your Amazon account (or create one if you don't have one)\n2. Complete the payment and shipping information\n3. Confirm the order\n\nThe shopping portion of your request has been fully completed. The selected Sharpie 4-pack offers good value at $6.95 with excellent customer reviews (4.8 stars). You're now just one sign-in step away from completing your purchase.",
+            "I successfully found and added a suitable desk organizer to your Amazon cart, but cannot complete the actual purchase as Amazon requires sign-in credentials.\n\n**What was accomplished:**\n- Successfully navigated to Amazon.com\n- Searched for 'desk organizer multiple compartments' and found over 30,000 results\n- Selected the Marbrasse 360-Degree Rotating Desk Organizer with 5 compartments (Green, $9.99) - this product has excellent reviews (4.7/5 stars from 4,500+ customers)\n- Successfully added the item to cart\n- Proceeded to checkout (which requires Amazon account authentication)\n\n**What remains to complete the purchase:**\n- Amazon account login credentials (email/phone and password)\n- Payment method on file\n- Shipping address\n\nThe desk organizer I selected meets your requirements perfectly - it has multiple compartments (5 total), rotates 360 degrees for easy access, and is highly rated by customers. To complete your purchase, you'll need to sign in to your Amazon account and follow the checkout process with your payment and shipping information."
+          ],
+          "description": "Value for action 2 (done) field 'text'."
+        },
+        {
+          "name": "p3_text",
+          "action_index": 2,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "I successfully found and selected an excellent wireless Bluetooth headset with noise cancellation under $100 from Amazon, but cannot complete the actual purchase due to authentication requirements.\n\n**Product Selected: Soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones**\n- Price: $39.99 (43% off from $69.99)\n- Rating: 4.6 stars with 59,500+ reviews\n- Features: Wireless Bluetooth, Hybrid Active Noise Cancelling (90% noise reduction)\n- Status: Marked as \"Overall Pick\" and \"Top Reviewed for Noise cancellation\"\n- Availability: Ships from Amazon with FREE delivery\n- Cart Status: Successfully added to cart, subtotal $39.99\n\n**Requirements Met:**\n\u2713 Wireless Bluetooth connectivity\n\u2713 Noise cancellation feature (Hybrid Active, 90% noise reduction)\n\u2713 Price under $100 ($39.99)\n\u2713 Available from Amazon\n\u2713 Excellent reviews and ratings\n\n**Progress Completed:**\n1. Navigated to Amazon.com\n2. Searched for wireless Bluetooth headsets with noise cancellation\n3. Identified products under $100 (all visible results were already under budget)\n4. Selected the best-rated option meeting all criteria\n5. Successfully added to cart\n6. Proceeded to checkout\n\n**Blocker:** The checkout process requires signing into an Amazon account. No login credentials were provided in the original request, so the actual purchase transaction cannot be completed.\n\n**Recommendation:** The Soundcore Q20i headphones are an excellent choice that fully meets your requirements at a great price point. To complete the purchase, you would need to sign into your Amazon account and proceed through the standard checkout process.",
+            "I have successfully completed most of the running socks purchase process on Amazon, but cannot finish the actual purchase without account credentials.\n\n**What was accomplished:**\n- Navigated to Amazon.com\n- Searched for 'running socks moisture wicking' (217 results found)\n- Selected BULLIANT Men Running Socks - 6 Pairs Ankle Athletic Socks\n- Product details: $7.99 (with 20% limited time deal), 4.6-star rating, moisture-wicking cushioned material\n- Successfully added the socks to cart\n- Initiated checkout process\n- Reached the sign-in page\n\n**Current Status:**\nThe running socks are in your Amazon cart and ready for purchase. The product perfectly matches your requirements for moisture-wicking material. To complete the purchase, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Review the order and shipping details\n3. Complete payment\n\nThe selected BULLIANT running socks meet your criteria with explicit moisture-wicking features and have excellent customer ratings (4.6/5 stars) at a competitive price of $7.99.",
+            "I successfully completed most of the notebook ordering process on Amazon but was unable to complete the final order due to login requirements.\n\n**What I accomplished:**\n\n\u2705 **Product Selection:** Found a Five Star Spiral Notebook that perfectly meets all your requirements:\n- **Lined pages:** College ruled (lined) format\n- **Sheet count:** Exactly 200 sheets (exceeds your minimum requirement)\n- **Source:** Available on Amazon\n- **Price:** $6.98\n- **Quality:** Best Seller product with good customer ratings\n\n\u2705 **Cart Addition:** Successfully added the notebook to your Amazon cart\n\n\u2705 **Checkout Attempt:** Proceeded to checkout process\n\n**Limitation encountered:**\nAmazon requires account login to complete the purchase. When I clicked \"Proceed to checkout,\" Amazon redirected to their sign-in page. I cannot proceed with the actual order completion without Amazon account credentials.\n\n**Next steps for you:**\nTo complete this order, you would need to:\n1. Log into your Amazon account (or create one if needed)\n2. The Five Star Spiral Notebook should still be in your cart\n3. Proceed through checkout to complete the purchase for $6.98\n\nThe product I selected is an excellent match for your requirements and is ready for purchase once you authenticate with Amazon.",
+            "I have successfully completed all pre-purchase steps for a wireless ergonomic computer mouse on Amazon:\n\n**Product Selected:** TECKNET Wireless Mouse\n- Price: $9.99 (38% discount)\n- Rating: 4.5 stars with 77,000 customer reviews\n- Features: Ergonomic design, 6 buttons, 2600 DPI, wireless connectivity\n- Status: Amazon's Choice product\n\n**Steps Completed:**\n1. \u2713 Navigated to Amazon.com\n2. \u2713 Searched for 'wireless ergonomic computer mouse'\n3. \u2713 Browsed over 70,000 search results\n4. \u2713 Selected highly-rated TECKNET wireless ergonomic mouse\n5. \u2713 Viewed detailed product specifications and reviews\n6. \u2713 Added product to shopping cart\n7. \u2713 Proceeded to checkout\n\n**Current Status:** The product is in your Amazon cart and ready for purchase. However, I cannot complete the actual transaction as Amazon requires login credentials to finalize the purchase. You would need to sign in to your Amazon account and complete the checkout process to finalize the purchase of this wireless ergonomic mouse.\n\nThe selected TECKNET mouse meets all your requirements: it's wireless, has an ergonomic design, is highly rated by customers, and is available on Amazon at a competitive price of $9.99.",
+            "I have successfully completed the digital kitchen scale shopping task on Amazon up to the checkout process. Here's what I accomplished:\n\n\u2705 **Product Found & Selected:**\n- **Ultrean Food Scale** - $6.98\n- **Capacity:** 11lb (meets the 11lb+ requirement)\n- **Rating:** 4.6 stars (Amazon's Choice)\n- **Successfully added to cart**\n\n\u2705 **Shopping Process Completed:**\n1. Navigated to Amazon.com\n2. Searched for \"digital kitchen scale 11lb capacity\"\n3. Browsed 739 search results\n4. Selected the Ultrean Food Scale based on capacity requirements and value\n5. Verified product specifications (11lb capacity confirmed)\n6. Added product to cart ($6.98 subtotal)\n7. Proceeded to checkout\n\n\u26a0\ufe0f **Cannot Complete Final Purchase:**\nI reached Amazon's sign-in page, which is the expected next step in the checkout process. However, I cannot complete the actual purchase transaction as it requires valid login credentials that I don't have access to.\n\n**Next Steps for User:**\nTo complete the purchase, you would need to:\n1. Sign in to your Amazon account (or create one)\n2. Complete the checkout process with your payment method\n3. Confirm the order\n\nThe product I selected (Ultrean Food Scale, 11lb capacity, $6.98) is currently in your cart and ready for purchase once you sign in.",
+            "I have successfully completed the shopping process for black permanent markers on Amazon:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for 'black permanent markers'\n- Browsed available options and found suitable products\n- Selected Sharpie Permanent Markers 4-pack ($6.95) with excellent reviews (4.8 stars)\n- Added the markers to cart (confirmed: \"1 item in cart\")\n- Proceeded to checkout\n\n\ud83d\udccd **Current Status:**\nI have reached the Amazon sign-in page, which is the final step before completing the order. The black permanent markers are in the cart and ready for purchase.\n\n\u26a0\ufe0f **Next Step Required:**\nTo complete the actual order, Amazon login credentials (email/phone and password) are needed. I cannot proceed further without authentication information.\n\n\ud83d\udce6 **Product Selected:**\n- Sharpie Permanent Markers 4-pack\n- Price: $6.95\n- Rating: 4.8/5 stars\n- Status: Added to cart, ready for checkout\n\nAll actionable shopping steps have been successfully completed. The markers are selected and ready for purchase once you sign in to your Amazon account.",
+            "I successfully found and added a suitable desk organizer to your Amazon cart, but was unable to complete the actual purchase due to Amazon's sign-in requirement.\n\n**Product Selected:**\n- **Name:** Marbrasse 360-Degree Rotating Desk Organizer\n- **Features:** 5 compartments, 360-degree rotating design\n- **Color:** Green\n- **Price:** $9.99 (discounted price)\n- **Status:** Successfully added to cart\n\n**Progress Completed:**\n\u2705 Navigated to Amazon.com\n\u2705 Searched for \"desk organizer multiple compartments\" (over 30,000 results found)\n\u2705 Browsed and evaluated multiple options\n\u2705 Selected a highly-rated product with multiple compartments as requested\n\u2705 Successfully added item to cart\n\u2705 Proceeded to checkout process\n\n**Unable to Complete:**\n\u274c Final purchase transaction (blocked by Amazon sign-in requirement)\n\nThe selected desk organizer meets your requirements with multiple compartments and is ready for purchase in your Amazon cart. To complete the purchase, you would need to sign in to your Amazon account and proceed through the checkout process with your payment information."
+          ],
+          "description": "Value for action 3 (done) field 'text'."
+        }
+      ],
+      "sequence_tokens": [
+        "replace_file(file_name,new_str,old_str)",
+        "done(files_to_display,success,text)",
+        "done(files_to_display,success,text)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p1_new_str}}",
+              "old_str": "{{p1_old_str}}"
+            }
+          },
+          {
+            "action": "done",
+            "input": {
+              "files_to_display": [
+                "todo.md"
+              ],
+              "success": "{{p2_success}}",
+              "text": "{{p2_text}}"
+            }
+          },
+          {
+            "action": "done",
+            "input": {
+              "files_to_display": [
+                "todo.md"
+              ],
+              "success": false,
+              "text": "{{p3_text}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_001",
+        "task_014",
+        "task_015",
+        "task_016",
+        "task_019",
+        "task_021",
+        "task_025"
+      ]
+    },
+    {
+      "id": "M002",
+      "bpe_symbol": "@M0022",
+      "name": "macro_002_wait_replace_file_click",
+      "description": "Reusable action chain (wait -> replace_file -> click -> wait) observed 4 times. Estimated primitive-call reduction if used as one macro: 12.",
+      "support": 4,
+      "length": 4,
+      "estimated_saved_calls": 12,
+      "parameters": [
+        {
+          "name": "p2_new_str",
+          "action_index": 1,
+          "path": "new_str",
+          "required": true,
+          "observed_values": [
+            "- [x] Apply price filter under $100 (all visible products are already under $100)",
+            "- [x] Browse search results and find suitable lamp",
+            "- [x] Review search results and apply filters if needed",
+            "- [x] Navigate to Amazon.com\n- [x] Search for notebooks with lined pages"
+          ],
+          "description": "Value for action 2 (replace_file) field 'new_str'."
+        },
+        {
+          "name": "p2_old_str",
+          "action_index": 1,
+          "path": "old_str",
+          "required": true,
+          "observed_values": [
+            "- [ ] Apply price filter under $100",
+            "- [ ] Browse search results and find suitable lamp",
+            "- [ ] Review search results and apply filters if needed",
+            "- [ ] Navigate to Amazon.com\n- [ ] Search for notebooks with lined pages"
+          ],
+          "description": "Value for action 2 (replace_file) field 'old_str'."
+        },
+        {
+          "name": "p3_index",
+          "action_index": 2,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            13925,
+            12001,
+            12812,
+            11072
+          ],
+          "description": "Value for action 3 (click) field 'index'."
+        },
+        {
+          "name": "p4_seconds",
+          "action_index": 3,
+          "path": "seconds",
+          "required": true,
+          "observed_values": [
+            3,
+            5
+          ],
+          "description": "Value for action 4 (wait) field 'seconds'."
+        }
+      ],
+      "sequence_tokens": [
+        "wait(seconds)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "wait(seconds)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "wait",
+            "input": {
+              "seconds": 3
+            }
+          },
+          {
+            "action": "replace_file",
+            "input": {
+              "file_name": "todo.md",
+              "new_str": "{{p2_new_str}}",
+              "old_str": "{{p2_old_str}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p3_index}}"
+            }
+          },
+          {
+            "action": "wait",
+            "input": {
+              "seconds": "{{p4_seconds}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_001",
+        "task_011",
+        "task_014",
+        "task_015"
+      ]
+    },
+    {
+      "id": "M006",
+      "bpe_symbol": "@M0023",
+      "name": "macro_006_scroll_click_click",
+      "description": "Reusable action chain (scroll -> click -> click -> click -> done) observed 3 times. Estimated primitive-call reduction if used as one macro: 12.",
+      "support": 3,
+      "length": 5,
+      "estimated_saved_calls": 12,
+      "parameters": [
+        {
+          "name": "p1_pages",
+          "action_index": 0,
+          "path": "pages",
+          "required": true,
+          "observed_values": [
+            1.0,
+            2.0
+          ],
+          "description": "Value for action 1 (scroll) field 'pages'."
+        },
+        {
+          "name": "p2_index",
+          "action_index": 1,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            10615,
+            10818,
+            13286
+          ],
+          "description": "Value for action 2 (click) field 'index'."
+        },
+        {
+          "name": "p3_index",
+          "action_index": 2,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            9612,
+            9624,
+            11002
+          ],
+          "description": "Value for action 3 (click) field 'index'."
+        },
+        {
+          "name": "p4_index",
+          "action_index": 3,
+          "path": "index",
+          "required": true,
+          "observed_values": [
+            29248,
+            32837,
+            31023
+          ],
+          "description": "Value for action 4 (click) field 'index'."
+        },
+        {
+          "name": "p5_text",
+          "action_index": 4,
+          "path": "text",
+          "required": true,
+          "observed_values": [
+            "I have successfully found and added a stainless steel water bottle to your Amazon cart that meets your requirements:\n\n**Product Selected: CIVAGO 32oz Stainless Steel Water Bottle**\n- Price: $14.95\n- Capacity: 32oz (meets your minimum requirement)\n- Material: Stainless steel\n- Customer rating: Good reviews visible on the product page\n\nThe water bottle has been successfully added to your Amazon cart. When I attempted to proceed to checkout, Amazon redirected to a login page requiring you to sign in to your Amazon account to complete the purchase.\n\nTo finish the purchase, you would need to:\n1. Sign in to your Amazon account (or create one if needed)\n2. Complete the checkout process with your preferred payment method and shipping address\n\nThe product selection phase of your request has been completed successfully - I found a high-quality stainless steel water bottle that meets your 32oz minimum capacity requirement at a competitive price.",
+            "I successfully completed most of the microfiber cleaning cloths ordering process on Amazon:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for \"microfiber cleaning cloths\" (found over 20,000 results)\n- Browsed and selected Amazon Basics Microfiber Cleaning Cloths 24-pack\n- Product details: $9.99, 4.7-star rating with 85K+ reviews\n- Successfully added item to cart\n- Proceeded to checkout\n\n\u274c **Unable to Complete:**\n- Amazon requires sign-in/account authentication to complete the order\n- I don't have valid login credentials to proceed with checkout\n\n**Current Status:** The microfiber cleaning cloths are in your Amazon cart and ready for purchase. You'll need to:\n1. Sign in to your Amazon account (or create one)\n2. Complete the checkout process with your preferred payment method and shipping address\n\nThe selected product (Amazon Basics 24-pack for $9.99) offers good value with high customer ratings and is ready for immediate purchase once you complete the authentication.",
+            "I successfully navigated through most of the Amazon purchase process for blue light blocking glasses:\n\n**Completed Steps:**\n1. \u2705 Navigated to Amazon.com\n2. \u2705 Searched for \"blue light blocking glasses\" (found 20,000+ results)\n3. \u2705 Selected livho Gaming Blue Light Blocking Glasses ($15.99, 4.4 stars, highly rated)\n4. \u2705 Added the product to cart\n5. \u2705 Proceeded to checkout\n\n**Blocking Issue:**\nAmazon requires account authentication (sign-in) to complete the purchase. The checkout process redirected to a sign-in page requesting email/mobile number and password.\n\n**Selected Product Details:**\n- Product: livho Gaming Blue Light Blocking Glasses\n- Price: $15.99\n- Rating: 4.4/5 stars\n- Status: Successfully added to cart, ready for purchase once authenticated\n\nThe product selection and cart process completed successfully, but the actual purchase transaction cannot be completed without valid Amazon account credentials. The item remains in the cart and can be purchased once proper authentication is provided."
+          ],
+          "description": "Value for action 5 (done) field 'text'."
+        }
+      ],
+      "sequence_tokens": [
+        "scroll(down,pages)",
+        "click(index)",
+        "click(index)",
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ],
+      "code": {
+        "language": "browser-use-actions-json",
+        "steps": [
+          {
+            "action": "scroll",
+            "input": {
+              "down": true,
+              "pages": "{{p1_pages}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p2_index}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p3_index}}"
+            }
+          },
+          {
+            "action": "click",
+            "input": {
+              "index": "{{p4_index}}"
+            }
+          },
+          {
+            "action": "done",
+            "input": {
+              "success": false,
+              "text": "{{p5_text}}"
+            }
+          }
+        ]
+      },
+      "sample_episode_ids": [
+        "task_002",
+        "task_018",
+        "task_026"
+      ]
+    }
+  ]
+}

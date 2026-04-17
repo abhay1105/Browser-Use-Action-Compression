@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:12:04.930227Z",
+  "task": {
+    "id": "task_018",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a pack of microfiber cleaning cloths from Amazon.",
+    "taskPrompt": "Order a pack of microfiber cleaning cloths from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:09:32.879509Z"
+  },
+  "goal": "Order a pack of microfiber cleaning cloths from Amazon.",
+  "sessionId": "session_018",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

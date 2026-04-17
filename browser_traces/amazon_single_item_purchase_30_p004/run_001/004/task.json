@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:33:48.587047Z",
+  "task": {
+    "id": "task_004",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a bestselling fiction book in paperback format from Amazon.",
+    "taskPrompt": "Purchase a bestselling fiction book in paperback format from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:31:25.988343Z"
+  },
+  "goal": "Purchase a bestselling fiction book in paperback format from Amazon.",
+  "sessionId": "session_004",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

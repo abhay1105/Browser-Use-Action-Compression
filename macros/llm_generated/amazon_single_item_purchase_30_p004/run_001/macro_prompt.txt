@@ -1,0 +1,2740 @@
+You are an expert in browser-agent action compression.
+Given multiple task traces, mine reusable macros that reduce repeated action calls.
+
+Return STRICT JSON (no markdown) with this exact top-level shape:
+{
+  "macros": [
+    {
+      "name": "string",
+      "description": "string",
+      "one_shot_example": "string",
+      "when_to_use": "string",
+      "parameters": [
+        {
+          "name": "string",
+          "type": "string",
+          "meaning": "string",
+          "required": true,
+          "example": "string"
+        }
+      ],
+      "action_sequence_pattern": ["action_name_1", "action_name_2"],
+      "confidence": 0.0
+    }
+  ],
+  "notes": "string"
+}
+
+Requirements:
+- Macros must be semantically meaningful and task-context aware (not just naive action-name chains).
+- Prefer reusable workflows for this dataset's goals and websites.
+- Parameter meanings should be practical and human-usable.
+- `action_sequence_pattern` should be concrete action names from traces for compression estimation.
+- Macros should be simple and consist of 2-4 actions at most for best reusability and compression.
+- Return between 3-5 of the most important macros.
+
+Trace data:
+[
+  {
+    "task_id": "task_001",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a wireless Bluetooth headset with noise cancellation under $100 from Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Headset Purchase Task\n\n## Goal: Purchase wireless Bluetooth headset with noise cancellation under $100\n\n## Requirements:\n- Wireless Bluetooth connectivity\n- Noise cance...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 61,
+          "text": "wireless Bluetooth headset noise cancellation",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 247
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for 'wireless Bluetooth headset noise cancellation'",
+          "new_str": "- [x] Search for 'wireless Bluetooth headset noise cancellation'"
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Apply price filter under $100",
+          "new_str": "- [x] Apply price filter under $100 (all visible products are already under $100)"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 13925
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Review search results and find suitable product",
+          "new_str": "- [x] Review search results and find suitable product (Selected Soundcore Q20i - $39.99, 4.6\u2605, noise cancelling)"
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Select product with good reviews and noise cancellation",
+          "new_str": "- [x] Select product with good reviews and noise cancellation (Q20i meets all requirements)"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 27006
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 26240
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add to cart",
+          "new_str": "- [x] Add to cart (Soundcore Q20i successfully added - $39.99)"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 50604
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Proceed through checkout process",
+          "new_str": "- [x] Proceed through checkout process (reached sign-in page - cannot complete without credentials)"
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and added a wireless Bluetooth headset with noise cancellation under $100 to your Amazon cart. Here are the details:\n\n**Product Selected: Soundcore by Anker...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and selected an excellent wireless Bluetooth headset with noise cancellation under $100 from Amazon, but cannot complete the actual purchase due to authenti...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_002",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a stainless steel water bottle with at least 32oz capacity on Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 59,
+          "text": "stainless steel water bottle 32oz",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 227
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 1.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 10615
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 9612
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 29248
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully found and added a stainless steel water bottle to your Amazon cart that meets your requirements:\n\n**Product Selected: CIVAGO 32oz Stainless Steel Water Bottl...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_003",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a USB-C charging cable that is 6 feet long from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 136,
+          "text": "USB-C charging cable 6 feet",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 273
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 15640
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 22905
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 22080
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 34487
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and added a USB-C charging cable to your Amazon cart that meets your requirements:\n\n**Selected Product:**\n- Anker USB C to USB C Cable (6 FT, 2Pack) \n- Pric...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_004",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a bestselling fiction book in paperback format from Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Bestselling Fiction Book Purchase\n\n## Goal: Purchase a bestselling fiction book in paperback format\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for bestselling...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Navigate to Amazon.com",
+          "new_str": "- [x] Navigate to Amazon.com"
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 86,
+          "text": "bestselling fiction books paperback",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 245
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for bestselling fiction books",
+          "new_str": "- [x] Search for bestselling fiction books"
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 2.0
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Filter results for paperback format",
+          "new_str": "- [x] Filter results for paperback format"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 11980
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Select a highly-rated bestselling book",
+          "new_str": "- [x] Select a highly-rated bestselling book"
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add book to cart",
+          "new_str": "- [x] Add book to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 9799
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [>] 4: Add book to cart",
+          "new_str": "- [x] Add book to cart"
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Proceed to checkout",
+          "new_str": "- [x] Proceed to checkout"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 22953
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed most of the book purchase process on Amazon:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for bestselling fiction books in paperbac...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_005",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a set of resistance bands for home workouts from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 95,
+          "text": "resistance bands",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 221
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 10001
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 9029
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 27726
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully completed most of the resistance band shopping process on Amazon:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for \"resistance bands\" (found 80,00...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_006",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a coffee mug with a capacity of at least 12oz from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 112,
+          "text": "coffee mug 12oz",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 271
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 1.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 10235
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 9247
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 32775
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and added a suitable coffee mug to your Amazon cart, but I cannot complete the actual order without login credentials.\n\n**What I accomplished:**\n- Navigated...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_007",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a phone case compatible with iPhone 14 Pro from Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# iPhone 14 Pro Phone Case Purchase Task\n\n## Goal: Purchase a compatible phone case from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for iPhone 14 Pro phone case...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Navigate to Amazon.com",
+          "new_str": "- [x] Navigate to Amazon.com"
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 60,
+          "text": "iPhone 14 Pro phone case",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 227
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for iPhone 14 Pro phone case",
+          "new_str": "- [x] Search for iPhone 14 Pro phone case"
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 1.0
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Browse and select a suitable phone case",
+          "new_str": "- [x] Browse and select a suitable phone case (selected SUPFINE Magnetic case)"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 11033
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add selected case to cart",
+          "new_str": "- [x] Add selected case to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 9872
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [x] Add selected case to cart",
+          "new_str": "- [x] Add selected case to cart\n- [>] Proceed through checkout process"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 29366
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed the iPhone 14 Pro phone case search and selection process on Amazon, but cannot complete the final purchase due to login requirements.\n\n**What was ...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_008",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a pack of blue gel pens for office use from Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Blue Gel Pens Purchase Task\n\n## Goal: Buy a pack of blue gel pens for office use from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for blue gel pens for ...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Navigate to Amazon.com",
+          "new_str": "- [x] Navigate to Amazon.com"
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 31,
+          "text": "blue gel pens for office use",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 158
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for blue gel pens for office use",
+          "new_str": "- [x] Search for blue gel pens for office use"
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Review and filter search results for suitable products",
+          "new_str": "- [x] Review and filter search results for suitable products"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 11382
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Select appropriate pack of blue gel pens",
+          "new_str": "- [x] Select appropriate pack of blue gel pens"
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add selected item to cart",
+          "new_str": "- [x] Add selected item to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 10490
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [x] Add selected item to cart\n- [ ] Proceed to checkout",
+          "new_str": "- [x] Add selected item to cart\n- [x] Proceed to checkout"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 28378
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully completed the Amazon shopping process up to the final purchase step:\n\n**Completed Steps:**\n\u2705 Navigated to Amazon.com\n\u2705 Searched for 'blue gel pens for office use'...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_009",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a yoga mat that is at least 6 feet long from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 86,
+          "text": "yoga mat",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 227
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 10482
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 5
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 24747
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 45135
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully identified and added a yoga mat that meets your requirements to the Amazon shopping cart:\n\n\u2705 **Product Found**: Retrospec Solana Yoga Mat\n\u2705 **Size**: 72 x 24...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_010",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a portable phone charger with at least 10000mAh capacity from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 160,
+          "text": "portable phone charger 10000mAh",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 251
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 11221
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 26898
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 49017
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and selected a suitable portable phone charger on Amazon that meets your requirements:\n\n**Product Selected: INIU Portable Charger**\n- Capacity: 10,000mAh (m...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_011",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a desk lamp with adjustable brightness settings from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Desk Lamp Purchase Task\n\n## Goal: Buy a desk lamp with adjustable brightness settings\n\n## Tasks:\n- [x] Navigate to Amazon.com\n- [ ] Search for 'desk lamp adjustable bri...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 167,
+          "text": "desk lamp adjustable brightness",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 258
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for 'desk lamp adjustable brightness'",
+          "new_str": "- [x] Search for 'desk lamp adjustable brightness'"
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Browse search results and find suitable lamp",
+          "new_str": "- [x] Browse search results and find suitable lamp"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 12001
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 5
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Check product details and reviews",
+          "new_str": "- [x] Check product details and reviews"
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Verify adjustable brightness feature",
+          "new_str": "- [x] Verify adjustable brightness feature"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 34767
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add selected lamp to cart",
+          "new_str": "- [x] Add selected lamp to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 54849
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully completed the Amazon desk lamp shopping task with the following results:\n\n\u2705 **Product Found**: Airlonv LED Desk Lamp for Office\n- **Price**: $20.97\n- **Rating**: ...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_012",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a pack of AA batteries from a well-known brand on Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon AA Battery Order Task\n\n## Goal: Order a pack of AA batteries from a well-known brand\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for AA batteries from well-kno...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Navigate to Amazon.com",
+          "new_str": "- [x] Navigate to Amazon.com"
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 66,
+          "text": "AA batteries Duracell Energizer",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 245
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for AA batteries from well-known brands (Duracell, Energizer, etc.)",
+          "new_str": "- [x] Search for AA batteries from well-known brands (Duracell, Energizer, etc.)"
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 2.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 12227
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add to cart",
+          "new_str": "- [x] Add to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 10256
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Filter/browse results to find suitable pack\n- [ ] Select appropriate AA battery pack",
+          "new_str": "- [x] Filter/browse results to find suitable pack\n- [x] Select appropriate AA battery pack"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 28651
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "Successfully completed the AA battery ordering process up to checkout on Amazon:\n\n\u2705 **Accomplished:**\n- Navigated to Amazon.com\n- Searched for AA batteries from well-known brand...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_013",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a kitchen cutting board made of bamboo from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Bamboo Cutting Board Purchase Task\n\n## Goal: Purchase a kitchen cutting board made of bamboo from Amazon\n\n## Tasks:\n- [x] Navigate to Amazon.com\n- [ ] Search for bamboo...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 112,
+          "text": "bamboo kitchen cutting board",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 269
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 1.0
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for bamboo kitchen cutting board",
+          "new_str": "- [x] Search for bamboo kitchen cutting board"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 11880
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add selected cutting board to cart",
+          "new_str": "- [x] Add selected cutting board to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 10939
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Proceed to checkout",
+          "new_str": "- [>] Proceed to checkout"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 29608
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully completed most of the bamboo cutting board purchase process on Amazon:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for \"bamboo kitchen cutting bo...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_014",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a pair of running socks with moisture-wicking material from Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Running Socks Purchase Task\n\n## Goal: Buy running socks with moisture-wicking material from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for 'running soc...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Navigate to Amazon.com",
+          "new_str": "- [x] Navigate to Amazon.com"
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 138,
+          "text": "running socks moisture wicking",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 244
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for 'running socks moisture wicking'",
+          "new_str": "- [x] Search for 'running socks moisture wicking'"
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Review search results and apply filters if needed",
+          "new_str": "- [x] Review search results and apply filters if needed"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 12812
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 5
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Select appropriate running socks product",
+          "new_str": "- [x] Select appropriate running socks product"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 32659
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add selected socks to cart",
+          "new_str": "- [x] Add selected socks to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 53160
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Proceed to checkout",
+          "new_str": "- [x] Proceed to checkout"
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed most of the Amazon running socks purchase process:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for 'running socks moisture wicking...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed most of the running socks purchase process on Amazon, but cannot finish the actual purchase without account credentials.\n\n**What was accomplished:*...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_015",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a notebook with lined pages and at least 200 sheets from Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Notebook Order Task\n\n## Goal: Order a notebook with lined pages and at least 200 sheets\n\n## Requirements:\n- Lined pages\n- At least 200 sheets\n- Available on Amazon\n\n## ...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 165,
+          "text": "lined notebook 200 sheets",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 247
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Navigate to Amazon.com\n- [ ] Search for notebooks with lined pages",
+          "new_str": "- [x] Navigate to Amazon.com\n- [x] Search for notebooks with lined pages"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 11072
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Filter results for notebooks with 200+ sheets\n- [ ] Select appropriate notebook product",
+          "new_str": "- [x] Filter results for notebooks with 200+ sheets\n- [x] Select appropriate notebook product (Five Star 200-sheet college ruled)"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 26855
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add to cart",
+          "new_str": "- [x] Add to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 46432
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Proceed through checkout process\n- [ ] Complete order",
+          "new_str": "- [x] Proceed through checkout process (blocked by login requirement)\n- [-] Complete order (cannot complete without Amazon account credentials)"
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and added a notebook that meets all your requirements to the Amazon cart:\n\n**Product Selected: Five Star Spiral Notebook**\n- \u2705 Has lined pages (college rule...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully completed most of the notebook ordering process on Amazon but was unable to complete the final order due to login requirements.\n\n**What I accomplished:**\n\n\u2705 **Pro...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_016",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a wireless computer mouse with ergonomic design from Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Mouse Purchase Task\n\n## Goal: Purchase a wireless computer mouse with ergonomic design from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for 'wireless er...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Navigate to Amazon.com",
+          "new_str": "- [x] Navigate to Amazon.com"
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 156,
+          "text": "wireless ergonomic computer mouse",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 273
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for 'wireless ergonomic computer mouse'",
+          "new_str": "- [x] Search for 'wireless ergonomic computer mouse'"
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 2.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 13363
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Click on product to view details",
+          "new_str": "- [x] Click on product to view details"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 24646
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add product to cart",
+          "new_str": "- [x] Add product to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 44266
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Proceed to checkout/purchase",
+          "new_str": "- [x] Proceed to checkout/purchase (reached login requirement)"
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed the wireless ergonomic mouse selection and cart addition process on Amazon:\n\n\u2705 **Product Found**: TECKNET Wireless Mouse\n- Price: $9.99 (38% off fr...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Browse search results and find suitable product",
+          "new_str": "- [x] Browse search results and find suitable product"
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed all possible steps for purchasing a wireless ergonomic computer mouse from Amazon:\n\n\u2705 **Completed Actions:**\n- Navigated to Amazon.com\n- Searched f...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed all pre-purchase steps for a wireless ergonomic computer mouse on Amazon:\n\n**Product Selected:** TECKNET Wireless Mouse\n- Price: $9.99 (38% discoun...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_017",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a travel pillow for airplane comfort from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 56,
+          "text": "travel pillow airplane comfort",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 207
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 12106
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 30474
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 48639
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed the travel pillow selection and shopping cart process on Amazon:\n\n\u2705 **Product Selected**: Purroch Travel Neck Pillow\n- Rating: 4.8 stars (159 revie...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_018",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a pack of microfiber cleaning cloths from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 127,
+          "text": "microfiber cleaning cloths",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 227
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 1.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 10818
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 9624
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 32837
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully completed most of the microfiber cleaning cloths ordering process on Amazon:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for \"microfiber cleaning...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_019",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a digital kitchen scale with at least 11lb capacity from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Kitchen Scale Purchase Task\n\n## Goal: Purchase a digital kitchen scale with at least 11lb capacity\n\n## Tasks:\n- [ ] Search for digital kitchen scale with 11lb capacity ...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 128,
+          "text": "digital kitchen scale 11lb capacity",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 222
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for digital kitchen scale with 11lb capacity on Amazon",
+          "new_str": "- [x] Search for digital kitchen scale with 11lb capacity on Amazon"
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 2.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 12231
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Read product details to confirm specifications",
+          "new_str": "- [x] Read product details to confirm specifications"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 27995
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add the selected scale to cart",
+          "new_str": "- [x] Add the selected scale to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 51126
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Proceed to checkout and complete purchase",
+          "new_str": "- [x] Proceed to checkout (reached sign-in page - cannot complete without credentials)"
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and selected a digital kitchen scale that meets your requirements:\n\n**Selected Product**: Ultrean Food Scale\n- **Capacity**: 11lb (meets the 11lb+ requireme...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed the digital kitchen scale shopping task on Amazon up to the checkout process. Here's what I accomplished:\n\n\u2705 **Product Found & Selected:**\n- **Ultr...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_020",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a smartphone screen protector with tempered glass from Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Screen Protector Purchase Task\n\n## Goal: Buy smartphone tempered glass screen protector from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for smartphone ...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 116,
+          "text": "smartphone tempered glass screen protector",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 235
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Navigate to Amazon.com",
+          "new_str": "- [x] Navigate to Amazon.com"
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for smartphone tempered glass screen protector",
+          "new_str": "- [x] Search for smartphone tempered glass screen protector"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 12011
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Browse and select a suitable product with good ratings",
+          "new_str": "- [x] Browse and select a suitable product with good ratings"
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add selected product to cart",
+          "new_str": "- [x] Add selected product to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 10871
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Proceed through checkout process",
+          "new_str": "- [>] Proceed through checkout process"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 22385
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and selected a high-quality smartphone tempered glass screen protector on Amazon:\n\n**Product Selected:** Ailun Screen Protector\n- Price: $5.98 (3-pack)\n- Ra...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_021",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a pack of black permanent markers from Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Order Black Permanent Markers from Amazon\n\n## Goal: Purchase a pack of black permanent markers\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for 'black permanent marker...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Navigate to Amazon.com",
+          "new_str": "- [x] Navigate to Amazon.com"
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 167,
+          "text": "black permanent markers",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 252
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 2.0
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for 'black permanent markers'",
+          "new_str": "- [x] Search for 'black permanent markers'"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 11003
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add selected markers to cart",
+          "new_str": "- [x] Add selected markers to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 9559
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Browse and select appropriate pack of markers",
+          "new_str": "- [x] Browse and select appropriate pack of markers"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 28956
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Proceed to checkout and complete order",
+          "new_str": "- [x] Proceed to checkout (reached sign-in page)"
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed most of the order process for black permanent markers from Amazon:\n\n\u2705 **Completed Steps:**\n1. Navigated to Amazon.com\n2. Searched for 'black perman...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [x] Proceed to checkout (reached sign-in page)",
+          "new_str": "- [x] Proceed to checkout (reached sign-in page - login required to complete)"
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "Successfully completed the shopping process for black permanent markers on Amazon:\n\n\u2705 Found and selected: Sharpie Permanent Markers 4-pack for $6.95\n\u2705 Added to cart successfully...",
+          "success": true,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed the shopping process for black permanent markers on Amazon:\n\n\u2705 **Completed Steps:**\n- Navigated to Amazon.com\n- Searched for 'black permanent marke...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_022",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a reusable grocery bag made from eco-friendly materials on Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 83,
+          "text": "eco-friendly reusable grocery bag",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 252
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 13615
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 1.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 33683
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 50742
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed the product selection and cart preparation portions of your request to purchase an eco-friendly reusable grocery bag on Amazon:\n\n\u2713 **Product Found ...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_023",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a car phone mount that attaches to the dashboard from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 158,
+          "text": "car phone mount dashboard",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 258
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 14852
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 23138
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 31745
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 51044
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I have successfully completed the product selection and cart addition portion of your request to buy a car phone mount that attaches to the dashboard from Amazon.\n\nHere's what I...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_024",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a pack of protein bars with at least 15g protein per bar from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 175,
+          "text": "protein bars",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 277
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 2.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 11009
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 28374
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 49895
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and added protein bars to your Amazon cart that meet your requirements:\n\n**Selected Product:**\n- CLIF BUILDERS Protein Bars\n- 20g protein per bar (exceeds y...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_025",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a desk organizer with multiple compartments from Amazon.",
+    "model_actions": [
+      {
+        "action": "write_file",
+        "input": {
+          "file_name": "todo.md",
+          "content": "# Amazon Desk Organizer Purchase Task\n\n## Goal: Purchase a desk organizer with multiple compartments from Amazon\n\n## Tasks:\n- [ ] Navigate to Amazon.com\n- [ ] Search for 'desk o...",
+          "append": false,
+          "trailing_newline": true,
+          "leading_newline": false
+        }
+      },
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 158,
+          "text": "desk organizer multiple compartments",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 254
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Search for 'desk organizer multiple compartments'",
+          "new_str": "- [x] Search for 'desk organizer multiple compartments'"
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 2.0
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Browse search results and apply filters if needed",
+          "new_str": "- [x] Browse search results and apply filters if needed"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 13104
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Add selected product to cart",
+          "new_str": "- [x] Add selected product to cart"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 10971
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Select a suitable desk organizer product",
+          "new_str": "- [x] Select a suitable desk organizer product"
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 28816
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Proceed to checkout",
+          "new_str": "- [x] Proceed to checkout (reached sign-in page)"
+        }
+      },
+      {
+        "action": "replace_file",
+        "input": {
+          "file_name": "todo.md",
+          "old_str": "- [ ] Complete purchase process",
+          "new_str": "- [-] Complete purchase process (blocked: requires Amazon login credentials)"
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and added a suitable desk organizer to your Amazon cart, but cannot complete the actual purchase as Amazon requires sign-in credentials.\n\n**What was accompl...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully found and added a suitable desk organizer to your Amazon cart, but was unable to complete the actual purchase due to Amazon's sign-in requirement.\n\n**Product Sele...",
+          "success": false,
+          "files_to_display": [
+            "todo.md"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_026",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a pair of blue light blocking glasses from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 163,
+          "text": "blue light blocking glasses",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 259
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 2.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 13286
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 11002
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 31023
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully navigated through most of the Amazon purchase process for blue light blocking glasses:\n\n**Completed Steps:**\n1. \u2705 Navigated to Amazon.com\n2. \u2705 Searched for \"blue ...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_027",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a portable Bluetooth speaker under $50 from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 123,
+          "text": "portable Bluetooth speaker",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 281
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 1.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 16818
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 5
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 28410
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 11279
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 41148
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully completed most of the order process for a portable Bluetooth speaker under $50 from Amazon:\n\n\u2705 **Completed Steps:**\n1. Navigated to Amazon.com\n2. Searched for \"po...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  },
+  {
+    "task_id": "task_028",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a set of measuring spoons for cooking from Amazon.",
+    "model_actions": [
+      {
+        "action": "navigate",
+        "input": {
+          "url": "https://www.amazon.com",
+          "new_tab": false
+        }
+      },
+      {
+        "action": "input",
+        "input": {
+          "index": 107,
+          "text": "measuring spoons for cooking",
+          "clear": true
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 219
+        }
+      },
+      {
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 2.0
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 14116
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 9914
+        }
+      },
+      {
+        "action": "wait",
+        "input": {
+          "seconds": 3
+        }
+      },
+      {
+        "action": "click",
+        "input": {
+          "index": 26491
+        }
+      },
+      {
+        "action": "done",
+        "input": {
+          "text": "I successfully completed the shopping process for measuring spoons on Amazon up to the point of purchase authentication. Here's what I accomplished:\n\n**Successfully Completed:**...",
+          "success": false,
+          "files_to_display": []
+        }
+      }
+    ]
+  }
+]

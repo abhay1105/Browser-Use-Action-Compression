@@ -1,0 +1,20 @@
+{
+  "task": "amazon_single_item_purchase",
+  "num_examples": 2,
+  "prompt_id": "p003",
+  "created_at": "2026-04-09T23:09:01.503717Z",
+  "generator": {
+    "type": "anthropic",
+    "model": "claude-sonnet-4-20250514"
+  },
+  "prompts": [
+    {
+      "id": "p003_001",
+      "text": "Purchase a wireless Bluetooth headphone with noise cancellation feature under $100 from Amazon and add it to your cart."
+    },
+    {
+      "id": "p003_002",
+      "text": "Find and buy a stainless steel water bottle with at least 32 oz capacity on Amazon, proceeding through checkout."
+    }
+  ]
+}

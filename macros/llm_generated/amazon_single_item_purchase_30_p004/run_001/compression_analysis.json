@@ -1,0 +1,574 @@
+{
+  "baseline_calls": 348,
+  "projected_calls": 281,
+  "estimated_saved_calls": 67,
+  "estimated_reduction_pct": 19.253,
+  "estimated_compression_ratio": 1.238434,
+  "macro_estimates": [
+    {
+      "name": "amazon_search",
+      "estimated_uses": 18,
+      "estimated_saved_calls": 36,
+      "action_sequence_pattern": [
+        "navigate",
+        "input",
+        "click"
+      ]
+    },
+    {
+      "name": "select_product_and_add_to_cart",
+      "estimated_uses": 17,
+      "estimated_saved_calls": 17,
+      "action_sequence_pattern": [
+        "click",
+        "click"
+      ]
+    },
+    {
+      "name": "init_todo_and_navigate",
+      "estimated_uses": 7,
+      "estimated_saved_calls": 7,
+      "action_sequence_pattern": [
+        "write_file",
+        "navigate"
+      ]
+    },
+    {
+      "name": "search_wait_and_scroll",
+      "estimated_uses": 7,
+      "estimated_saved_calls": 7,
+      "action_sequence_pattern": [
+        "wait",
+        "scroll"
+      ]
+    },
+    {
+      "name": "add_to_cart_and_proceed_to_checkout",
+      "estimated_uses": 0,
+      "estimated_saved_calls": 0,
+      "action_sequence_pattern": [
+        "click",
+        "click"
+      ]
+    }
+  ],
+  "per_trace_estimates": [
+    {
+      "task_id": "task_001",
+      "baseline_calls": 19,
+      "projected_calls": 16,
+      "saved_calls": 3,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 1,
+          "end": 4,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 11,
+          "end": 13,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_002",
+      "baseline_calls": 9,
+      "projected_calls": 5,
+      "saved_calls": 4,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "search_wait_and_scroll",
+          "start": 3,
+          "end": 5,
+          "saved_calls": 1
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 5,
+          "end": 7,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_003",
+      "baseline_calls": 9,
+      "projected_calls": 5,
+      "saved_calls": 4,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 4,
+          "end": 6,
+          "saved_calls": 1
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 6,
+          "end": 8,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_004",
+      "baseline_calls": 16,
+      "projected_calls": 15,
+      "saved_calls": 1,
+      "selected_macros": [
+        {
+          "name": "init_todo_and_navigate",
+          "start": 0,
+          "end": 2,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_005",
+      "baseline_calls": 8,
+      "projected_calls": 5,
+      "saved_calls": 3,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 4,
+          "end": 6,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_006",
+      "baseline_calls": 10,
+      "projected_calls": 6,
+      "saved_calls": 4,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "search_wait_and_scroll",
+          "start": 3,
+          "end": 5,
+          "saved_calls": 1
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 5,
+          "end": 7,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_007",
+      "baseline_calls": 15,
+      "projected_calls": 13,
+      "saved_calls": 2,
+      "selected_macros": [
+        {
+          "name": "init_todo_and_navigate",
+          "start": 0,
+          "end": 2,
+          "saved_calls": 1
+        },
+        {
+          "name": "search_wait_and_scroll",
+          "start": 6,
+          "end": 8,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_008",
+      "baseline_calls": 15,
+      "projected_calls": 14,
+      "saved_calls": 1,
+      "selected_macros": [
+        {
+          "name": "init_todo_and_navigate",
+          "start": 0,
+          "end": 2,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_009",
+      "baseline_calls": 9,
+      "projected_calls": 6,
+      "saved_calls": 3,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 6,
+          "end": 8,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_010",
+      "baseline_calls": 9,
+      "projected_calls": 6,
+      "saved_calls": 3,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 6,
+          "end": 8,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_011",
+      "baseline_calls": 15,
+      "projected_calls": 15,
+      "saved_calls": 0,
+      "selected_macros": []
+    },
+    {
+      "task_id": "task_012",
+      "baseline_calls": 13,
+      "projected_calls": 12,
+      "saved_calls": 1,
+      "selected_macros": [
+        {
+          "name": "init_todo_and_navigate",
+          "start": 0,
+          "end": 2,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_013",
+      "baseline_calls": 13,
+      "projected_calls": 12,
+      "saved_calls": 1,
+      "selected_macros": [
+        {
+          "name": "search_wait_and_scroll",
+          "start": 4,
+          "end": 6,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_014",
+      "baseline_calls": 17,
+      "projected_calls": 16,
+      "saved_calls": 1,
+      "selected_macros": [
+        {
+          "name": "init_todo_and_navigate",
+          "start": 0,
+          "end": 2,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_015",
+      "baseline_calls": 15,
+      "projected_calls": 13,
+      "saved_calls": 2,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 1,
+          "end": 4,
+          "saved_calls": 2
+        }
+      ]
+    },
+    {
+      "task_id": "task_016",
+      "baseline_calls": 18,
+      "projected_calls": 17,
+      "saved_calls": 1,
+      "selected_macros": [
+        {
+          "name": "init_todo_and_navigate",
+          "start": 0,
+          "end": 2,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_017",
+      "baseline_calls": 9,
+      "projected_calls": 6,
+      "saved_calls": 3,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 6,
+          "end": 8,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_018",
+      "baseline_calls": 8,
+      "projected_calls": 5,
+      "saved_calls": 3,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 4,
+          "end": 6,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_019",
+      "baseline_calls": 16,
+      "projected_calls": 15,
+      "saved_calls": 1,
+      "selected_macros": [
+        {
+          "name": "search_wait_and_scroll",
+          "start": 5,
+          "end": 7,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_020",
+      "baseline_calls": 14,
+      "projected_calls": 12,
+      "saved_calls": 2,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 1,
+          "end": 4,
+          "saved_calls": 2
+        }
+      ]
+    },
+    {
+      "task_id": "task_021",
+      "baseline_calls": 18,
+      "projected_calls": 16,
+      "saved_calls": 2,
+      "selected_macros": [
+        {
+          "name": "init_todo_and_navigate",
+          "start": 0,
+          "end": 2,
+          "saved_calls": 1
+        },
+        {
+          "name": "search_wait_and_scroll",
+          "start": 5,
+          "end": 7,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_022",
+      "baseline_calls": 9,
+      "projected_calls": 6,
+      "saved_calls": 3,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 6,
+          "end": 8,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_023",
+      "baseline_calls": 10,
+      "projected_calls": 6,
+      "saved_calls": 4,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 4,
+          "end": 6,
+          "saved_calls": 1
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 7,
+          "end": 9,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_024",
+      "baseline_calls": 9,
+      "projected_calls": 6,
+      "saved_calls": 3,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 6,
+          "end": 8,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_025",
+      "baseline_calls": 17,
+      "projected_calls": 15,
+      "saved_calls": 2,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 1,
+          "end": 4,
+          "saved_calls": 2
+        }
+      ]
+    },
+    {
+      "task_id": "task_026",
+      "baseline_calls": 8,
+      "projected_calls": 5,
+      "saved_calls": 3,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 4,
+          "end": 6,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_027",
+      "baseline_calls": 11,
+      "projected_calls": 7,
+      "saved_calls": 4,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "search_wait_and_scroll",
+          "start": 3,
+          "end": 5,
+          "saved_calls": 1
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 7,
+          "end": 9,
+          "saved_calls": 1
+        }
+      ]
+    },
+    {
+      "task_id": "task_028",
+      "baseline_calls": 9,
+      "projected_calls": 6,
+      "saved_calls": 3,
+      "selected_macros": [
+        {
+          "name": "amazon_search",
+          "start": 0,
+          "end": 3,
+          "saved_calls": 2
+        },
+        {
+          "name": "select_product_and_add_to_cart",
+          "start": 4,
+          "end": 6,
+          "saved_calls": 1
+        }
+      ]
+    }
+  ]
+}

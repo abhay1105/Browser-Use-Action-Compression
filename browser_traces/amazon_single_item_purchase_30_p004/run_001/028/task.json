@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:41:38.807293Z",
+  "task": {
+    "id": "task_028",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a set of measuring spoons for cooking from Amazon.",
+    "taskPrompt": "Purchase a set of measuring spoons for cooking from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:39:07.229999Z"
+  },
+  "goal": "Purchase a set of measuring spoons for cooking from Amazon.",
+  "sessionId": "session_028",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

@@ -1,0 +1,20 @@
+{
+  "task": "amazon_single_item_purchase",
+  "num_examples": 2,
+  "prompt_id": "p002",
+  "created_at": "2026-04-08T01:14:09.952037Z",
+  "generator": {
+    "type": "template",
+    "model": null
+  },
+  "prompts": [
+    {
+      "id": "p002_001",
+      "text": "Go to https://www.amazon.com/ and find one stainless steel water bottle with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase."
+    },
+    {
+      "id": "p002_002",
+      "text": "Go to https://www.amazon.com/ and find one wireless ergonomic mouse with Prime shipping and rating >= 4 stars. Add exactly one item to cart and stop before checkout confirmation. Task theme: amazon single item purchase."
+    }
+  ]
+}

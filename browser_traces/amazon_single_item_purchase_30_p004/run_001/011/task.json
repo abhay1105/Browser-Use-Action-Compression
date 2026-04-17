@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:51:40.967154Z",
+  "task": {
+    "id": "task_011",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a desk lamp with adjustable brightness settings from Amazon.",
+    "taskPrompt": "Buy a desk lamp with adjustable brightness settings from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:48:52.088194Z"
+  },
+  "goal": "Buy a desk lamp with adjustable brightness settings from Amazon.",
+  "sessionId": "session_011",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

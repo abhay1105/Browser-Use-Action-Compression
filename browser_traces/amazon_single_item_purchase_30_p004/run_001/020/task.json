@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:17:35.215103Z",
+  "task": {
+    "id": "task_020",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a smartphone screen protector with tempered glass from Amazon.",
+    "taskPrompt": "Buy a smartphone screen protector with tempered glass from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:15:04.988635Z"
+  },
+  "goal": "Buy a smartphone screen protector with tempered glass from Amazon.",
+  "sessionId": "session_020",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

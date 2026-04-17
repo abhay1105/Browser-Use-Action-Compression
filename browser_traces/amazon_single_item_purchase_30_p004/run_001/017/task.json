@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:09:32.877807Z",
+  "task": {
+    "id": "task_017",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a travel pillow for airplane comfort from Amazon.",
+    "taskPrompt": "Buy a travel pillow for airplane comfort from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:06:45.994253Z"
+  },
+  "goal": "Buy a travel pillow for airplane comfort from Amazon.",
+  "sessionId": "session_017",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

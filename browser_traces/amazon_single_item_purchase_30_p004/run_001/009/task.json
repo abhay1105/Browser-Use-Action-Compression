@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:46:16.130265Z",
+  "task": {
+    "id": "task_009",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a yoga mat that is at least 6 feet long from Amazon.",
+    "taskPrompt": "Order a yoga mat that is at least 6 feet long from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:43:30.584507Z"
+  },
+  "goal": "Order a yoga mat that is at least 6 feet long from Amazon.",
+  "sessionId": "session_009",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

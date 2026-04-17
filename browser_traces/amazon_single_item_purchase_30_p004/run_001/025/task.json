@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:34:07.020620Z",
+  "task": {
+    "id": "task_025",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Purchase a desk organizer with multiple compartments from Amazon.",
+    "taskPrompt": "Purchase a desk organizer with multiple compartments from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:31:06.643960Z"
+  },
+  "goal": "Purchase a desk organizer with multiple compartments from Amazon.",
+  "sessionId": "session_025",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

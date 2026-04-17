@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:20:40.682529Z",
+  "task": {
+    "id": "task_021",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a pack of black permanent markers from Amazon.",
+    "taskPrompt": "Order a pack of black permanent markers from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:17:35.216800Z"
+  },
+  "goal": "Order a pack of black permanent markers from Amazon.",
+  "sessionId": "session_021",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

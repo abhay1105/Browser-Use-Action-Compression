@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:31:25.986700Z",
+  "task": {
+    "id": "task_003",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a USB-C charging cable that is 6 feet long from Amazon.",
+    "taskPrompt": "Order a USB-C charging cable that is 6 feet long from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:28:39.958357Z"
+  },
+  "goal": "Order a USB-C charging cable that is 6 feet long from Amazon.",
+  "sessionId": "session_003",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

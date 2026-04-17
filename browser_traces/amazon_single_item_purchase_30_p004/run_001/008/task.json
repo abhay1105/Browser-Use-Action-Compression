@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:43:30.582345Z",
+  "task": {
+    "id": "task_008",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a pack of blue gel pens for office use from Amazon.",
+    "taskPrompt": "Buy a pack of blue gel pens for office use from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:41:13.632692Z"
+  },
+  "goal": "Buy a pack of blue gel pens for office use from Amazon.",
+  "sessionId": "session_008",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+<rect width="100%" height="100%" fill="white"/>
+<text x="640.0" y="34" text-anchor="middle" font-size="20" font-family="Arial">Top Action Frequencies</text>
+<line x1="90" y1="480.00" x2="1240" y2="480.00" stroke="#d0d7de"/>
+<text x="78" y="484.00" font-size="11" text-anchor="end">0.0</text>
+<line x1="90" y1="398.00" x2="1240" y2="398.00" stroke="#d0d7de"/>
+<text x="78" y="402.00" font-size="11" text-anchor="end">23.2</text>
+<line x1="90" y1="316.00" x2="1240" y2="316.00" stroke="#d0d7de"/>
+<text x="78" y="320.00" font-size="11" text-anchor="end">46.4</text>
+<line x1="90" y1="234.00" x2="1240" y2="234.00" stroke="#d0d7de"/>
+<text x="78" y="238.00" font-size="11" text-anchor="end">69.6</text>
+<line x1="90" y1="152.00" x2="1240" y2="152.00" stroke="#d0d7de"/>
+<text x="78" y="156.00" font-size="11" text-anchor="end">92.8</text>
+<line x1="90" y1="70.00" x2="1240" y2="70.00" stroke="#d0d7de"/>
+<text x="78" y="74.00" font-size="11" text-anchor="end">116.0</text>
+<line x1="90" y1="480" x2="1240" y2="480" stroke="#333"/>
+<line x1="90" y1="70" x2="90" y2="480" stroke="#333"/>
+<rect x="90.00" y="70.00" width="135.75" height="410.00" fill="#1f7a8c" />
+<rect x="233.75" y="221.98" width="135.75" height="258.02" fill="#1f7a8c" />
+<rect x="377.50" y="349.22" width="135.75" height="130.78" fill="#1f7a8c" />
+<rect x="521.25" y="352.76" width="135.75" height="127.24" fill="#1f7a8c" />
+<rect x="665.00" y="381.03" width="135.75" height="98.97" fill="#1f7a8c" />
+<rect x="808.75" y="381.03" width="135.75" height="98.97" fill="#1f7a8c" />
+<rect x="952.50" y="423.45" width="135.75" height="56.55" fill="#1f7a8c" />
+<rect x="1096.25" y="430.52" width="135.75" height="49.48" fill="#1f7a8c" />
+<text x="157.88" y="500" font-size="11" text-anchor="end" transform="rotate(-45 157.88,500)">click</text>
+<text x="301.62" y="500" font-size="11" text-anchor="end" transform="rotate(-45 301.62,500)">replace_file</text>
+<text x="445.38" y="500" font-size="11" text-anchor="end" transform="rotate(-45 445.38,500)">done</text>
+<text x="589.12" y="500" font-size="11" text-anchor="end" transform="rotate(-45 589.12,500)">wait</text>
+<text x="732.88" y="500" font-size="11" text-anchor="end" transform="rotate(-45 732.88,500)">navigate</text>
+<text x="876.62" y="500" font-size="11" text-anchor="end" transform="rotate(-45 876.62,500)">input</text>
+<text x="1020.38" y="500" font-size="11" text-anchor="end" transform="rotate(-45 1020.38,500)">scroll</text>
+<text x="1164.12" y="500" font-size="11" text-anchor="end" transform="rotate(-45 1164.12,500)">write_file</text>
+</svg>

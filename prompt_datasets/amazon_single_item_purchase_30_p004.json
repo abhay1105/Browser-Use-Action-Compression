@@ -1,0 +1,132 @@
+{
+  "task": "amazon_single_item_purchase",
+  "num_examples": 30,
+  "prompt_id": "p004",
+  "created_at": "2026-04-09T23:19:52.653549Z",
+  "generator": {
+    "type": "anthropic",
+    "model": "claude-sonnet-4-20250514"
+  },
+  "prompts": [
+    {
+      "id": "p004_001",
+      "text": "Purchase a wireless Bluetooth headset with noise cancellation under $100 from Amazon."
+    },
+    {
+      "id": "p004_002",
+      "text": "Buy a stainless steel water bottle with at least 32oz capacity on Amazon."
+    },
+    {
+      "id": "p004_003",
+      "text": "Order a USB-C charging cable that is 6 feet long from Amazon."
+    },
+    {
+      "id": "p004_004",
+      "text": "Purchase a bestselling fiction book in paperback format from Amazon."
+    },
+    {
+      "id": "p004_005",
+      "text": "Buy a set of resistance bands for home workouts from Amazon."
+    },
+    {
+      "id": "p004_006",
+      "text": "Order a coffee mug with a capacity of at least 12oz from Amazon."
+    },
+    {
+      "id": "p004_007",
+      "text": "Purchase a phone case compatible with iPhone 14 Pro from Amazon."
+    },
+    {
+      "id": "p004_008",
+      "text": "Buy a pack of blue gel pens for office use from Amazon."
+    },
+    {
+      "id": "p004_009",
+      "text": "Order a yoga mat that is at least 6 feet long from Amazon."
+    },
+    {
+      "id": "p004_010",
+      "text": "Purchase a portable phone charger with at least 10000mAh capacity from Amazon."
+    },
+    {
+      "id": "p004_011",
+      "text": "Buy a desk lamp with adjustable brightness settings from Amazon."
+    },
+    {
+      "id": "p004_012",
+      "text": "Order a pack of AA batteries from a well-known brand on Amazon."
+    },
+    {
+      "id": "p004_013",
+      "text": "Purchase a kitchen cutting board made of bamboo from Amazon."
+    },
+    {
+      "id": "p004_014",
+      "text": "Buy a pair of running socks with moisture-wicking material from Amazon."
+    },
+    {
+      "id": "p004_015",
+      "text": "Order a notebook with lined pages and at least 200 sheets from Amazon."
+    },
+    {
+      "id": "p004_016",
+      "text": "Purchase a wireless computer mouse with ergonomic design from Amazon."
+    },
+    {
+      "id": "p004_017",
+      "text": "Buy a travel pillow for airplane comfort from Amazon."
+    },
+    {
+      "id": "p004_018",
+      "text": "Order a pack of microfiber cleaning cloths from Amazon."
+    },
+    {
+      "id": "p004_019",
+      "text": "Purchase a digital kitchen scale with at least 11lb capacity from Amazon."
+    },
+    {
+      "id": "p004_020",
+      "text": "Buy a smartphone screen protector with tempered glass from Amazon."
+    },
+    {
+      "id": "p004_021",
+      "text": "Order a pack of black permanent markers from Amazon."
+    },
+    {
+      "id": "p004_022",
+      "text": "Purchase a reusable grocery bag made from eco-friendly materials on Amazon."
+    },
+    {
+      "id": "p004_023",
+      "text": "Buy a car phone mount that attaches to the dashboard from Amazon."
+    },
+    {
+      "id": "p004_024",
+      "text": "Order a pack of protein bars with at least 15g protein per bar from Amazon."
+    },
+    {
+      "id": "p004_025",
+      "text": "Purchase a desk organizer with multiple compartments from Amazon."
+    },
+    {
+      "id": "p004_026",
+      "text": "Buy a pair of blue light blocking glasses from Amazon."
+    },
+    {
+      "id": "p004_027",
+      "text": "Order a portable Bluetooth speaker under $50 from Amazon."
+    },
+    {
+      "id": "p004_028",
+      "text": "Purchase a set of measuring spoons for cooking from Amazon."
+    },
+    {
+      "id": "p004_029",
+      "text": "Buy a laptop sleeve that fits a 13-inch MacBook from Amazon."
+    },
+    {
+      "id": "p004_030",
+      "text": "Order a pack of sticky notes in assorted colors from Amazon."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-09T23:28:39.956303Z",
+  "task": {
+    "id": "task_002",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Buy a stainless steel water bottle with at least 32oz capacity on Amazon.",
+    "taskPrompt": "Buy a stainless steel water bottle with at least 32oz capacity on Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-09T23:26:22.354412Z"
+  },
+  "goal": "Buy a stainless steel water bottle with at least 32oz capacity on Amazon.",
+  "sessionId": "session_002",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

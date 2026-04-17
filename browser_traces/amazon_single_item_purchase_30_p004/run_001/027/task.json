@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-04-10T00:39:07.228232Z",
+  "task": {
+    "id": "task_027",
+    "type": "start_local_agent_goal",
+    "url": "https://www.amazon.com/",
+    "goal": "Order a portable Bluetooth speaker under $50 from Amazon.",
+    "taskPrompt": "Order a portable Bluetooth speaker under $50 from Amazon.",
+    "deviceId": "browser-use-local",
+    "createdAt": "2026-04-10T00:36:20.207630Z"
+  },
+  "goal": "Order a portable Bluetooth speaker under $50 from Amazon.",
+  "sessionId": "session_027",
+  "serverUrl": null,
+  "deviceId": "browser-use-local"
+}

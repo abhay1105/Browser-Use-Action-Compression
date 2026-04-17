@@ -1,0 +1,571 @@
+{
+  "generated_at": "2026-04-10T03:41:29.435176Z",
+  "trace_run_dir": "/Users/abhayp/Documents/browser_use/browser_traces/amazon_single_item_purchase_30_p004/run_001",
+  "merge_stats": [
+    {
+      "merge_index": 1,
+      "merged_symbol": "@M0001",
+      "left": "replace_file(file_name,new_str,old_str)",
+      "right": "click(index)",
+      "pair_count": 39,
+      "expanded_sequence": [
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 2,
+      "merged_symbol": "@M0002",
+      "left": "input(clear,index,text)",
+      "right": "click(index)",
+      "pair_count": 28,
+      "expanded_sequence": [
+        "input(clear,index,text)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 3,
+      "merged_symbol": "@M0003",
+      "left": "click(index)",
+      "right": "click(index)",
+      "pair_count": 22,
+      "expanded_sequence": [
+        "click(index)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 4,
+      "merged_symbol": "@M0004",
+      "left": "navigate(new_tab,url)",
+      "right": "@M0002",
+      "pair_count": 18,
+      "expanded_sequence": [
+        "navigate(new_tab,url)",
+        "input(clear,index,text)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 5,
+      "merged_symbol": "@M0005",
+      "left": "@M0001",
+      "right": "@M0001",
+      "pair_count": 15,
+      "expanded_sequence": [
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 6,
+      "merged_symbol": "@M0006",
+      "left": "@M0004",
+      "right": "wait(seconds)",
+      "pair_count": 12,
+      "expanded_sequence": [
+        "navigate(new_tab,url)",
+        "input(clear,index,text)",
+        "click(index)",
+        "wait(seconds)"
+      ]
+    },
+    {
+      "merge_index": 7,
+      "merged_symbol": "@M0007",
+      "left": "replace_file(file_name,new_str,old_str)",
+      "right": "done(files_to_display,success,text)",
+      "pair_count": 9,
+      "expanded_sequence": [
+        "replace_file(file_name,new_str,old_str)",
+        "done(files_to_display,success,text)"
+      ]
+    },
+    {
+      "merge_index": 8,
+      "merged_symbol": "@M0008",
+      "left": "click(index)",
+      "right": "wait(seconds)",
+      "pair_count": 8,
+      "expanded_sequence": [
+        "click(index)",
+        "wait(seconds)"
+      ]
+    },
+    {
+      "merge_index": 9,
+      "merged_symbol": "@M0009",
+      "left": "@M0002",
+      "right": "replace_file(file_name,new_str,old_str)",
+      "pair_count": 8,
+      "expanded_sequence": [
+        "input(clear,index,text)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)"
+      ]
+    },
+    {
+      "merge_index": 10,
+      "merged_symbol": "@M0010",
+      "left": "@M0007",
+      "right": "done(files_to_display,success,text)",
+      "pair_count": 7,
+      "expanded_sequence": [
+        "replace_file(file_name,new_str,old_str)",
+        "done(files_to_display,success,text)",
+        "done(files_to_display,success,text)"
+      ]
+    },
+    {
+      "merge_index": 11,
+      "merged_symbol": "@M0011",
+      "left": "click(index)",
+      "right": "done(files_to_display,success,text)",
+      "pair_count": 7,
+      "expanded_sequence": [
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ]
+    },
+    {
+      "merge_index": 12,
+      "merged_symbol": "@M0012",
+      "left": "@M0003",
+      "right": "done(files_to_display,success,text)",
+      "pair_count": 7,
+      "expanded_sequence": [
+        "click(index)",
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ]
+    },
+    {
+      "merge_index": 13,
+      "merged_symbol": "@M0013",
+      "left": "write_file(append,content,file_name,leading_newline,trailing_newline)",
+      "right": "navigate(new_tab,url)",
+      "pair_count": 7,
+      "expanded_sequence": [
+        "write_file(append,content,file_name,leading_newline,trailing_newline)",
+        "navigate(new_tab,url)"
+      ]
+    },
+    {
+      "merge_index": 14,
+      "merged_symbol": "@M0014",
+      "left": "@M0013",
+      "right": "replace_file(file_name,new_str,old_str)",
+      "pair_count": 7,
+      "expanded_sequence": [
+        "write_file(append,content,file_name,leading_newline,trailing_newline)",
+        "navigate(new_tab,url)",
+        "replace_file(file_name,new_str,old_str)"
+      ]
+    },
+    {
+      "merge_index": 15,
+      "merged_symbol": "@M0015",
+      "left": "@M0014",
+      "right": "@M0009",
+      "pair_count": 6,
+      "expanded_sequence": [
+        "write_file(append,content,file_name,leading_newline,trailing_newline)",
+        "navigate(new_tab,url)",
+        "replace_file(file_name,new_str,old_str)",
+        "input(clear,index,text)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)"
+      ]
+    },
+    {
+      "merge_index": 16,
+      "merged_symbol": "@M0016",
+      "left": "wait(seconds)",
+      "right": "@M0001",
+      "pair_count": 5,
+      "expanded_sequence": [
+        "wait(seconds)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 17,
+      "merged_symbol": "@M0017",
+      "left": "scroll(down,pages)",
+      "right": "@M0003",
+      "pair_count": 5,
+      "expanded_sequence": [
+        "scroll(down,pages)",
+        "click(index)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 18,
+      "merged_symbol": "@M0018",
+      "left": "replace_file(file_name,new_str,old_str)",
+      "right": "@M0001",
+      "pair_count": 4,
+      "expanded_sequence": [
+        "replace_file(file_name,new_str,old_str)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 19,
+      "merged_symbol": "@M0019",
+      "left": "wait(seconds)",
+      "right": "scroll(down,pages)",
+      "pair_count": 4,
+      "expanded_sequence": [
+        "wait(seconds)",
+        "scroll(down,pages)"
+      ]
+    },
+    {
+      "merge_index": 20,
+      "merged_symbol": "@M0020",
+      "left": "@M0005",
+      "right": "done(files_to_display,success,text)",
+      "pair_count": 4,
+      "expanded_sequence": [
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ]
+    },
+    {
+      "merge_index": 21,
+      "merged_symbol": "@M0021",
+      "left": "@M0008",
+      "right": "@M0012",
+      "pair_count": 4,
+      "expanded_sequence": [
+        "click(index)",
+        "wait(seconds)",
+        "click(index)",
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ]
+    },
+    {
+      "merge_index": 22,
+      "merged_symbol": "@M0022",
+      "left": "@M0016",
+      "right": "wait(seconds)",
+      "pair_count": 3,
+      "expanded_sequence": [
+        "wait(seconds)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "wait(seconds)"
+      ]
+    },
+    {
+      "merge_index": 23,
+      "merged_symbol": "@M0023",
+      "left": "@M0017",
+      "right": "@M0011",
+      "pair_count": 3,
+      "expanded_sequence": [
+        "scroll(down,pages)",
+        "click(index)",
+        "click(index)",
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ]
+    },
+    {
+      "merge_index": 24,
+      "merged_symbol": "@M0024",
+      "left": "@M0006",
+      "right": "@M0003",
+      "pair_count": 3,
+      "expanded_sequence": [
+        "navigate(new_tab,url)",
+        "input(clear,index,text)",
+        "click(index)",
+        "wait(seconds)",
+        "click(index)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 25,
+      "merged_symbol": "@M0025",
+      "left": "@M0015",
+      "right": "scroll(down,pages)",
+      "pair_count": 3,
+      "expanded_sequence": [
+        "write_file(append,content,file_name,leading_newline,trailing_newline)",
+        "navigate(new_tab,url)",
+        "replace_file(file_name,new_str,old_str)",
+        "input(clear,index,text)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "scroll(down,pages)"
+      ]
+    },
+    {
+      "merge_index": 26,
+      "merged_symbol": "@M0026",
+      "left": "@M0019",
+      "right": "@M0005",
+      "pair_count": 3,
+      "expanded_sequence": [
+        "wait(seconds)",
+        "scroll(down,pages)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 27,
+      "merged_symbol": "@M0027",
+      "left": "@M0026",
+      "right": "@M0001",
+      "pair_count": 3,
+      "expanded_sequence": [
+        "wait(seconds)",
+        "scroll(down,pages)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)"
+      ]
+    },
+    {
+      "merge_index": 28,
+      "merged_symbol": "@M0028",
+      "left": "replace_file(file_name,new_str,old_str)",
+      "right": "@M0020",
+      "pair_count": 3,
+      "expanded_sequence": [
+        "replace_file(file_name,new_str,old_str)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ]
+    },
+    {
+      "merge_index": 29,
+      "merged_symbol": "@M0029",
+      "left": "@M0006",
+      "right": "@M0021",
+      "pair_count": 3,
+      "expanded_sequence": [
+        "navigate(new_tab,url)",
+        "input(clear,index,text)",
+        "click(index)",
+        "wait(seconds)",
+        "click(index)",
+        "wait(seconds)",
+        "click(index)",
+        "click(index)",
+        "done(files_to_display,success,text)"
+      ]
+    },
+    {
+      "merge_index": 30,
+      "merged_symbol": "@M0030",
+      "left": "navigate(new_tab,url)",
+      "right": "write_file(append,content,file_name,leading_newline,trailing_newline)",
+      "pair_count": 3,
+      "expanded_sequence": [
+        "navigate(new_tab,url)",
+        "write_file(append,content,file_name,leading_newline,trailing_newline)"
+      ]
+    },
+    {
+      "merge_index": 31,
+      "merged_symbol": "@M0031",
+      "left": "@M0005",
+      "right": "@M0010",
+      "pair_count": 3,
+      "expanded_sequence": [
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "click(index)",
+        "replace_file(file_name,new_str,old_str)",
+        "done(files_to_display,success,text)",
+        "done(files_to_display,success,text)"
+      ]
+    }
+  ],
+  "compression_curve": [
+    {
+      "step": 0,
+      "total_tokens": 348,
+      "compression_ratio": 1.0
+    },
+    {
+      "step": 1,
+      "total_tokens": 309,
+      "compression_ratio": 1.126214
+    },
+    {
+      "step": 2,
+      "total_tokens": 281,
+      "compression_ratio": 1.238434
+    },
+    {
+      "step": 3,
+      "total_tokens": 265,
+      "compression_ratio": 1.313208
+    },
+    {
+      "step": 4,
+      "total_tokens": 247,
+      "compression_ratio": 1.408907
+    },
+    {
+      "step": 5,
+      "total_tokens": 235,
+      "compression_ratio": 1.480851
+    },
+    {
+      "step": 6,
+      "total_tokens": 223,
+      "compression_ratio": 1.560538
+    },
+    {
+      "step": 7,
+      "total_tokens": 214,
+      "compression_ratio": 1.626168
+    },
+    {
+      "step": 8,
+      "total_tokens": 206,
+      "compression_ratio": 1.68932
+    },
+    {
+      "step": 9,
+      "total_tokens": 198,
+      "compression_ratio": 1.757576
+    },
+    {
+      "step": 10,
+      "total_tokens": 191,
+      "compression_ratio": 1.82199
+    },
+    {
+      "step": 11,
+      "total_tokens": 184,
+      "compression_ratio": 1.891304
+    },
+    {
+      "step": 12,
+      "total_tokens": 177,
+      "compression_ratio": 1.966102
+    },
+    {
+      "step": 13,
+      "total_tokens": 170,
+      "compression_ratio": 2.047059
+    },
+    {
+      "step": 14,
+      "total_tokens": 163,
+      "compression_ratio": 2.134969
+    },
+    {
+      "step": 15,
+      "total_tokens": 157,
+      "compression_ratio": 2.216561
+    },
+    {
+      "step": 16,
+      "total_tokens": 152,
+      "compression_ratio": 2.289474
+    },
+    {
+      "step": 17,
+      "total_tokens": 147,
+      "compression_ratio": 2.367347
+    },
+    {
+      "step": 18,
+      "total_tokens": 143,
+      "compression_ratio": 2.433566
+    },
+    {
+      "step": 19,
+      "total_tokens": 139,
+      "compression_ratio": 2.503597
+    },
+    {
+      "step": 20,
+      "total_tokens": 135,
+      "compression_ratio": 2.577778
+    },
+    {
+      "step": 21,
+      "total_tokens": 131,
+      "compression_ratio": 2.656489
+    },
+    {
+      "step": 22,
+      "total_tokens": 128,
+      "compression_ratio": 2.71875
+    },
+    {
+      "step": 23,
+      "total_tokens": 125,
+      "compression_ratio": 2.784
+    },
+    {
+      "step": 24,
+      "total_tokens": 122,
+      "compression_ratio": 2.852459
+    },
+    {
+      "step": 25,
+      "total_tokens": 119,
+      "compression_ratio": 2.92437
+    },
+    {
+      "step": 26,
+      "total_tokens": 116,
+      "compression_ratio": 3.0
+    },
+    {
+      "step": 27,
+      "total_tokens": 113,
+      "compression_ratio": 3.079646
+    },
+    {
+      "step": 28,
+      "total_tokens": 110,
+      "compression_ratio": 3.163636
+    },
+    {
+      "step": 29,
+      "total_tokens": 107,
+      "compression_ratio": 3.252336
+    },
+    {
+      "step": 30,
+      "total_tokens": 104,
+      "compression_ratio": 3.346154
+    },
+    {
+      "step": 31,
+      "total_tokens": 101,
+      "compression_ratio": 3.445545
+    }
+  ]
+}

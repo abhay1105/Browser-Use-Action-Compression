@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720">
+<rect width="100%" height="100%" fill="white"/>
+<text x="640.0" y="30" font-size="20" text-anchor="middle" font-family="Arial">Macro estimated saved primitive calls</text>
+<line x1="80" y1="500.00" x2="1240" y2="500.00" stroke="#d0d7de"/>
+<text x="70" y="504.00" font-size="11" text-anchor="end">0.0</text>
+<line x1="80" y1="412.00" x2="1240" y2="412.00" stroke="#d0d7de"/>
+<text x="70" y="416.00" font-size="11" text-anchor="end">7.2</text>
+<line x1="80" y1="324.00" x2="1240" y2="324.00" stroke="#d0d7de"/>
+<text x="70" y="328.00" font-size="11" text-anchor="end">14.4</text>
+<line x1="80" y1="236.00" x2="1240" y2="236.00" stroke="#d0d7de"/>
+<text x="70" y="240.00" font-size="11" text-anchor="end">21.6</text>
+<line x1="80" y1="148.00" x2="1240" y2="148.00" stroke="#d0d7de"/>
+<text x="70" y="152.00" font-size="11" text-anchor="end">28.8</text>
+<line x1="80" y1="60.00" x2="1240" y2="60.00" stroke="#d0d7de"/>
+<text x="70" y="64.00" font-size="11" text-anchor="end">36.0</text>
+<line x1="80" y1="500" x2="1240" y2="500" stroke="#333"/>
+<line x1="80" y1="60" x2="80" y2="500" stroke="#333"/>
+<rect x="80.00" y="60.00" width="76.86" height="440.00" fill="#2f6fed" />
+<rect x="162.86" y="60.00" width="76.86" height="440.00" fill="#2f6fed" />
+<rect x="245.71" y="133.33" width="76.86" height="366.67" fill="#2f6fed" />
+<rect x="328.57" y="206.67" width="76.86" height="293.33" fill="#2f6fed" />
+<rect x="411.43" y="206.67" width="76.86" height="293.33" fill="#2f6fed" />
+<rect x="494.29" y="243.33" width="76.86" height="256.67" fill="#2f6fed" />
+<rect x="577.14" y="280.00" width="76.86" height="220.00" fill="#2f6fed" />
+<rect x="660.00" y="280.00" width="76.86" height="220.00" fill="#2f6fed" />
+<rect x="742.86" y="316.67" width="76.86" height="183.33" fill="#2f6fed" />
+<rect x="825.71" y="316.67" width="76.86" height="183.33" fill="#2f6fed" />
+<rect x="908.57" y="328.89" width="76.86" height="171.11" fill="#2f6fed" />
+<rect x="991.43" y="328.89" width="76.86" height="171.11" fill="#2f6fed" />
+<rect x="1074.29" y="353.33" width="76.86" height="146.67" fill="#2f6fed" />
+<rect x="1157.14" y="353.33" width="76.86" height="146.67" fill="#2f6fed" />
+<text x="118.43" y="520" font-size="11" text-anchor="end" transform="rotate(-45 118.43,520)">macro_001_navigate_input_click</text>
+<text x="201.29" y="520" font-size="11" text-anchor="end" transform="rotate(-45 201.29,520)">macro_005_navigate_input_click</text>
+<text x="284.14" y="520" font-size="11" text-anchor="end" transform="rotate(-45 284.14,520)">macro_010_write_file_navigate_replace_file</text>
+<text x="367.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 367.00,520)">macro_008_click_click_done</text>
+<text x="449.86" y="520" font-size="11" text-anchor="end" transform="rotate(-45 449.86,520)">macro_013_navigate_input_click</text>
+<text x="532.71" y="520" font-size="11" text-anchor="end" transform="rotate(-45 532.71,520)">macro_011_wait_scroll_replace_file</text>
+<text x="615.57" y="520" font-size="11" text-anchor="end" transform="rotate(-45 615.57,520)">macro_009_write_file_navigate_replace_file</text>
+<text x="698.43" y="520" font-size="11" text-anchor="end" transform="rotate(-45 698.43,520)">macro_014_replace_file_click_replace_file</text>
+<text x="781.29" y="520" font-size="11" text-anchor="end" transform="rotate(-45 781.29,520)">macro_007_navigate_input_click</text>
+<text x="864.14" y="520" font-size="11" text-anchor="end" transform="rotate(-45 864.14,520)">macro_012_replace_file_replace_file_click</text>
+<text x="947.00" y="520" font-size="11" text-anchor="end" transform="rotate(-45 947.00,520)">macro_003_replace_file_replace_file_click</text>
+<text x="1029.86" y="520" font-size="11" text-anchor="end" transform="rotate(-45 1029.86,520)">macro_004_replace_file_done_done</text>
+<text x="1112.71" y="520" font-size="11" text-anchor="end" transform="rotate(-45 1112.71,520)">macro_002_wait_replace_file_click</text>
+<text x="1195.57" y="520" font-size="11" text-anchor="end" transform="rotate(-45 1195.57,520)">macro_006_scroll_click_click</text>
+</svg>
