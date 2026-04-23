@@ -1,0 +1,212 @@
+{
+  "task": "yelp_search",
+  "num_examples": 50,
+  "prompt_id": "p005",
+  "created_at": "2026-04-21T22:32:03.619424Z",
+  "generator": {
+    "type": "anthropic",
+    "model": "claude-sonnet-4-20250514"
+  },
+  "prompts": [
+    {
+      "id": "p005_001",
+      "text": "Find the highest-rated Italian restaurants in downtown Seattle and check their hours."
+    },
+    {
+      "id": "p005_002",
+      "text": "Search for pet-friendly coffee shops in Austin, Texas with outdoor seating."
+    },
+    {
+      "id": "p005_003",
+      "text": "Look up barbecue restaurants in Kansas City with at least 4 stars and read recent reviews."
+    },
+    {
+      "id": "p005_004",
+      "text": "Find vegetarian restaurants near Central Park in New York City that deliver."
+    },
+    {
+      "id": "p005_005",
+      "text": "Search for 24-hour diners in Las Vegas and check their menu photos."
+    },
+    {
+      "id": "p005_006",
+      "text": "Look for highly-rated sushi restaurants in San Francisco's Mission District."
+    },
+    {
+      "id": "p005_007",
+      "text": "Find Mexican restaurants in Phoenix that offer takeout and have parking."
+    },
+    {
+      "id": "p005_008",
+      "text": "Search for breakfast places in Portland, Oregon that are open on Sundays."
+    },
+    {
+      "id": "p005_009",
+      "text": "Look up pizza places in Chicago with gluten-free options and good reviews."
+    },
+    {
+      "id": "p005_010",
+      "text": "Find romantic restaurants in Miami Beach suitable for anniversary dinners."
+    },
+    {
+      "id": "p005_011",
+      "text": "Search for family-friendly restaurants in Orlando near Disney World."
+    },
+    {
+      "id": "p005_012",
+      "text": "Look for Thai restaurants in Los Angeles with spicy food and delivery options."
+    },
+    {
+      "id": "p005_013",
+      "text": "Find steakhouses in Dallas with private dining rooms and valet parking."
+    },
+    {
+      "id": "p005_014",
+      "text": "Search for brunch spots in Nashville with live music and outdoor patios."
+    },
+    {
+      "id": "p005_015",
+      "text": "Look up seafood restaurants in Boston's North End with fresh lobster."
+    },
+    {
+      "id": "p005_016",
+      "text": "Find Indian restaurants in Denver that offer lunch buffets and are highly rated."
+    },
+    {
+      "id": "p005_017",
+      "text": "Search for wine bars in Napa Valley with cheese plates and good ambiance."
+    },
+    {
+      "id": "p005_018",
+      "text": "Look for burger joints in Atlanta with craft beer and late-night hours."
+    },
+    {
+      "id": "p005_019",
+      "text": "Find French restaurants in New Orleans' French Quarter with authentic cuisine."
+    },
+    {
+      "id": "p005_020",
+      "text": "Search for ramen shops in San Diego with vegetarian broth options."
+    },
+    {
+      "id": "p005_021",
+      "text": "Look up Mediterranean restaurants in Philadelphia with outdoor dining."
+    },
+    {
+      "id": "p005_022",
+      "text": "Find bakeries in San Antonio that make custom wedding cakes."
+    },
+    {
+      "id": "p005_023",
+      "text": "Search for food trucks in Portland with the highest ratings and unique menus."
+    },
+    {
+      "id": "p005_024",
+      "text": "Look for dim sum restaurants in San Francisco's Chinatown that take reservations."
+    },
+    {
+      "id": "p005_025",
+      "text": "Find sports bars in Green Bay with big screens and game-day specials."
+    },
+    {
+      "id": "p005_026",
+      "text": "Search for ice cream shops in Charleston with homemade flavors and good reviews."
+    },
+    {
+      "id": "p005_027",
+      "text": "Look up Korean BBQ restaurants in Los Angeles with all-you-can-eat options."
+    },
+    {
+      "id": "p005_028",
+      "text": "Find farm-to-table restaurants in Burlington, Vermont with seasonal menus."
+    },
+    {
+      "id": "p005_029",
+      "text": "Search for tapas bars in Barcelona with authentic Spanish dishes and wine."
+    },
+    {
+      "id": "p005_030",
+      "text": "Look for gastropubs in Washington DC with craft cocktails and small plates."
+    },
+    {
+      "id": "p005_031",
+      "text": "Find Ethiopian restaurants in Minneapolis with traditional coffee ceremonies."
+    },
+    {
+      "id": "p005_032",
+      "text": "Search for oyster bars in Seattle with happy hour specials and fresh selections."
+    },
+    {
+      "id": "p005_033",
+      "text": "Look up Cuban restaurants in Tampa with live salsa music and mojitos."
+    },
+    {
+      "id": "p005_034",
+      "text": "Find pho restaurants in Westminster, California with large portions and good broth."
+    },
+    {
+      "id": "p005_035",
+      "text": "Search for German restaurants in Milwaukee with authentic beer gardens."
+    },
+    {
+      "id": "p005_036",
+      "text": "Look for soul food restaurants in Memphis with fried chicken and live blues."
+    },
+    {
+      "id": "p005_037",
+      "text": "Find Lebanese restaurants in Detroit with fresh hummus and outdoor seating."
+    },
+    {
+      "id": "p005_038",
+      "text": "Search for Peruvian restaurants in Miami with ceviche and pisco sours."
+    },
+    {
+      "id": "p005_039",
+      "text": "Look up Jewish delis in New York with pastrami sandwiches and pickle bars."
+    },
+    {
+      "id": "p005_040",
+      "text": "Find Moroccan restaurants in San Francisco with belly dancing and tagines."
+    },
+    {
+      "id": "p005_041",
+      "text": "Search for Polish restaurants in Chicago with pierogi and traditional atmosphere."
+    },
+    {
+      "id": "p005_042",
+      "text": "Look for Jamaican restaurants in Brooklyn with jerk chicken and reggae music."
+    },
+    {
+      "id": "p005_043",
+      "text": "Find Greek restaurants in Astoria with fresh fish and waterfront views."
+    },
+    {
+      "id": "p005_044",
+      "text": "Search for Vietnamese restaurants in Houston with pho and spring rolls."
+    },
+    {
+      "id": "p005_045",
+      "text": "Look up Brazilian steakhouses in Las Vegas with all-you-can-eat meat service."
+    },
+    {
+      "id": "p005_046",
+      "text": "Find Nepalese restaurants in Jackson Heights with momos and curry dishes."
+    },
+    {
+      "id": "p005_047",
+      "text": "Search for Argentinian restaurants in Miami with empanadas and tango shows."
+    },
+    {
+      "id": "p005_048",
+      "text": "Look for Turkish restaurants in Fairfax, Virginia with kebabs and baklava."
+    },
+    {
+      "id": "p005_049",
+      "text": "Find Russian restaurants in Brighton Beach with borscht and vodka selection."
+    },
+    {
+      "id": "p005_050",
+      "text": "Search for Salvadoran restaurants in Los Angeles with pupusas and horchata."
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "task": "yelp_search",
+  "num_examples": 50,
+  "prompt_id": "p007",
+  "created_at": "2026-04-21T23:04:46.084363Z",
+  "generator": {
+    "type": "anthropic_yelp_buckets",
+    "model": null
+  },
+  "prompts": [
+    {
+      "id": "p007_001",
+      "text": "Find Italian restaurants in Seattle."
+    },
+    {
+      "id": "p007_002",
+      "text": "Search for coffee shops in downtown Portland."
+    },
+    {
+      "id": "p007_003",
+      "text": "Look for highly rated sushi restaurants in San Francisco."
+    },
+    {
+      "id": "p007_004",
+      "text": "Find Mexican food near Times Square in New York City."
+    },
+    {
+      "id": "p007_005",
+      "text": "Search for barbecue restaurants in Austin, Texas."
+    },
+    {
+      "id": "p007_006",
+      "text": "Look for vegetarian restaurants in Los Angeles with outdoor seating."
+    },
+    {
+      "id": "p007_007",
+      "text": "Find pizza places open late in Chicago."
+    },
+    {
+      "id": "p007_008",
+      "text": "Search for Thai restaurants in Boston with delivery options."
+    },
+    {
+      "id": "p007_009",
+      "text": "Look for brunch spots in Miami Beach."
+    },
+    {
+      "id": "p007_010",
+      "text": "Find steakhouses in Las Vegas with valet parking."
+    },
+    {
+      "id": "p007_011",
+      "text": "Search for Indian restaurants in Denver with 4+ star ratings."
+    },
+    {
+      "id": "p007_012",
+      "text": "Look for seafood restaurants near the waterfront in Baltimore."
+    },
+    {
+      "id": "p007_013",
+      "text": "Find bakeries in San Diego that serve gluten-free options."
+    },
+    {
+      "id": "p007_014",
+      "text": "Search for ramen shops in Philadelphia's Chinatown."
+    },
+    {
+      "id": "p007_015",
+      "text": "Look for farm-to-table restaurants in Nashville."
+    },
+    {
+      "id": "p007_016",
+      "text": "Find burger joints in Phoenix with outdoor patios."
+    },
+    {
+      "id": "p007_017",
+      "text": "Search for French restaurants in New Orleans' French Quarter."
+    },
+    {
+      "id": "p007_018",
+      "text": "Look for taco trucks in San Antonio with high ratings."
+    },
+    {
+      "id": "p007_019",
+      "text": "Find wine bars in Napa Valley with live music."
+    },
+    {
+      "id": "p007_020",
+      "text": "Search for dim sum restaurants in Vancouver, BC."
+    },
+    {
+      "id": "p007_021",
+      "text": "Find the highest-rated sushi restaurant in Seattle and tell me their delivery options and average wait time."
+    },
+    {
+      "id": "p007_022",
+      "text": "Search for the best pizza place in Chicago and provide their phone number and whether they offer gluten-free options."
+    },
+    {
+      "id": "p007_023",
+      "text": "Locate the top-rated coffee shop in Portland and find out their WiFi availability and laptop policy."
+    },
+    {
+      "id": "p007_024",
+      "text": "Find the best Mexican restaurant in San Diego and tell me their parking situation and if they have outdoor seating."
+    },
+    {
+      "id": "p007_025",
+      "text": "Search for the highest-rated brunch spot in Miami and determine their weekend hours and reservation policy."
+    },
+    {
+      "id": "p007_026",
+      "text": "Find the best barbecue restaurant in Austin and tell me their catering options and price range."
+    },
+    {
+      "id": "p007_027",
+      "text": "Locate the top-rated Indian restaurant in New York City and find out if they offer vegan options and their spice level customization."
+    },
+    {
+      "id": "p007_028",
+      "text": "Search for the best burger joint in Los Angeles and tell me their happy hour times and whether they have a drive-through."
+    },
+    {
+      "id": "p007_029",
+      "text": "Find the highest-rated steakhouse in Dallas and determine their dress code and private dining availability."
+    },
+    {
+      "id": "p007_030",
+      "text": "Locate the best bakery in San Francisco and find out their specialty items and whether they take custom cake orders."
+    },
+    {
+      "id": "p007_031",
+      "text": "Search for the top-rated ramen shop in Denver and tell me their broth options and if they accommodate dietary restrictions."
+    },
+    {
+      "id": "p007_032",
+      "text": "Find the best seafood restaurant in Boston and determine their daily specials and whether they serve raw oysters."
+    },
+    {
+      "id": "p007_033",
+      "text": "Locate the highest-rated ice cream shop in Nashville and find out their seasonal flavors and if they offer dairy-free options."
+    },
+    {
+      "id": "p007_034",
+      "text": "Search for the best Mediterranean restaurant in Phoenix and tell me their lunch menu availability and group dining options."
+    },
+    {
+      "id": "p007_035",
+      "text": "Find the top-rated breakfast spot in Atlanta and determine their weekend brunch hours and whether they accept walk-ins."
+    },
+    {
+      "id": "p007_036",
+      "text": "Find two highly-rated pizza places in Chicago and compare their prices and ratings."
+    },
+    {
+      "id": "p007_037",
+      "text": "Compare the customer reviews and operating hours of two popular coffee shops in Seattle."
+    },
+    {
+      "id": "p007_038",
+      "text": "Find two top-rated sushi restaurants in Los Angeles and compare their delivery options and menu prices."
+    },
+    {
+      "id": "p007_039",
+      "text": "Compare the ratings, cuisine types, and price ranges of two Italian restaurants in New York City."
+    },
+    {
+      "id": "p007_040",
+      "text": "Find two well-reviewed barbecue restaurants in Austin and compare their customer feedback and location convenience."
+    },
+    {
+      "id": "p007_041",
+      "text": "Compare the service quality and atmosphere ratings of two steakhouses in Miami based on recent reviews."
+    },
+    {
+      "id": "p007_042",
+      "text": "Find two highly-rated Thai restaurants in San Francisco and compare their takeout options and customer ratings."
+    },
+    {
+      "id": "p007_043",
+      "text": "Compare the pricing, portion sizes, and overall ratings of two Mexican restaurants in Denver."
+    },
+    {
+      "id": "p007_044",
+      "text": "Find two popular brunch spots in Portland and compare their wait times and menu variety based on reviews."
+    },
+    {
+      "id": "p007_045",
+      "text": "Compare the delivery fees, ratings, and customer service quality of two Chinese restaurants in Boston."
+    },
+    {
+      "id": "p007_046",
+      "text": "Find the highest-rated sushi restaurant in Seattle and summarize the 3 most recent customer reviews."
+    },
+    {
+      "id": "p007_047",
+      "text": "Locate the top-rated coffee shop in Austin and provide a summary of the 5 most helpful reviews."
+    },
+    {
+      "id": "p007_048",
+      "text": "Search for the best pizza place in Chicago and analyze the most recent negative review to identify common complaints."
+    },
+    {
+      "id": "p007_049",
+      "text": "Find a highly-rated Mexican restaurant in Los Angeles and summarize what the 4 most recent reviews say about the food quality and service."
+    },
+    {
+      "id": "p007_050",
+      "text": "Locate the top-rated brunch spot in New York City and extract key themes from the 6 most recent customer reviews."
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "trace_001",
+    "domain": "www.amazon.com",
+    "goal": "Search for wireless headphones and add the first one to cart",
+    "events": [
+      {"tool": "navigate", "action": null, "input": {"url": "https://www.amazon.com/", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 1000, "semanticTarget": null},
+      {"tool": "computer", "action": "screenshot", "input": {"action": "screenshot", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 1001, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [450, 52], "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 1002, "semanticTarget": {"role": "searchbox", "name": "Search Amazon.com"}},
+      {"tool": "computer", "action": "type", "input": {"action": "type", "text": "wireless headphones", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 1003, "semanticTarget": null},
+      {"tool": "computer", "action": "key", "input": {"action": "key", "text": "Enter", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 1004, "semanticTarget": null},
+      {"tool": "computer", "action": "screenshot", "input": {"action": "screenshot", "tabId": 1}, "url": "https://www.amazon.com/s?k=wireless+headphones", "success": true, "domain": "www.amazon.com", "timestamp": 1005, "semanticTarget": null},
+      {"tool": "read_page", "action": null, "input": {"filter": "interactive", "tabId": 1}, "url": "https://www.amazon.com/s?k=wireless+headphones", "success": true, "domain": "www.amazon.com", "timestamp": 1006, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [300, 400], "tabId": 1}, "url": "https://www.amazon.com/s?k=wireless+headphones", "success": true, "domain": "www.amazon.com", "timestamp": 1007, "semanticTarget": {"role": "link", "name": "Sony WH-1000XM5 Wireless Headphones"}},
+      {"tool": "computer", "action": "screenshot", "input": {"action": "screenshot", "tabId": 1}, "url": "https://www.amazon.com/dp/B09XS7JWHH", "success": true, "domain": "www.amazon.com", "timestamp": 1008, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [900, 350], "tabId": 1}, "url": "https://www.amazon.com/dp/B09XS7JWHH", "success": true, "domain": "www.amazon.com", "timestamp": 1009, "semanticTarget": {"role": "button", "name": "Add to Cart"}}
+    ],
+    "startedAt": 1000,
+    "completedAt": 1010,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_002",
+    "domain": "www.amazon.com",
+    "goal": "Find a USB-C cable and add to cart",
+    "events": [
+      {"tool": "navigate", "action": null, "input": {"url": "https://www.amazon.com/", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 2000, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [450, 52], "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 2001, "semanticTarget": {"role": "searchbox", "name": "Search Amazon.com"}},
+      {"tool": "computer", "action": "type", "input": {"action": "type", "text": "USB-C cable", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 2002, "semanticTarget": null},
+      {"tool": "computer", "action": "key", "input": {"action": "key", "text": "Enter", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 2003, "semanticTarget": null},
+      {"tool": "read_page", "action": null, "input": {"filter": "interactive", "tabId": 1}, "url": "https://www.amazon.com/s?k=USB-C+cable", "success": true, "domain": "www.amazon.com", "timestamp": 2004, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [310, 380], "tabId": 1}, "url": "https://www.amazon.com/s?k=USB-C+cable", "success": true, "domain": "www.amazon.com", "timestamp": 2005, "semanticTarget": {"role": "link", "name": "Anker USB-C Cable 6ft"}},
+      {"tool": "computer", "action": "screenshot", "input": {"action": "screenshot", "tabId": 1}, "url": "https://www.amazon.com/dp/B08T5QFHFR", "success": true, "domain": "www.amazon.com", "timestamp": 2006, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [905, 345], "tabId": 1}, "url": "https://www.amazon.com/dp/B08T5QFHFR", "success": true, "domain": "www.amazon.com", "timestamp": 2007, "semanticTarget": {"role": "button", "name": "Add to Cart"}}
+    ],
+    "startedAt": 2000,
+    "completedAt": 2008,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_003",
+    "domain": "www.amazon.com",
+    "goal": "Search for a laptop stand",
+    "events": [
+      {"tool": "navigate", "action": null, "input": {"url": "https://www.amazon.com/", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 3000, "semanticTarget": null},
+      {"tool": "computer", "action": "screenshot", "input": {"action": "screenshot", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 3001, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [448, 50], "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 3002, "semanticTarget": {"role": "searchbox", "name": "Search Amazon.com"}},
+      {"tool": "computer", "action": "type", "input": {"action": "type", "text": "laptop stand", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 3003, "semanticTarget": null},
+      {"tool": "computer", "action": "key", "input": {"action": "key", "text": "Enter", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 3004, "semanticTarget": null},
+      {"tool": "computer", "action": "screenshot", "input": {"action": "screenshot", "tabId": 1}, "url": "https://www.amazon.com/s?k=laptop+stand", "success": true, "domain": "www.amazon.com", "timestamp": 3005, "semanticTarget": null},
+      {"tool": "read_page", "action": null, "input": {"filter": "interactive", "tabId": 1}, "url": "https://www.amazon.com/s?k=laptop+stand", "success": true, "domain": "www.amazon.com", "timestamp": 3006, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [290, 420], "tabId": 1}, "url": "https://www.amazon.com/s?k=laptop+stand", "success": true, "domain": "www.amazon.com", "timestamp": 3007, "semanticTarget": {"role": "link", "name": "Rain Design mStand Laptop Stand"}}
+    ],
+    "startedAt": 3000,
+    "completedAt": 3008,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_004",
+    "domain": "www.amazon.com",
+    "goal": "Buy a mechanical keyboard",
+    "events": [
+      {"tool": "navigate", "action": null, "input": {"url": "https://www.amazon.com/", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 4000, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [450, 52], "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 4001, "semanticTarget": {"role": "searchbox", "name": "Search Amazon.com"}},
+      {"tool": "computer", "action": "type", "input": {"action": "type", "text": "mechanical keyboard", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 4002, "semanticTarget": null},
+      {"tool": "computer", "action": "key", "input": {"action": "key", "text": "Enter", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 4003, "semanticTarget": null},
+      {"tool": "computer", "action": "screenshot", "input": {"action": "screenshot", "tabId": 1}, "url": "https://www.amazon.com/s?k=mechanical+keyboard", "success": true, "domain": "www.amazon.com", "timestamp": 4004, "semanticTarget": null},
+      {"tool": "read_page", "action": null, "input": {"filter": "interactive", "tabId": 1}, "url": "https://www.amazon.com/s?k=mechanical+keyboard", "success": true, "domain": "www.amazon.com", "timestamp": 4005, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [305, 390], "tabId": 1}, "url": "https://www.amazon.com/s?k=mechanical+keyboard", "success": true, "domain": "www.amazon.com", "timestamp": 4006, "semanticTarget": {"role": "link", "name": "Keychron K2 Wireless Mechanical Keyboard"}},
+      {"tool": "computer", "action": "screenshot", "input": {"action": "screenshot", "tabId": 1}, "url": "https://www.amazon.com/dp/B07YB32H52", "success": true, "domain": "www.amazon.com", "timestamp": 4007, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [900, 350], "tabId": 1}, "url": "https://www.amazon.com/dp/B07YB32H52", "success": true, "domain": "www.amazon.com", "timestamp": 4008, "semanticTarget": {"role": "button", "name": "Add to Cart"}}
+    ],
+    "startedAt": 4000,
+    "completedAt": 4009,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_005",
+    "domain": "www.amazon.com",
+    "goal": "Search for running shoes and add to cart",
+    "events": [
+      {"tool": "navigate", "action": null, "input": {"url": "https://www.amazon.com/", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 5000, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [452, 51], "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 5001, "semanticTarget": {"role": "searchbox", "name": "Search Amazon.com"}},
+      {"tool": "computer", "action": "type", "input": {"action": "type", "text": "running shoes", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 5002, "semanticTarget": null},
+      {"tool": "computer", "action": "key", "input": {"action": "key", "text": "Enter", "tabId": 1}, "url": "https://www.amazon.com/", "success": true, "domain": "www.amazon.com", "timestamp": 5003, "semanticTarget": null},
+      {"tool": "read_page", "action": null, "input": {"filter": "interactive", "tabId": 1}, "url": "https://www.amazon.com/s?k=running+shoes", "success": true, "domain": "www.amazon.com", "timestamp": 5004, "semanticTarget": null},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [320, 410], "tabId": 1}, "url": "https://www.amazon.com/s?k=running+shoes", "success": true, "domain": "www.amazon.com", "timestamp": 5005, "semanticTarget": {"role": "link", "name": "Nike Air Zoom Pegasus 40"}},
+      {"tool": "computer", "action": "left_click", "input": {"action": "left_click", "coordinate": [900, 355], "tabId": 1}, "url": "https://www.amazon.com/dp/B0BX4NRFB3", "success": true, "domain": "www.amazon.com", "timestamp": 5006, "semanticTarget": {"role": "button", "name": "Add to Cart"}}
+    ],
+    "startedAt": 5000,
+    "completedAt": 5007,
+    "taskSuccess": true
+  }
+]

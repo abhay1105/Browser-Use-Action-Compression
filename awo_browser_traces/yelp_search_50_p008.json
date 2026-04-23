@@ -1,0 +1,6518 @@
+[
+  {
+    "id": "trace_001",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Turkish restaurants in Cincinnati.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822721703,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822721704,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822721705,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Turkish Restaurants in Cincinnati, OH",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822721706,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822721707,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Cincinnati%2C+OH",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Cincinnati%2C+OH",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822721708,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Cincinnati%2C+OH",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822721709,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Cincinnati%2C+OH",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822721710,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Cincinnati%2C+OH&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822721711,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Turkish restaurants in Cincinnati - list all restaurant names, ratings, number of reviews, neighborhood/location, price range, hours/open status, and cuisine tags"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Cincinnati%2C+OH&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822721712,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776822721703,
+    "completedAt": 1776822790633,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_002",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Thai restaurants in New Orleans.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822790662,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822790663,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822790664,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Thai Restaurants in New Orleans, LA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822790665,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822790666,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=New+Orleans%2C+LA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=New+Orleans%2C+LA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822790667,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=New+Orleans%2C+LA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822790668,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=New+Orleans%2C+LA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822790669,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=New+Orleans%2C+LA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822790670,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Thai restaurants in New Orleans - name, rating, number of reviews, neighborhood, price range, hours/status"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=New+Orleans%2C+LA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822790671,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776822790662,
+    "completedAt": 1776822860574,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_003",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Spanish restaurants in San Diego.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822860605,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822860606,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822860607,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Spanish Restaurants in San Diego, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822860608,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822860609,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=San+Diego%2C+CA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=San+Diego%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822860610,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=San+Diego%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822860611,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=San+Diego%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822860612,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Spanish restaurants in San Diego - list all restaurants with their name, rating, number of reviews, neighborhood, price range, and hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=San+Diego%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822860613,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776822860605,
+    "completedAt": 1776822924383,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_004",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Steakhouse restaurants in Columbus.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822924414,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822924415,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822924416,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Steakhouse in Columbus, OH",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822924417,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822924418,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Steakhouse&find_loc=Columbus%2C+OH",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouse&find_loc=Columbus%2C+OH",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822924419,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouse&find_loc=Columbus%2C+OH",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822924420,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouse&find_loc=Columbus%2C+OH&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822924421,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Steakhouse restaurants in Columbus - name, rating, number of reviews, neighborhood, price range, hours status"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouse&find_loc=Columbus%2C+OH&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822924422,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776822924414,
+    "completedAt": 1776822990292,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_005",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Vegan restaurants in Boston.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822990323,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822990324,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822990325,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Vegan Restaurants in Boston, MA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822990326,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822990327,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Vegan+Restaurants&find_loc=Boston%2C+MA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegan+Restaurants&find_loc=Boston%2C+MA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822990328,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegan+Restaurants&find_loc=Boston%2C+MA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822990329,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegan+Restaurants&find_loc=Boston%2C+MA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822990330,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "List of all vegan restaurants with their names, ratings, number of reviews, neighborhood/location, price range, hours/open status, and categories"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegan+Restaurants&find_loc=Boston%2C+MA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776822990331,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776822990323,
+    "completedAt": 1776823069202,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_006",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Breakfast restaurants in Las Vegas.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823069233,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823069234,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823069235,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Breakfast Restaurants in Las Vegas, NV",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823069236,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823069237,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Breakfast+Restaurants&find_loc=Las+Vegas%2C+NV",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Breakfast+Restaurants&find_loc=Las+Vegas%2C+NV",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823069238,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Breakfast+Restaurants&find_loc=Las+Vegas%2C+NV",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823069239,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Breakfast+Restaurants&find_loc=Las+Vegas%2C+NV",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823069240,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Breakfast+Restaurants&find_loc=Las+Vegas%2C+NV&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823069241,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "List of breakfast restaurants in Las Vegas with their ratings, reviews, neighborhood, price range, and categories"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Breakfast+Restaurants&find_loc=Las+Vegas%2C+NV&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823069242,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823069233,
+    "completedAt": 1776823144344,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_007",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Indian restaurants in Phoenix.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823144378,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823144379,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823144380,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Indian Restaurants in Phoenix, AZ",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823144381,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823144382,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Phoenix%2C+AZ",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Phoenix%2C+AZ",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823144383,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Phoenix%2C+AZ",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823144384,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Phoenix%2C+AZ&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823144385,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Indian restaurants in Phoenix - name, rating, number of reviews, price range, categories, hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Phoenix%2C+AZ&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823144386,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823144378,
+    "completedAt": 1776823209420,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_008",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Turkish restaurants in Detroit.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823209452,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823209453,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823209454,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Turkish Restaurants in Detroit, MI",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823209455,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823209456,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Detroit%2C+MI",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Detroit%2C+MI",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823209457,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Detroit%2C+MI",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823209458,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Detroit%2C+MI",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823209459,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Detroit%2C+MI&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823209460,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Turkish restaurants in Detroit - list all restaurants with name, rating, number of reviews, location, price range, hours status, and categories"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Detroit%2C+MI&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823209461,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823209452,
+    "completedAt": 1776823278005,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_009",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Chinese restaurants in Chicago.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823278038,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823278039,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823278040,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Chinese Restaurants in Chicago, IL",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823278041,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823278042,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Chinese+Restaurants&find_loc=Chicago%2C+IL",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Chinese+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823278043,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Chinese+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823278044,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Chinese+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823278045,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Chinese+Restaurants&find_loc=Chicago%2C+IL&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823278046,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Chinese restaurant name, rating, number of reviews, neighborhood/location, price range, categories, hours status"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Chinese+Restaurants&find_loc=Chicago%2C+IL&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823278047,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823278038,
+    "completedAt": 1776823354984,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_010",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Turkish restaurants in Phoenix.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823355018,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823355019,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823355020,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Turkish Restaurants in Phoenix, AZ",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823355021,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823355022,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Phoenix%2C+AZ",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Phoenix%2C+AZ",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823355023,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Phoenix%2C+AZ",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823355024,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Phoenix%2C+AZ",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823355025,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Phoenix%2C+AZ&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823355026,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Turkish restaurants in Phoenix - name, rating, number of reviews, location, price range, hours, categories"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Phoenix%2C+AZ&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823355027,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823355018,
+    "completedAt": 1776823429317,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_011",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Brunch restaurants in St. Louis.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823429354,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823429355,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823429356,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Brunch in St. Louis, MO",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823429357,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823429358,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=St.+Louis%2C+MO",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=St.+Louis%2C+MO",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823429359,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=St.+Louis%2C+MO",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823429360,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=St.+Louis%2C+MO",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823429361,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=St.+Louis%2C+MO&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823429362,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "brunch restaurants in St. Louis - name, rating, reviews, neighborhood, price range, hours, categories"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=St.+Louis%2C+MO&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823429363,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823429354,
+    "completedAt": 1776823501930,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_012",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find BBQ restaurants in San Jose.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823501965,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823501966,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823501967,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "BBQ in San Jose, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823501968,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823501969,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=BBQ&find_loc=San+Jose%2C+CA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=BBQ&find_loc=San+Jose%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823501970,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=BBQ&find_loc=San+Jose%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823501971,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=BBQ&find_loc=San+Jose%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823501972,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=BBQ&find_loc=San+Jose%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823501973,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "BBQ restaurants in San Jose - name, rating, number of reviews, price range, neighborhood/location, hours/status"
+        },
+        "url": "https://www.yelp.com/search?find_desc=BBQ&find_loc=San+Jose%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823501974,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823501965,
+    "completedAt": 1776823568241,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_013",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find French restaurants in Detroit.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823568277,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823568278,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823568279,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "French Restaurants in Detroit, MI",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823568280,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823568281,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=Detroit%2C+MI",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=Detroit%2C+MI",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823568282,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=Detroit%2C+MI",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823568283,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=Detroit%2C+MI",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823568284,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=Detroit%2C+MI&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823568285,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "French restaurants in Detroit - names, ratings, reviews, neighborhoods, price range"
+        },
+        "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=Detroit%2C+MI&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823568286,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823568277,
+    "completedAt": 1776823638737,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_014",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Spanish restaurants in Houston.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823638772,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823638773,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823638774,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Spanish Restaurants in Houston, TX",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823638775,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823638776,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=Houston%2C+TX",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=Houston%2C+TX",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823638777,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=Houston%2C+TX",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823638778,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=Houston%2C+TX",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823638779,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=Houston%2C+TX&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823638780,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "List all Spanish restaurants in Houston with their name, rating, number of reviews, neighborhood, price range, and hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Spanish+Restaurants&find_loc=Houston%2C+TX&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823638781,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823638772,
+    "completedAt": 1776823703314,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_015",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Steakhouse restaurants in Indianapolis.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823703350,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823703351,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823703352,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Steakhouse in Indianapolis, IN",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823703353,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823703354,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Steakhouse&find_loc=Indianapolis%2C+IN",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouse&find_loc=Indianapolis%2C+IN",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823703355,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouse&find_loc=Indianapolis%2C+IN",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823703356,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouse&find_loc=Indianapolis%2C+IN&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823703357,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Steakhouse restaurants in Indianapolis - names, ratings, reviews count, neighborhoods, price range"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouse&find_loc=Indianapolis%2C+IN&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823703358,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823703350,
+    "completedAt": 1776823769269,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_016",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Thai restaurants in Columbus.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823769305,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823769306,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823769307,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Thai Restaurants in Columbus, OH",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823769308,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823769309,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Columbus%2C+OH",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Columbus%2C+OH",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823769310,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Columbus%2C+OH",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823769311,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Columbus%2C+OH&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823769312,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Thai restaurants in Columbus Ohio - names, ratings, number of reviews, neighborhood/location, price range"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Columbus%2C+OH&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823769313,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823769305,
+    "completedAt": 1776823824417,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_017",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Greek restaurants in Austin.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823824451,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823824452,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823824453,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Greek Restaurants in Austin, TX",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823824454,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823824455,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Greek+Restaurants&find_loc=Austin%2C+TX",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Greek+Restaurants&find_loc=Austin%2C+TX",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823824456,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Greek+Restaurants&find_loc=Austin%2C+TX",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823824457,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Greek+Restaurants&find_loc=Austin%2C+TX&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823824458,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Greek restaurants list with names, ratings, reviews, price, location, and categories"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Greek+Restaurants&find_loc=Austin%2C+TX&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823824459,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823824451,
+    "completedAt": 1776823892357,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_018",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Indian restaurants in Raleigh.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823892391,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823892392,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823892393,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Indian Restaurants in Raleigh, NC",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823892394,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823892395,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Raleigh%2C+NC",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Raleigh%2C+NC",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823892396,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Raleigh%2C+NC",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823892397,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Raleigh%2C+NC",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823892398,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Raleigh%2C+NC&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823892399,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Indian restaurants in Raleigh - name, rating, number of reviews, location, price range, categories"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Raleigh%2C+NC&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823892400,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823892391,
+    "completedAt": 1776823958539,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_019",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Vietnamese restaurants in Detroit.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823958573,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823958574,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823958575,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Vietnamese Restaurants in Detroit, MI",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823958576,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823958577,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Detroit%2C+MI",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Detroit%2C+MI",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823958578,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Detroit%2C+MI",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823958579,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Detroit%2C+MI&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823958580,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Vietnamese restaurants list with name, rating, reviews, location, price range"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Detroit%2C+MI&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776823958581,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776823958573,
+    "completedAt": 1776824019055,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_020",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Peruvian restaurants in Miami.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824019090,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824019091,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824019092,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Peruvian Restaurants in Miami, FL",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824019093,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824019094,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Miami%2C+FL",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Miami%2C+FL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824019095,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Miami%2C+FL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824019096,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Miami%2C+FL&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824019097,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Peruvian restaurants in Miami - name, rating, number of reviews, neighborhood, price range, hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Miami%2C+FL&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824019098,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776824019090,
+    "completedAt": 1776824081522,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_021",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Peruvian place in Cleveland and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081557,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081558,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081559,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Peruvian Restaurants in Cleveland, OH",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081560,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081561,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Cleveland%2C+OH&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Cleveland%2C+OH&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081562,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Cleveland%2C+OH&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081563,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Cleveland%2C+OH&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081564,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 214,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Cleveland%2C+OH&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081565,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 540,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/quintaesencia-parma-2?osq=Peruvian+Restaurants",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081566,
+        "semanticTarget": {
+          "role": "A",
+          "name": "See hours"
+        }
+      },
+      {
+        "tool": "find",
+        "action": null,
+        "input": {
+          "pattern": "reservat",
+          "regex": false,
+          "case_sensitive": false,
+          "context_chars": 200,
+          "max_results": 10
+        },
+        "url": "https://www.yelp.com/biz/quintaesencia-parma-2?osq=Peruvian+Restaurants#location-and-hours",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081567,
+        "semanticTarget": null
+      },
+      {
+        "tool": "find",
+        "action": null,
+        "input": {
+          "pattern": "Takes Reservations",
+          "regex": false,
+          "case_sensitive": false,
+          "context_chars": 200,
+          "max_results": 5
+        },
+        "url": "https://www.yelp.com/biz/quintaesencia-parma-2?osq=Peruvian+Restaurants#location-and-hours",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081568,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/quintaesencia-parma-2?osq=Peruvian+Restaurants#location-and-hours",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081569,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "amenities reservations takes reservations"
+        },
+        "url": "https://www.yelp.com/biz/quintaesencia-parma-2?osq=Peruvian+Restaurants#location-and-hours",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824081570,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776824081557,
+    "completedAt": 1776824196659,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_022",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Vegan place in Salt Lake City and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824196701,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824196702,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824196703,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Vegan in Salt Lake City, UT",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824196704,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824196705,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Vegan&find_loc=Salt+Lake+City%2C+UT&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegan&find_loc=Salt+Lake+City%2C+UT&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824196706,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegan&find_loc=Salt+Lake+City%2C+UT&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824196707,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 250,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegan&find_loc=Salt+Lake+City%2C+UT&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824196708,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 527,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/blatchs-backyard-bbq-salt-lake-city?osq=Vegan",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824196709,
+        "semanticTarget": {
+          "role": "A",
+          "name": "See hours"
+        }
+      }
+    ],
+    "startedAt": 1776824196701,
+    "completedAt": 1776824256785,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_023",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Japanese place in Sacramento and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824256820,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824256821,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824256822,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Japanese Restaurants in Sacramento, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824256823,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824256824,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=Sacramento%2C+CA&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=Sacramento%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824256825,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=Sacramento%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824256826,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 391,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=Sacramento%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824256827,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 562,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/hikari-sushi-and-omakase-davis?osq=Japanese+Restaurants",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824256828,
+        "semanticTarget": {
+          "role": "A",
+          "name": "See hours"
+        }
+      }
+    ],
+    "startedAt": 1776824256820,
+    "completedAt": 1776824335787,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_024",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Turkish place in Dallas and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335823,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335824,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335825,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Turkish Restaurants in Dallas, TX",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335826,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335827,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Dallas%2C+TX&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Dallas%2C+TX&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335828,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Dallas%2C+TX&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335829,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Dallas%2C+TX&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335830,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 225,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Turkish+Restaurants&find_loc=Dallas%2C+TX&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335831,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/selda-irving?osq=Turkish+Restaurants",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335832,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/selda-irving?osq=Turkish+Restaurants",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335833,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "business hours, opening hours, reservation information, does it take reservations"
+        },
+        "url": "https://www.yelp.com/biz/selda-irving?osq=Turkish+Restaurants",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824335834,
+        "semanticTarget": null
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.seldadallas.com",
+          "new_tab": true,
+          "tabId": 1
+        },
+        "url": "https://www.seldadallas.com",
+        "success": true,
+        "domain": "www.seldadallas.com",
+        "timestamp": 1776824335835,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.seldadallas.com",
+        "success": true,
+        "domain": "www.seldadallas.com",
+        "timestamp": 1776824335836,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.seldadallas.com/",
+        "success": true,
+        "domain": "www.seldadallas.com",
+        "timestamp": 1776824335837,
+        "semanticTarget": null
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "tab_id": "C323"
+        },
+        "url": "https://internaladmin.zingmyorder.com/restaurants/selda-mediterranean-irving-7750-n-macarthur-blvd-ste-160-irving-tx-75063-usa",
+        "success": true,
+        "domain": "internaladmin.zingmyorder.com",
+        "timestamp": 1776824335838,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 18,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.seldadallas.com/",
+        "success": true,
+        "domain": "www.seldadallas.com",
+        "timestamp": 1776824335839,
+        "semanticTarget": {
+          "role": "A",
+          "name": "locations & menus"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 756,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.seldadallas.com/locations",
+        "success": true,
+        "domain": "www.seldadallas.com",
+        "timestamp": 1776824335840,
+        "semanticTarget": {
+          "role": "link",
+          "name": "LOAD MORE CONTENT"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.seldadallas.com/locations",
+        "success": true,
+        "domain": "www.seldadallas.com",
+        "timestamp": 1776824335841,
+        "semanticTarget": null
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "tab_id": "C323"
+        },
+        "url": "https://internaladmin.zingmyorder.com/restaurants/selda-mediterranean-irving-7750-n-macarthur-blvd-ste-160-irving-tx-75063-usa",
+        "success": true,
+        "domain": "internaladmin.zingmyorder.com",
+        "timestamp": 1776824335842,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.seldadallas.com/locations",
+        "success": true,
+        "domain": "www.seldadallas.com",
+        "timestamp": 1776824335843,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776824335823,
+    "completedAt": 1776824575102,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_025",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Korean place in Seattle and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575142,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575143,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575144,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Korean Restaurants in Seattle, WA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575145,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575146,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=Seattle%2C+WA&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=Seattle%2C+WA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575147,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=Seattle%2C+WA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575148,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=Seattle%2C+WA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575149,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=Seattle%2C+WA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575150,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 405,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=Seattle%2C+WA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575151,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 610,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/kind-seattle-2?osq=Korean+Restaurants",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824575152,
+        "semanticTarget": {
+          "role": "A",
+          "name": "See hours"
+        }
+      }
+    ],
+    "startedAt": 1776824575142,
+    "completedAt": 1776824662562,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_026",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Vegetarian place in Boston and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662601,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662602,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662603,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Vegetarian Restaurants in Boston, MA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662604,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662605,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Vegetarian+Restaurants&find_loc=Boston%2C+MA&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegetarian+Restaurants&find_loc=Boston%2C+MA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662606,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegetarian+Restaurants&find_loc=Boston%2C+MA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662607,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegetarian+Restaurants&find_loc=Boston%2C+MA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662608,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegetarian+Restaurants&find_loc=Boston%2C+MA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662609,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": false,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegetarian+Restaurants&find_loc=Boston%2C+MA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662610,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 260,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vegetarian+Restaurants&find_loc=Boston%2C+MA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662611,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 117,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/krasi-boston-2?osq=Vegetarian+Restaurants",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824662612,
+        "semanticTarget": {
+          "role": "A",
+          "name": "See hours"
+        }
+      }
+    ],
+    "startedAt": 1776824662601,
+    "completedAt": 1776824798167,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_027",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Caribbean place in Detroit and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824798209,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824798210,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824798211,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Caribbean Restaurants in Detroit, MI",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824798212,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824798213,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Caribbean+Restaurants&find_loc=Detroit%2C+MI&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Caribbean+Restaurants&find_loc=Detroit%2C+MI&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824798214,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Caribbean+Restaurants&find_loc=Detroit%2C+MI&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824798215,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 209,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Caribbean+Restaurants&find_loc=Detroit%2C+MI&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824798216,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776824798209,
+    "completedAt": 1776824857730,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_028",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Peruvian place in Columbus and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824857767,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824857768,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824857769,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Peruvian Restaurants in Columbus, OH",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824857770,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824857771,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Columbus%2C+OH&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Columbus%2C+OH&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824857772,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Columbus%2C+OH&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824857773,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 207,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Peruvian+Restaurants&find_loc=Columbus%2C+OH&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824857774,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776824857767,
+    "completedAt": 1776824917427,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_029",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Middle Eastern place in San Jose and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917467,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917468,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917469,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Middle Eastern in San Jose, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917470,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917471,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Middle+Eastern&find_loc=San+Jose%2C+CA&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Middle+Eastern&find_loc=San+Jose%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917472,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Middle+Eastern&find_loc=San+Jose%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917473,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 5.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Middle+Eastern&find_loc=San+Jose%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917474,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": false,
+          "pages": 10.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Middle+Eastern&find_loc=San+Jose%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917475,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 2.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Middle+Eastern&find_loc=San+Jose%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917476,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 406,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Middle+Eastern&find_loc=San+Jose%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917477,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 106,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/iraklis-santa-clara?osq=Middle+Eastern",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776824917478,
+        "semanticTarget": {
+          "role": "A",
+          "name": "See hours"
+        }
+      }
+    ],
+    "startedAt": 1776824917467,
+    "completedAt": 1776825040808,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_030",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Burgers place in Miami and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040849,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040850,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040851,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Burgers in Miami, FL",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040852,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040853,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Burgers&find_loc=Miami%2C+FL&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Burgers&find_loc=Miami%2C+FL&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040854,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Burgers&find_loc=Miami%2C+FL&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040855,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Burgers&find_loc=Miami%2C+FL&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040856,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Burgers&find_loc=Miami%2C+FL&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040857,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 444,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Burgers&find_loc=Miami%2C+FL&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040858,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 73,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/the-chopping-block-miami?osq=Burgers",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040859,
+        "semanticTarget": {
+          "role": "A",
+          "name": "See hours"
+        }
+      },
+      {
+        "tool": "find",
+        "action": null,
+        "input": {
+          "pattern": "reservat",
+          "regex": false,
+          "case_sensitive": false,
+          "context_chars": 200,
+          "max_results": 10
+        },
+        "url": "https://www.yelp.com/biz/the-chopping-block-miami?osq=Burgers#location-and-hours",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825040860,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776825040849,
+    "completedAt": 1776825134665,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_031",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Steakhouse place in Los Angeles and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825134704,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825134705,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825134706,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Steakhouses in Los Angeles, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825134707,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825134708,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Steakhouses&find_loc=Los+Angeles%2C+CA&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouses&find_loc=Los+Angeles%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825134709,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouses&find_loc=Los+Angeles%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825134710,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouses&find_loc=Los+Angeles%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825134711,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 417,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouses&find_loc=Los+Angeles%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825134712,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 561,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/chubby-cattle-little-tokyo-los-angeles-2?osq=Steakhouses",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825134713,
+        "semanticTarget": {
+          "role": "A",
+          "name": "See hours"
+        }
+      }
+    ],
+    "startedAt": 1776825134704,
+    "completedAt": 1776825225797,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_032",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Brunch place in Detroit and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225836,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225837,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225838,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Brunch in Detroit, MI",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225839,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225840,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Detroit%2C+MI&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Detroit%2C+MI&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225841,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Detroit%2C+MI&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225842,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Detroit%2C+MI&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225843,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Detroit%2C+MI&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225844,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Detroit%2C+MI&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225845,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 282,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Detroit%2C+MI&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225846,
+        "semanticTarget": null
+      },
+      {
+        "tool": "find",
+        "action": null,
+        "input": {
+          "pattern": "reserv",
+          "regex": false,
+          "case_sensitive": false,
+          "context_chars": 200,
+          "max_results": 10
+        },
+        "url": "https://www.yelp.com/biz/fred-s-detroit?osq=Brunch",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225847,
+        "semanticTarget": null
+      },
+      {
+        "tool": "find",
+        "action": null,
+        "input": {
+          "pattern": "No Reservations|Takes Reservations|accepts reservations|reservation",
+          "regex": true,
+          "case_sensitive": false,
+          "context_chars": 200,
+          "max_results": 10
+        },
+        "url": "https://www.yelp.com/biz/fred-s-detroit?osq=Brunch",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225848,
+        "semanticTarget": null
+      },
+      {
+        "tool": "find",
+        "action": null,
+        "input": {
+          "pattern": "No Reservations|Takes Reservations|reservation not|does not take",
+          "regex": true,
+          "case_sensitive": false,
+          "context_chars": 200,
+          "max_results": 10
+        },
+        "url": "https://www.yelp.com/biz/fred-s-detroit?osq=Brunch",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225849,
+        "semanticTarget": null
+      },
+      {
+        "tool": "find",
+        "action": null,
+        "input": {
+          "pattern": "Amenities|reservation|booking|walk.in|walk in",
+          "regex": true,
+          "case_sensitive": false,
+          "context_chars": 200,
+          "max_results": 10
+        },
+        "url": "https://www.yelp.com/biz/fred-s-detroit?osq=Brunch",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825225850,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776825225836,
+    "completedAt": 1776825392364,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_033",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Brunch place in Albuquerque and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392404,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392405,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392406,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Brunch in Albuquerque, NM",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392407,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392408,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Albuquerque%2C+NM&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Albuquerque%2C+NM&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392409,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Albuquerque%2C+NM&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392410,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Albuquerque%2C+NM&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392411,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Albuquerque%2C+NM&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392412,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 441,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Brunch&find_loc=Albuquerque%2C+NM&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392413,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 687,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/buen-provecho-albuquerque-2?osq=Brunch",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825392414,
+        "semanticTarget": {
+          "role": "A",
+          "name": "See hours"
+        }
+      }
+    ],
+    "startedAt": 1776825392404,
+    "completedAt": 1776825487608,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_034",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Middle Eastern place in Pittsburgh and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825487650,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825487651,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825487652,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Middle Eastern Restaurants in Pittsburgh, PA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825487653,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825487654,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Middle+Eastern+Restaurants&find_loc=Pittsburgh%2C+PA&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Middle+Eastern+Restaurants&find_loc=Pittsburgh%2C+PA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825487655,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Middle+Eastern+Restaurants&find_loc=Pittsburgh%2C+PA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825487656,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 231,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Middle+Eastern+Restaurants&find_loc=Pittsburgh%2C+PA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825487657,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/mezze-pittsburgh-2?osq=Middle+Eastern+Restaurants",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825487658,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1078,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/mezze-pittsburgh-2?osq=Middle+Eastern+Restaurants",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825487659,
+        "semanticTarget": {
+          "role": "submit",
+          "name": "13 More Attributes"
+        }
+      }
+    ],
+    "startedAt": 1776825487650,
+    "completedAt": 1776825572602,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_035",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find the best-rated Seafood place in Nashville and report its hours and whether it takes reservations.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572642,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572643,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572644,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Seafood in Nashville, TN",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572645,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572646,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Seafood&find_loc=Nashville%2C+TN&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Seafood&find_loc=Nashville%2C+TN&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572647,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Seafood&find_loc=Nashville%2C+TN&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572648,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Seafood&find_loc=Nashville%2C+TN&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572649,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": false,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Seafood&find_loc=Nashville%2C+TN&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572650,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 255,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Seafood&find_loc=Nashville%2C+TN&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572651,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 588,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/biz/gannons-nashville-nashville",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776825572652,
+        "semanticTarget": {
+          "role": "A",
+          "name": "See hours"
+        }
+      }
+    ],
+    "startedAt": 1776825572642,
+    "completedAt": 1776825779272,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_036",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find two highly-rated Lebanese places in San Francisco and compare their ratings and number of reviews.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826839070,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826839071,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826839072,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Lebanese Restaurants in San Francisco, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826839073,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826839074,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Lebanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Lebanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826839075,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Lebanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826839076,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Lebanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826839077,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776826839070,
+    "completedAt": 1776826922530,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_037",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find two highly-rated Japanese places in San Francisco and compare their ratings and number of reviews.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922563,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922564,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922565,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Japanese Restaurants in San Francisco, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922566,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922567,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922568,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922569,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922570,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922571,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": false,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922572,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 4.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Francisco%2C+CA&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776826922573,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776826922563,
+    "completedAt": 1776827052027,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_038",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find two highly-rated Mediterranean places in Charlotte and compare their ratings and number of reviews.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827052061,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827052062,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827052063,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Mediterranean in Charlotte, NC",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827052064,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827052065,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Mediterranean&find_loc=Charlotte%2C+NC&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mediterranean&find_loc=Charlotte%2C+NC&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827052066,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mediterranean&find_loc=Charlotte%2C+NC&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827052067,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776827052061,
+    "completedAt": 1776827112167,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_039",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find two highly-rated Steakhouse places in Minneapolis and compare their ratings and number of reviews.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827112199,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827112200,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827112201,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Steakhouses in Minneapolis, MN",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827112202,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827112203,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Steakhouses&find_loc=Minneapolis%2C+MN&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouses&find_loc=Minneapolis%2C+MN&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827112204,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Steakhouses&find_loc=Minneapolis%2C+MN&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827112205,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776827112199,
+    "completedAt": 1776827155827,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_040",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find two highly-rated Breakfast places in Boise and compare their ratings and number of reviews.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827155860,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827155861,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827155862,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Breakfast in Boise, ID",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827155863,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827155864,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Breakfast&find_loc=Boise%2C+ID&sortby=rating",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Breakfast&find_loc=Boise%2C+ID&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827155865,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Breakfast&find_loc=Boise%2C+ID&sortby=rating",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827155866,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "scroll",
+        "input": {
+          "down": true,
+          "pages": 3.0,
+          "action": "scroll",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Breakfast&find_loc=Boise%2C+ID&sortby=rating&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776827155867,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776827155860,
+    "completedAt": 1776827227692,
+    "taskSuccess": true
+  }
+]

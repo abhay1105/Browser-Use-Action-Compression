@@ -1,0 +1,212 @@
+{
+  "task": "yelp_search",
+  "num_examples": 50,
+  "prompt_id": "p008",
+  "created_at": "2026-04-22T01:46:12.818837Z",
+  "generator": {
+    "type": "template_yelp_mix",
+    "model": null
+  },
+  "prompts": [
+    {
+      "id": "p008_001",
+      "text": "On Yelp, find Turkish restaurants in Cincinnati."
+    },
+    {
+      "id": "p008_002",
+      "text": "On Yelp, find Thai restaurants in New Orleans."
+    },
+    {
+      "id": "p008_003",
+      "text": "On Yelp, find Spanish restaurants in San Diego."
+    },
+    {
+      "id": "p008_004",
+      "text": "On Yelp, find Steakhouse restaurants in Columbus."
+    },
+    {
+      "id": "p008_005",
+      "text": "On Yelp, find Vegan restaurants in Boston."
+    },
+    {
+      "id": "p008_006",
+      "text": "On Yelp, find Breakfast restaurants in Las Vegas."
+    },
+    {
+      "id": "p008_007",
+      "text": "On Yelp, find Indian restaurants in Phoenix."
+    },
+    {
+      "id": "p008_008",
+      "text": "On Yelp, find Turkish restaurants in Detroit."
+    },
+    {
+      "id": "p008_009",
+      "text": "On Yelp, find Chinese restaurants in Chicago."
+    },
+    {
+      "id": "p008_010",
+      "text": "On Yelp, find Turkish restaurants in Phoenix."
+    },
+    {
+      "id": "p008_011",
+      "text": "On Yelp, find Brunch restaurants in St. Louis."
+    },
+    {
+      "id": "p008_012",
+      "text": "On Yelp, find BBQ restaurants in San Jose."
+    },
+    {
+      "id": "p008_013",
+      "text": "On Yelp, find French restaurants in Detroit."
+    },
+    {
+      "id": "p008_014",
+      "text": "On Yelp, find Spanish restaurants in Houston."
+    },
+    {
+      "id": "p008_015",
+      "text": "On Yelp, find Steakhouse restaurants in Indianapolis."
+    },
+    {
+      "id": "p008_016",
+      "text": "On Yelp, find Thai restaurants in Columbus."
+    },
+    {
+      "id": "p008_017",
+      "text": "On Yelp, find Greek restaurants in Austin."
+    },
+    {
+      "id": "p008_018",
+      "text": "On Yelp, find Indian restaurants in Raleigh."
+    },
+    {
+      "id": "p008_019",
+      "text": "On Yelp, find Vietnamese restaurants in Detroit."
+    },
+    {
+      "id": "p008_020",
+      "text": "On Yelp, find Peruvian restaurants in Miami."
+    },
+    {
+      "id": "p008_021",
+      "text": "On Yelp, find the best-rated Peruvian place in Cleveland and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_022",
+      "text": "On Yelp, find the best-rated Vegan place in Salt Lake City and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_023",
+      "text": "On Yelp, find the best-rated Japanese place in Sacramento and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_024",
+      "text": "On Yelp, find the best-rated Turkish place in Dallas and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_025",
+      "text": "On Yelp, find the best-rated Korean place in Seattle and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_026",
+      "text": "On Yelp, find the best-rated Vegetarian place in Boston and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_027",
+      "text": "On Yelp, find the best-rated Caribbean place in Detroit and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_028",
+      "text": "On Yelp, find the best-rated Peruvian place in Columbus and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_029",
+      "text": "On Yelp, find the best-rated Middle Eastern place in San Jose and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_030",
+      "text": "On Yelp, find the best-rated Burgers place in Miami and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_031",
+      "text": "On Yelp, find the best-rated Steakhouse place in Los Angeles and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_032",
+      "text": "On Yelp, find the best-rated Brunch place in Detroit and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_033",
+      "text": "On Yelp, find the best-rated Brunch place in Albuquerque and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_034",
+      "text": "On Yelp, find the best-rated Middle Eastern place in Pittsburgh and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_035",
+      "text": "On Yelp, find the best-rated Seafood place in Nashville and report its hours and whether it takes reservations."
+    },
+    {
+      "id": "p008_036",
+      "text": "On Yelp, find two highly-rated Lebanese places in San Francisco and compare their ratings and number of reviews."
+    },
+    {
+      "id": "p008_037",
+      "text": "On Yelp, find two highly-rated Japanese places in San Francisco and compare their ratings and number of reviews."
+    },
+    {
+      "id": "p008_038",
+      "text": "On Yelp, find two highly-rated Mediterranean places in Charlotte and compare their ratings and number of reviews."
+    },
+    {
+      "id": "p008_039",
+      "text": "On Yelp, find two highly-rated Steakhouse places in Minneapolis and compare their ratings and number of reviews."
+    },
+    {
+      "id": "p008_040",
+      "text": "On Yelp, find two highly-rated Breakfast places in Boise and compare their ratings and number of reviews."
+    },
+    {
+      "id": "p008_041",
+      "text": "On Yelp, find two highly-rated Indian places in San Jose and compare their ratings and number of reviews."
+    },
+    {
+      "id": "p008_042",
+      "text": "On Yelp, find two highly-rated Italian places in Sacramento and compare their ratings and number of reviews."
+    },
+    {
+      "id": "p008_043",
+      "text": "On Yelp, find two highly-rated Steakhouse places in Orlando and compare their ratings and number of reviews."
+    },
+    {
+      "id": "p008_044",
+      "text": "On Yelp, find two highly-rated Greek places in Cincinnati and compare their ratings and number of reviews."
+    },
+    {
+      "id": "p008_045",
+      "text": "On Yelp, find two highly-rated Ramen places in Philadelphia and compare their ratings and number of reviews."
+    },
+    {
+      "id": "p008_046",
+      "text": "On Yelp, find the top French restaurant in Philadelphia and summarize its three most recent reviews."
+    },
+    {
+      "id": "p008_047",
+      "text": "On Yelp, find the top Seafood restaurant in Boise and summarize its three most recent reviews."
+    },
+    {
+      "id": "p008_048",
+      "text": "On Yelp, find the top Middle Eastern restaurant in Indianapolis and summarize its three most recent reviews."
+    },
+    {
+      "id": "p008_049",
+      "text": "On Yelp, find the top Chinese restaurant in Nashville and summarize its three most recent reviews."
+    },
+    {
+      "id": "p008_050",
+      "text": "On Yelp, find the top Brazilian restaurant in Portland and summarize its three most recent reviews."
+    }
+  ]
+}

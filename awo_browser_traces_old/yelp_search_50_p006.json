@@ -1,0 +1,2567 @@
+[
+  {
+    "id": "trace_001",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Italian restaurants in Seattle.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820703593,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820703594,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820703595,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Italian Restaurants in Seattle, WA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820703596,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820703597,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=Seattle%2C+WA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=Seattle%2C+WA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820703598,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=Seattle%2C+WA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820703599,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=Seattle%2C+WA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820703600,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Italian restaurants in Seattle - names, ratings, number of reviews, price range, neighborhood, categories, hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=Seattle%2C+WA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820703601,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776820703593,
+    "completedAt": 1776820770141,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_002",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Thai restaurants in Chicago.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820770172,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820770173,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820770174,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Thai Restaurants in Chicago, IL",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820770175,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820770176,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820770177,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820770178,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820770179,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820770180,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Thai restaurants in Chicago - names, ratings, number of reviews, neighborhood, price range, hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820770181,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776820770172,
+    "completedAt": 1776820838425,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_003",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Pizza restaurants in San Diego.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820838456,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820838457,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820838458,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Pizza in San Diego, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820838459,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820838460,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Pizza&find_loc=San+Diego%2C+CA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Pizza&find_loc=San+Diego%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820838461,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Pizza&find_loc=San+Diego%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820838462,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Pizza&find_loc=San+Diego%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820838463,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Pizza&find_loc=San+Diego%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820838464,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Pizza restaurants in San Diego - names, ratings, reviews, categories, price, hours, neighborhood"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Pizza&find_loc=San+Diego%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820838465,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776820838456,
+    "completedAt": 1776820914203,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_004",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Mexican restaurants in Portland.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820914232,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820914233,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820914234,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Mexican Restaurants in Portland, OR",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820914235,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820914236,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820914237,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820914238,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820914239,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820914240,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Mexican restaurants in Portland - name, rating, number of reviews, neighborhood/location, price range, hours/status"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820914241,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776820914232,
+    "completedAt": 1776820978548,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_005",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Japanese restaurants in San Jose.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820978578,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820978579,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820978580,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Japanese Restaurants in San Jose, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820978581,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820978582,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820978583,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820978584,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820978585,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820978586,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Japanese restaurants in San Jose - list of restaurants with name, rating, number of reviews, cuisine categories, price range, and hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776820978587,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776820978578,
+    "completedAt": 1776821049139,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_006",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Indian restaurants in Seattle.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821049172,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821049173,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821049174,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Indian Restaurants in Seattle, WA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821049175,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821049176,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821049177,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821049178,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821049179,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821049180,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "List of Indian restaurants in Seattle with ratings, reviews, price range, neighborhood, and hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821049181,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821049172,
+    "completedAt": 1776821122860,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_007",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Mediterranean restaurants in Chicago.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821122893,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821122894,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821122895,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Mediterranean Restaurants in Chicago, IL",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821122896,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821122897,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Mediterranean+Restaurants&find_loc=Chicago%2C+IL",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mediterranean+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821122898,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mediterranean+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821122899,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mediterranean+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821122900,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mediterranean+Restaurants&find_loc=Chicago%2C+IL&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821122901,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Mediterranean restaurants in Chicago - name, rating, number of reviews, neighborhood/location, price range, cuisine type, hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mediterranean+Restaurants&find_loc=Chicago%2C+IL&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821122902,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821122893,
+    "completedAt": 1776821191265,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_008",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Korean restaurants in San Diego.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821191302,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821191303,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821191304,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Korean Restaurants in San Diego, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821191305,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821191306,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=San+Diego%2C+CA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=San+Diego%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821191307,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=San+Diego%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821191308,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=San+Diego%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821191309,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=San+Diego%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821191310,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Korean restaurants in San Diego - names, ratings, number of reviews, price range, cuisine types, hours, neighborhood/location"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Korean+Restaurants&find_loc=San+Diego%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821191311,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821191302,
+    "completedAt": 1776821263558,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_009",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Vietnamese restaurants in Portland.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821263593,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821263594,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821263595,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Vietnamese Restaurants in Portland, OR",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821263596,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821263597,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Portland%2C+OR",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Portland%2C+OR",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821263598,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Portland%2C+OR",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821263599,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Portland%2C+OR",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821263600,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Portland%2C+OR&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821263601,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Vietnamese restaurants in Portland - name, rating, number of reviews, neighborhood, price range, hours status"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Vietnamese+Restaurants&find_loc=Portland%2C+OR&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821263602,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821263593,
+    "completedAt": 1776821326857,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_010",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find French restaurants in San Jose.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821326896,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821326897,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821326898,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "French Restaurants in San Jose, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821326899,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821326900,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=San+Jose%2C+CA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=San+Jose%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821326901,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=San+Jose%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821326902,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=San+Jose%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821326903,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "French restaurants in San Jose - name, rating, number of reviews, neighborhood, price range, hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=French+Restaurants&find_loc=San+Jose%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821326904,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821326896,
+    "completedAt": 1776821387467,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_011",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Italian restaurants in Seattle.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821387502,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821387503,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821387504,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Italian Restaurants in Seattle, WA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821387505,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821387506,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=Seattle%2C+WA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=Seattle%2C+WA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821387507,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=Seattle%2C+WA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821387508,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=Seattle%2C+WA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821387509,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "List all Italian restaurants with their ratings, number of reviews, price range, neighborhoods, and categories"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=Seattle%2C+WA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821387510,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821387502,
+    "completedAt": 1776821452771,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_012",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Thai restaurants in Chicago.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821452808,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821452809,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821452810,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Thai Restaurants in Chicago, IL",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821452811,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821452812,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821452813,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821452814,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821452815,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821452816,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Thai restaurants in Chicago - name, rating, number of reviews, neighborhood, price range, hours/status"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Thai+Restaurants&find_loc=Chicago%2C+IL&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821452817,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821452808,
+    "completedAt": 1776821524773,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_013",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Pizza restaurants in San Diego.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821524809,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821524810,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821524811,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Pizza in San Diego, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821524812,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821524813,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Pizza&find_loc=San+Diego%2C+CA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Pizza&find_loc=San+Diego%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821524814,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Pizza&find_loc=San+Diego%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821524815,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821524809,
+    "completedAt": 1776821562504,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_014",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Mexican restaurants in Portland.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821562539,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821562540,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821562541,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Mexican Restaurants in Portland, OR",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821562542,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821562543,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821562544,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821562545,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821562546,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821562547,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Mexican restaurants list with name, rating, reviews, neighborhood, price range, hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mexican+Restaurants&find_loc=Portland%2C+OR&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821562548,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821562539,
+    "completedAt": 1776821631075,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_015",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Japanese restaurants in San Jose.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821631112,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821631113,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821631114,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Japanese Restaurants in San Jose, CA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821631115,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821631116,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821631117,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821631118,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821631119,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "Japanese restaurants in San Jose - names, ratings, reviews, categories, price range, hours"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Japanese+Restaurants&find_loc=San+Jose%2C+CA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821631120,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821631112,
+    "completedAt": 1776821709634,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_016",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Indian restaurants in Seattle.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821709668,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821709669,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821709670,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Indian Restaurants in Seattle, WA",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821709671,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821709672,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821709673,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821709674,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 5,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821709675,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821709676,
+        "semanticTarget": null
+      },
+      {
+        "tool": "read_page",
+        "action": null,
+        "input": {
+          "filter": "interactive",
+          "tabId": 1,
+          "query": "List of Indian restaurants in Seattle with ratings, reviews, price range, neighborhood, and status"
+        },
+        "url": "https://www.yelp.com/search?find_desc=Indian+Restaurants&find_loc=Seattle%2C+WA&dd_referrer=",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821709677,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821709668,
+    "completedAt": 1776821780448,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_017",
+    "domain": "www.yelp.com",
+    "goal": "On Yelp, find Mediterranean restaurants in Chicago.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "new_tab": false,
+          "tabId": 1,
+          "url": "https://www.yelp.com/"
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821780483,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821780484,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "left_click",
+        "input": {
+          "coordinate": [
+            460,
+            90
+          ],
+          "action": "left_click",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821780485,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "type",
+        "input": {
+          "text": "Mediterranean Restaurants in Chicago, IL",
+          "action": "type",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821780486,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "key",
+        "input": {
+          "text": "Enter",
+          "action": "key",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821780487,
+        "semanticTarget": {
+          "role": "searchbox",
+          "name": "Search Yelp"
+        }
+      },
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.yelp.com/search?find_desc=Mediterranean+Restaurants&find_loc=Chicago%2C+IL",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mediterranean+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821780488,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.yelp.com/search?find_desc=Mediterranean+Restaurants&find_loc=Chicago%2C+IL",
+        "success": true,
+        "domain": "www.yelp.com",
+        "timestamp": 1776821780489,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776821780483,
+    "completedAt": 1776821826501,
+    "taskSuccess": true
+  }
+]
