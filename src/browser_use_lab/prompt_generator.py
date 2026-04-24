@@ -4,6 +4,7 @@ import json
 import os
 import random
 import re
+from datetime import date, timedelta
 from typing import Any
 
 from .ids import now_iso
@@ -26,6 +27,11 @@ FALLBACK_ITEMS = [
 def _is_yelp_task(task: str) -> bool:
     slug = task.strip().lower()
     return "yelp" in slug
+
+
+def _is_google_flights_task(task: str) -> bool:
+    slug = task.strip().lower()
+    return "google_flights" in slug or ("google" in slug and "flight" in slug)
 
 
 def _allocate_yelp_bucket_counts(n: int) -> dict[str, int]:
@@ -58,6 +64,190 @@ def _allocate_yelp_bucket_counts(n: int) -> dict[str, int]:
         idx += 1
 
     return base_counts
+
+
+def _allocate_google_flights_bucket_counts(n: int) -> dict[str, int]:
+    # Target distribution for n=48:
+    # one_way_basic=8, round_trip_basic=8, one_way_nonstop=8,
+    # one_way_airline=8, one_way_people=8, multi_city=8
+    specs: list[tuple[str, int]] = [
+        ("one_way_basic", 8),
+        ("round_trip_basic", 8),
+        ("one_way_nonstop", 8),
+        ("one_way_airline", 8),
+        ("one_way_people", 8),
+        ("multi_city", 8),
+    ]
+    total_weight = sum(weight for _, weight in specs)
+    base_counts: dict[str, int] = {}
+    remainders: list[tuple[float, str]] = []
+    assigned = 0
+    for name, weight in specs:
+        exact = (n * weight) / total_weight
+        count = int(exact)
+        base_counts[name] = count
+        assigned += count
+        remainders.append((exact - count, name))
+
+    remainders.sort(key=lambda item: item[0], reverse=True)
+    remaining = n - assigned
+    idx = 0
+    while remaining > 0 and remainders:
+        _, name = remainders[idx % len(remainders)]
+        base_counts[name] += 1
+        remaining -= 1
+        idx += 1
+
+    return base_counts
+
+
+def _build_google_flights_mixed_prompts(n: int) -> list[str]:
+    today = date.today()
+    start_instruction = (
+        " Start from Google Flights home page."
+        " Do not navigate directly to search results URLs."
+        " First open https://www.google.com/travel/flights."
+        " Use on-page controls only after the homepage loads."
+    )
+    airports = [
+        "New York (JFK)",
+        "Los Angeles (LAX)",
+        "San Francisco (SFO)",
+        "Chicago (ORD)",
+        "Seattle (SEA)",
+        "Boston (BOS)",
+        "Miami (MIA)",
+        "Dallas (DFW)",
+        "Denver (DEN)",
+        "Atlanta (ATL)",
+        "Washington, DC (DCA)",
+        "Las Vegas (LAS)",
+        "Phoenix (PHX)",
+        "Orlando (MCO)",
+        "Houston (IAH)",
+        "Minneapolis (MSP)",
+        "Philadelphia (PHL)",
+        "San Diego (SAN)",
+    ]
+    airlines = [
+        "Delta Air Lines",
+        "United Airlines",
+        "American Airlines",
+        "Southwest Airlines",
+        "Alaska Airlines",
+        "JetBlue",
+    ]
+    passenger_counts = [2, 3, 4, 5, 6]
+    counts = _allocate_google_flights_bucket_counts(n)
+
+    route_pairs = [(origin, destination) for origin in airports for destination in airports if origin != destination]
+    round_trip_pairs = list(route_pairs)
+    nonstop_pairs = list(route_pairs)
+    airline_pairs = list(route_pairs)
+    people_pairs = list(route_pairs)
+    multi_city_legs = [
+        (origin, middle, destination)
+        for origin in airports
+        for middle in airports
+        for destination in airports
+        if len({origin, middle, destination}) == 3
+    ]
+
+    random.Random(202601).shuffle(route_pairs)
+    random.Random(202602).shuffle(round_trip_pairs)
+    random.Random(202603).shuffle(nonstop_pairs)
+    random.Random(202604).shuffle(airline_pairs)
+    random.Random(202605).shuffle(people_pairs)
+    random.Random(202606).shuffle(multi_city_legs)
+
+    prompts: list[str] = []
+    used_prompts: set[str] = set()
+
+    def _add_unique(bucket: str, bucket_count: int, candidates: list[str]) -> None:
+        if bucket_count <= 0:
+            return
+        generated = 0
+        for candidate in candidates:
+            prompt = candidate.strip()
+            if not prompt or prompt in used_prompts:
+                continue
+            prompts.append(prompt)
+            used_prompts.add(prompt)
+            generated += 1
+            if generated >= bucket_count:
+                return
+        raise RuntimeError(f"Unable to generate {bucket_count} unique Google Flights prompts for bucket '{bucket}'")
+
+    one_way_basic_candidates = [
+        (
+            f"Find one-way flights from {origin} to {destination} on {(today + timedelta(days=14 + (idx * 2))).isoformat()} "
+            f"and report the cheapest option with airline, duration, and stops.{start_instruction}"
+        )
+        for idx, (origin, destination) in enumerate(route_pairs)
+    ]
+    _add_unique("one_way_basic", counts["one_way_basic"], one_way_basic_candidates)
+
+    round_trip_basic_candidates = [
+        (
+            f"Find a round-trip from {origin} to {destination} on "
+            f"{(today + timedelta(days=21 + (idx * 3))).isoformat()} and "
+            f"{(today + timedelta(days=21 + (idx * 3) + 3 + (idx % 4))).isoformat()} "
+            f"and report the cheapest option with airline, duration, and stops.{start_instruction}"
+        )
+        for idx, (origin, destination) in enumerate(round_trip_pairs)
+    ]
+    _add_unique("round_trip_basic", counts["round_trip_basic"], round_trip_basic_candidates)
+
+    one_way_nonstop_candidates = [
+        (
+            f"Find nonstop one-way flights from {origin} to {destination} on "
+            f"{(today + timedelta(days=18 + (idx * 2))).isoformat()} and report the cheapest option.{start_instruction}"
+        )
+        for idx, (origin, destination) in enumerate(nonstop_pairs)
+    ]
+    _add_unique("one_way_nonstop", counts["one_way_nonstop"], one_way_nonstop_candidates)
+
+    airline_candidates = [
+        (
+            f"Find one-way flights on {airline} from {origin} to {destination} on "
+            f"{(today + timedelta(days=24 + idx)).isoformat()} and report the cheapest option.{start_instruction}"
+        )
+        for idx, (airline, (origin, destination)) in enumerate(
+            (airlines[idx % len(airlines)], pair)
+            for idx, pair in enumerate(airline_pairs)
+        )
+    ]
+    _add_unique("one_way_airline", counts["one_way_airline"], airline_candidates)
+
+    one_way_people_candidates = [
+        (
+            f"Find one-way flights for {people} people from {origin} to {destination} on "
+            f"{(today + timedelta(days=16 + idx)).isoformat()} and report the cheapest option.{start_instruction}"
+        )
+        for idx, (people, (origin, destination)) in enumerate(
+            (passenger_counts[idx % len(passenger_counts)], pair)
+            for idx, pair in enumerate(people_pairs)
+        )
+    ]
+    _add_unique("one_way_people", counts["one_way_people"], one_way_people_candidates)
+
+    multi_city_candidates = [
+        (
+            f"Find a multi-city flight from {origin} to {middle} on "
+            f"{(today + timedelta(days=28 + (idx * 2))).isoformat()} and "
+            f"{middle} to {destination} on "
+            f"{(today + timedelta(days=28 + (idx * 2) + 2 + (idx % 3))).isoformat()} "
+            f"and report the cheapest option.{start_instruction}"
+        )
+        for idx, (origin, middle, destination) in enumerate(multi_city_legs)
+    ]
+    _add_unique("multi_city", counts["multi_city"], multi_city_candidates)
+
+    if len(prompts) != n:
+        raise RuntimeError(f"Expected {n} Google Flights prompts, got {len(prompts)}")
+    if len(set(prompts)) != len(prompts):
+        raise RuntimeError("Duplicate Google Flights prompts detected")
+    return prompts
 
 
 def _build_yelp_mixed_prompts(n: int) -> list[str]:
@@ -321,6 +511,8 @@ def _generate_yelp_prompts_by_buckets(*, n: int, model: str, provider: str) -> l
 
 
 def _fallback_prompts(task: str, n: int) -> list[str]:
+    if _is_google_flights_task(task):
+        return _build_google_flights_mixed_prompts(n)
     if _is_yelp_task(task):
         return _build_yelp_mixed_prompts(n)
 
@@ -448,7 +640,10 @@ def generate_prompt_dataset(
     generator_type = "template"
     provider_slug = provider.strip().lower()
 
-    if _is_yelp_task(task):
+    if _is_google_flights_task(task):
+        prompts = _build_google_flights_mixed_prompts(n)
+        generator_type = "template_google_flights_mix"
+    elif _is_yelp_task(task):
         if force_template:
             prompts = _build_yelp_mixed_prompts(n)
             generator_type = "template_yelp_mix"

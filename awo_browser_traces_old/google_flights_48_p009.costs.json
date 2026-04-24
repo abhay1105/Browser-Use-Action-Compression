@@ -1,0 +1,574 @@
+{
+  "trace_001": {
+    "usage": {
+      "total_prompt_tokens": 121024,
+      "total_completion_tokens": 3451,
+      "total_tokens": 124475,
+      "total_prompt_cost": 0.2364717,
+      "total_prompt_cached_tokens": 62214,
+      "total_prompt_cached_cost": 0.0186642,
+      "total_completion_cost": 0.051765,
+      "total_cost": 0.30690090000000003,
+      "entry_count": 8,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 121024,
+          "completion_tokens": 3451,
+          "total_tokens": 124475,
+          "cost": 0.2882367,
+          "invocations": 8,
+          "average_tokens_per_invocation": 15559.375
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 7
+  },
+  "trace_002": {
+    "usage": {
+      "total_prompt_tokens": 221579,
+      "total_completion_tokens": 5164,
+      "total_tokens": 226743,
+      "total_prompt_cost": 0.33127890000000004,
+      "total_prompt_cached_tokens": 124428,
+      "total_prompt_cached_cost": 0.037328400000000005,
+      "total_completion_cost": 0.07746000000000001,
+      "total_cost": 0.44606730000000006,
+      "entry_count": 13,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 221579,
+          "completion_tokens": 5164,
+          "total_tokens": 226743,
+          "cost": 0.4087389,
+          "invocations": 13,
+          "average_tokens_per_invocation": 17441.76923076923
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 12
+  },
+  "trace_003": {
+    "usage": {
+      "total_prompt_tokens": 207451,
+      "total_completion_tokens": 4828,
+      "total_tokens": 212279,
+      "total_prompt_cost": 0.31688744999999996,
+      "total_prompt_cached_tokens": 114059,
+      "total_prompt_cached_cost": 0.034217700000000004,
+      "total_completion_cost": 0.07242,
+      "total_cost": 0.42352514999999996,
+      "entry_count": 12,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 207451,
+          "completion_tokens": 4828,
+          "total_tokens": 212279,
+          "cost": 0.38930745,
+          "invocations": 12,
+          "average_tokens_per_invocation": 17689.916666666668
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 12
+  },
+  "trace_004": {
+    "usage": {
+      "total_prompt_tokens": 42823,
+      "total_completion_tokens": 1579,
+      "total_tokens": 44402,
+      "total_prompt_cost": 0.0749664,
+      "total_prompt_cached_tokens": 20738,
+      "total_prompt_cached_cost": 0.006221399999999999,
+      "total_completion_cost": 0.023685,
+      "total_cost": 0.1048728,
+      "entry_count": 3,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 42823,
+          "completion_tokens": 1579,
+          "total_tokens": 44402,
+          "cost": 0.0986514,
+          "invocations": 3,
+          "average_tokens_per_invocation": 14800.666666666666
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 2
+  },
+  "trace_005": {
+    "usage": {
+      "total_prompt_tokens": 272126,
+      "total_completion_tokens": 5461,
+      "total_tokens": 277587,
+      "total_prompt_cost": 0.39891975,
+      "total_prompt_cached_tokens": 155535,
+      "total_prompt_cached_cost": 0.04666050000000001,
+      "total_completion_cost": 0.08191499999999999,
+      "total_cost": 0.52749525,
+      "entry_count": 16,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 272126,
+          "completion_tokens": 5461,
+          "total_tokens": 277587,
+          "cost": 0.48083475,
+          "invocations": 16,
+          "average_tokens_per_invocation": 17349.1875
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 15
+  },
+  "trace_006": {
+    "usage": {
+      "total_prompt_tokens": 42756,
+      "total_completion_tokens": 1597,
+      "total_tokens": 44353,
+      "total_prompt_cost": 0.07476165,
+      "total_prompt_cached_tokens": 20738,
+      "total_prompt_cached_cost": 0.006221399999999999,
+      "total_completion_cost": 0.023955,
+      "total_cost": 0.10493805,
+      "entry_count": 3,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 42756,
+          "completion_tokens": 1597,
+          "total_tokens": 44353,
+          "cost": 0.09871665,
+          "invocations": 3,
+          "average_tokens_per_invocation": 14784.333333333334
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 2
+  },
+  "trace_007": {
+    "usage": {
+      "total_prompt_tokens": 147446,
+      "total_completion_tokens": 3110,
+      "total_tokens": 150556,
+      "total_prompt_cost": 0.2768502,
+      "total_prompt_cached_tokens": 62214,
+      "total_prompt_cached_cost": 0.0186642,
+      "total_completion_cost": 0.046650000000000004,
+      "total_cost": 0.34216440000000004,
+      "entry_count": 7,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 147446,
+          "completion_tokens": 3110,
+          "total_tokens": 150556,
+          "cost": 0.3235002,
+          "invocations": 7,
+          "average_tokens_per_invocation": 21508.0
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 6
+  },
+  "trace_008": {
+    "usage": {
+      "total_prompt_tokens": 144246,
+      "total_completion_tokens": 3902,
+      "total_tokens": 148148,
+      "total_prompt_cost": 0.21126135000000001,
+      "total_prompt_cached_tokens": 82952,
+      "total_prompt_cached_cost": 0.0248856,
+      "total_completion_cost": 0.058530000000000006,
+      "total_cost": 0.29467695000000005,
+      "entry_count": 9,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 144246,
+          "completion_tokens": 3902,
+          "total_tokens": 148148,
+          "cost": 0.26979135000000004,
+          "invocations": 9,
+          "average_tokens_per_invocation": 16460.88888888889
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 8
+  },
+  "trace_009": {
+    "usage": {
+      "total_prompt_tokens": 42810,
+      "total_completion_tokens": 1821,
+      "total_tokens": 44631,
+      "total_prompt_cost": 0.0749649,
+      "total_prompt_cached_tokens": 20738,
+      "total_prompt_cached_cost": 0.006221399999999999,
+      "total_completion_cost": 0.027315,
+      "total_cost": 0.10850130000000001,
+      "entry_count": 3,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 42810,
+          "completion_tokens": 1821,
+          "total_tokens": 44631,
+          "cost": 0.1022799,
+          "invocations": 3,
+          "average_tokens_per_invocation": 14877.0
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 2
+  },
+  "trace_010": {
+    "usage": {
+      "total_prompt_tokens": 41823,
+      "total_completion_tokens": 1449,
+      "total_tokens": 43272,
+      "total_prompt_cost": 0.0719964,
+      "total_prompt_cached_tokens": 20738,
+      "total_prompt_cached_cost": 0.006221399999999999,
+      "total_completion_cost": 0.021735,
+      "total_cost": 0.09995280000000001,
+      "entry_count": 3,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 41823,
+          "completion_tokens": 1449,
+          "total_tokens": 43272,
+          "cost": 0.09373139999999999,
+          "invocations": 3,
+          "average_tokens_per_invocation": 14424.0
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 2
+  },
+  "trace_011": {
+    "usage": {
+      "total_prompt_tokens": 191898,
+      "total_completion_tokens": 4780,
+      "total_tokens": 196678,
+      "total_prompt_cost": 0.29826225,
+      "total_prompt_cached_tokens": 103690,
+      "total_prompt_cached_cost": 0.031107000000000003,
+      "total_completion_cost": 0.0717,
+      "total_cost": 0.40106925,
+      "entry_count": 11,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 191898,
+          "completion_tokens": 4780,
+          "total_tokens": 196678,
+          "cost": 0.36996225000000005,
+          "invocations": 11,
+          "average_tokens_per_invocation": 17879.81818181818
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 10
+  },
+  "trace_012": {
+    "usage": {
+      "total_prompt_tokens": 245645,
+      "total_completion_tokens": 5745,
+      "total_tokens": 251390,
+      "total_prompt_cost": 0.37551435000000005,
+      "total_prompt_cached_tokens": 134797,
+      "total_prompt_cached_cost": 0.040439100000000006,
+      "total_completion_cost": 0.086175,
+      "total_cost": 0.5021284500000001,
+      "entry_count": 14,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 245645,
+          "completion_tokens": 5745,
+          "total_tokens": 251390,
+          "cost": 0.46168935,
+          "invocations": 14,
+          "average_tokens_per_invocation": 17956.428571428572
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 13
+  },
+  "trace_013": {
+    "usage": {
+      "total_prompt_tokens": 42894,
+      "total_completion_tokens": 1999,
+      "total_tokens": 44893,
+      "total_prompt_cost": 0.07520940000000001,
+      "total_prompt_cached_tokens": 20738,
+      "total_prompt_cached_cost": 0.006221399999999999,
+      "total_completion_cost": 0.029984999999999998,
+      "total_cost": 0.11141580000000001,
+      "entry_count": 3,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 42894,
+          "completion_tokens": 1999,
+          "total_tokens": 44893,
+          "cost": 0.10519440000000001,
+          "invocations": 3,
+          "average_tokens_per_invocation": 14964.333333333334
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 2
+  },
+  "trace_014": {
+    "usage": {
+      "total_prompt_tokens": 248000,
+      "total_completion_tokens": 5626,
+      "total_tokens": 253626,
+      "total_prompt_cost": 0.38257560000000007,
+      "total_prompt_cached_tokens": 134797,
+      "total_prompt_cached_cost": 0.040439100000000006,
+      "total_completion_cost": 0.08439,
+      "total_cost": 0.5074047000000002,
+      "entry_count": 14,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 248000,
+          "completion_tokens": 5626,
+          "total_tokens": 253626,
+          "cost": 0.4669656000000001,
+          "invocations": 14,
+          "average_tokens_per_invocation": 18116.14285714286
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 13
+  },
+  "trace_015": {
+    "usage": {
+      "total_prompt_tokens": 265676,
+      "total_completion_tokens": 6286,
+      "total_tokens": 271962,
+      "total_prompt_cost": 0.40759980000000007,
+      "total_prompt_cached_tokens": 145166,
+      "total_prompt_cached_cost": 0.04354980000000001,
+      "total_completion_cost": 0.09429,
+      "total_cost": 0.5454396,
+      "entry_count": 15,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 265676,
+          "completion_tokens": 6286,
+          "total_tokens": 271962,
+          "cost": 0.5018897999999999,
+          "invocations": 15,
+          "average_tokens_per_invocation": 18130.8
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 15
+  },
+  "trace_016": {
+    "usage": {
+      "total_prompt_tokens": 201513,
+      "total_completion_tokens": 4150,
+      "total_tokens": 205663,
+      "total_prompt_cost": 0.27110715,
+      "total_prompt_cached_tokens": 124428,
+      "total_prompt_cached_cost": 0.037328400000000005,
+      "total_completion_cost": 0.06225,
+      "total_cost": 0.37068555,
+      "entry_count": 12,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 201513,
+          "completion_tokens": 4150,
+          "total_tokens": 205663,
+          "cost": 0.33335715,
+          "invocations": 12,
+          "average_tokens_per_invocation": 17138.583333333332
+        }
+      }
+    },
+    "taskSuccess": false,
+    "eventCount": 13
+  },
+  "trace_017": {
+    "usage": {
+      "total_prompt_tokens": 43156,
+      "total_completion_tokens": 2579,
+      "total_tokens": 45735,
+      "total_prompt_cost": 0.0759654,
+      "total_prompt_cached_tokens": 20738,
+      "total_prompt_cached_cost": 0.006221399999999999,
+      "total_completion_cost": 0.038685,
+      "total_cost": 0.1208718,
+      "entry_count": 3,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 43156,
+          "completion_tokens": 2579,
+          "total_tokens": 45735,
+          "cost": 0.1146504,
+          "invocations": 3,
+          "average_tokens_per_invocation": 15245.0
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 2
+  },
+  "trace_018": {
+    "usage": {
+      "total_prompt_tokens": 257779,
+      "total_completion_tokens": 6137,
+      "total_tokens": 263916,
+      "total_prompt_cost": 0.3838638,
+      "total_prompt_cached_tokens": 145166,
+      "total_prompt_cached_cost": 0.04354980000000001,
+      "total_completion_cost": 0.092055,
+      "total_cost": 0.5194686,
+      "entry_count": 15,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 257779,
+          "completion_tokens": 6137,
+          "total_tokens": 263916,
+          "cost": 0.4759188000000001,
+          "invocations": 15,
+          "average_tokens_per_invocation": 17594.4
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 15
+  },
+  "trace_019": {
+    "usage": {
+      "total_prompt_tokens": 257477,
+      "total_completion_tokens": 6136,
+      "total_tokens": 263613,
+      "total_prompt_cost": 0.38295405000000005,
+      "total_prompt_cached_tokens": 145166,
+      "total_prompt_cached_cost": 0.04354980000000001,
+      "total_completion_cost": 0.09204,
+      "total_cost": 0.51854385,
+      "entry_count": 15,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 257477,
+          "completion_tokens": 6136,
+          "total_tokens": 263613,
+          "cost": 0.4749940500000001,
+          "invocations": 15,
+          "average_tokens_per_invocation": 17574.2
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 14
+  },
+  "trace_020": {
+    "usage": {
+      "total_prompt_tokens": 44294,
+      "total_completion_tokens": 3420,
+      "total_tokens": 47714,
+      "total_prompt_cost": 0.0793569,
+      "total_prompt_cached_tokens": 20738,
+      "total_prompt_cached_cost": 0.006221399999999999,
+      "total_completion_cost": 0.0513,
+      "total_cost": 0.13687829999999998,
+      "entry_count": 3,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 44294,
+          "completion_tokens": 3420,
+          "total_tokens": 47714,
+          "cost": 0.1306569,
+          "invocations": 3,
+          "average_tokens_per_invocation": 15904.666666666666
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 2
+  },
+  "trace_021": {
+    "usage": {
+      "total_prompt_tokens": 151722,
+      "total_completion_tokens": 6010,
+      "total_tokens": 157732,
+      "total_prompt_cost": 0.2896782,
+      "total_prompt_cached_tokens": 62214,
+      "total_prompt_cached_cost": 0.0186642,
+      "total_completion_cost": 0.09015000000000001,
+      "total_cost": 0.3984924,
+      "entry_count": 7,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 151722,
+          "completion_tokens": 6010,
+          "total_tokens": 157732,
+          "cost": 0.3798282,
+          "invocations": 7,
+          "average_tokens_per_invocation": 22533.14285714286
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 6
+  },
+  "trace_022": {
+    "usage": {
+      "total_prompt_tokens": 38826,
+      "total_completion_tokens": 2396,
+      "total_tokens": 41222,
+      "total_prompt_cost": 0.06295665,
+      "total_prompt_cached_tokens": 20738,
+      "total_prompt_cached_cost": 0.006221399999999999,
+      "total_completion_cost": 0.03594,
+      "total_cost": 0.10511805,
+      "entry_count": 3,
+      "by_model": {
+        "claude-sonnet-4-6": {
+          "model": "claude-sonnet-4-6",
+          "prompt_tokens": 38826,
+          "completion_tokens": 2396,
+          "total_tokens": 41222,
+          "cost": 0.09889665,
+          "invocations": 3,
+          "average_tokens_per_invocation": 13740.666666666666
+        }
+      }
+    },
+    "taskSuccess": true,
+    "eventCount": 2
+  }
+}

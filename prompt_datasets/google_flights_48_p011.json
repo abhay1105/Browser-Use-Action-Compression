@@ -1,0 +1,204 @@
+{
+  "task": "google_flights",
+  "num_examples": 48,
+  "prompt_id": "p011",
+  "created_at": "2026-04-23T20:36:16.525820Z",
+  "generator": {
+    "type": "template_google_flights_mix",
+    "model": null
+  },
+  "prompts": [
+    {
+      "id": "p011_001",
+      "text": "Find one-way flights from Chicago (ORD) to Phoenix (PHX) on 2026-05-07 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_002",
+      "text": "Find one-way flights from San Francisco (SFO) to Orlando (MCO) on 2026-05-09 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_003",
+      "text": "Find one-way flights from San Francisco (SFO) to Houston (IAH) on 2026-05-11 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_004",
+      "text": "Find one-way flights from Miami (MIA) to Seattle (SEA) on 2026-05-13 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_005",
+      "text": "Find one-way flights from Las Vegas (LAS) to Seattle (SEA) on 2026-05-15 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_006",
+      "text": "Find one-way flights from Atlanta (ATL) to Houston (IAH) on 2026-05-17 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_007",
+      "text": "Find one-way flights from Boston (BOS) to San Francisco (SFO) on 2026-05-19 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_008",
+      "text": "Find one-way flights from Seattle (SEA) to Dallas (DFW) on 2026-05-21 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_009",
+      "text": "Find a round-trip from Denver (DEN) to Seattle (SEA) on 2026-05-14 and 2026-05-17 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_010",
+      "text": "Find a round-trip from Minneapolis (MSP) to San Diego (SAN) on 2026-05-17 and 2026-05-21 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_011",
+      "text": "Find a round-trip from San Francisco (SFO) to Minneapolis (MSP) on 2026-05-20 and 2026-05-25 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_012",
+      "text": "Find a round-trip from Seattle (SEA) to San Diego (SAN) on 2026-05-23 and 2026-05-29 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_013",
+      "text": "Find a round-trip from Minneapolis (MSP) to Atlanta (ATL) on 2026-05-26 and 2026-05-29 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_014",
+      "text": "Find a round-trip from Miami (MIA) to San Francisco (SFO) on 2026-05-29 and 2026-06-02 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_015",
+      "text": "Find a round-trip from Boston (BOS) to Houston (IAH) on 2026-06-01 and 2026-06-06 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_016",
+      "text": "Find a round-trip from Boston (BOS) to Chicago (ORD) on 2026-06-04 and 2026-06-10 and report the cheapest option with airline, duration, and stops. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_017",
+      "text": "Find nonstop one-way flights from Dallas (DFW) to San Francisco (SFO) on 2026-05-11 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_018",
+      "text": "Find nonstop one-way flights from Orlando (MCO) to Philadelphia (PHL) on 2026-05-13 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_019",
+      "text": "Find nonstop one-way flights from Boston (BOS) to Miami (MIA) on 2026-05-15 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_020",
+      "text": "Find nonstop one-way flights from Houston (IAH) to Atlanta (ATL) on 2026-05-17 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_021",
+      "text": "Find nonstop one-way flights from Washington, DC (DCA) to San Francisco (SFO) on 2026-05-19 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_022",
+      "text": "Find nonstop one-way flights from San Diego (SAN) to Boston (BOS) on 2026-05-21 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_023",
+      "text": "Find nonstop one-way flights from Boston (BOS) to Seattle (SEA) on 2026-05-23 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_024",
+      "text": "Find nonstop one-way flights from Atlanta (ATL) to Boston (BOS) on 2026-05-25 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_025",
+      "text": "Find one-way flights on Delta Air Lines from Miami (MIA) to Los Angeles (LAX) on 2026-05-17 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_026",
+      "text": "Find one-way flights on United Airlines from San Francisco (SFO) to Houston (IAH) on 2026-05-18 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_027",
+      "text": "Find one-way flights on American Airlines from Los Angeles (LAX) to Boston (BOS) on 2026-05-19 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_028",
+      "text": "Find one-way flights on Southwest Airlines from New York (JFK) to Minneapolis (MSP) on 2026-05-20 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_029",
+      "text": "Find one-way flights on Alaska Airlines from Washington, DC (DCA) to San Diego (SAN) on 2026-05-21 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_030",
+      "text": "Find one-way flights on JetBlue from Washington, DC (DCA) to Chicago (ORD) on 2026-05-22 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_031",
+      "text": "Find one-way flights on Delta Air Lines from San Francisco (SFO) to Denver (DEN) on 2026-05-23 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_032",
+      "text": "Find one-way flights on United Airlines from Houston (IAH) to Los Angeles (LAX) on 2026-05-24 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_033",
+      "text": "Find one-way flights for 2 people from San Francisco (SFO) to Boston (BOS) on 2026-05-09 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_034",
+      "text": "Find one-way flights for 3 people from San Diego (SAN) to Boston (BOS) on 2026-05-10 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_035",
+      "text": "Find one-way flights for 4 people from Orlando (MCO) to Dallas (DFW) on 2026-05-11 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_036",
+      "text": "Find one-way flights for 5 people from Phoenix (PHX) to Philadelphia (PHL) on 2026-05-12 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_037",
+      "text": "Find one-way flights for 6 people from Phoenix (PHX) to Dallas (DFW) on 2026-05-13 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_038",
+      "text": "Find one-way flights for 2 people from Atlanta (ATL) to Dallas (DFW) on 2026-05-14 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_039",
+      "text": "Find one-way flights for 3 people from Chicago (ORD) to Las Vegas (LAS) on 2026-05-15 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_040",
+      "text": "Find one-way flights for 4 people from Seattle (SEA) to Philadelphia (PHL) on 2026-05-16 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_041",
+      "text": "Find a multi-city flight from Los Angeles (LAX) to Houston (IAH) on 2026-05-21 and Houston (IAH) to Orlando (MCO) on 2026-05-23 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_042",
+      "text": "Find a multi-city flight from New York (JFK) to Seattle (SEA) on 2026-05-23 and Seattle (SEA) to Miami (MIA) on 2026-05-26 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_043",
+      "text": "Find a multi-city flight from Boston (BOS) to Atlanta (ATL) on 2026-05-25 and Atlanta (ATL) to Chicago (ORD) on 2026-05-29 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_044",
+      "text": "Find a multi-city flight from Las Vegas (LAS) to Minneapolis (MSP) on 2026-05-27 and Minneapolis (MSP) to New York (JFK) on 2026-05-29 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_045",
+      "text": "Find a multi-city flight from Boston (BOS) to Dallas (DFW) on 2026-05-29 and Dallas (DFW) to Philadelphia (PHL) on 2026-06-01 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_046",
+      "text": "Find a multi-city flight from Seattle (SEA) to Philadelphia (PHL) on 2026-05-31 and Philadelphia (PHL) to Boston (BOS) on 2026-06-04 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_047",
+      "text": "Find a multi-city flight from Boston (BOS) to Denver (DEN) on 2026-06-02 and Denver (DEN) to Phoenix (PHX) on 2026-06-04 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    },
+    {
+      "id": "p011_048",
+      "text": "Find a multi-city flight from Phoenix (PHX) to San Francisco (SFO) on 2026-06-04 and San Francisco (SFO) to Los Angeles (LAX) on 2026-06-07 and report the cheapest option. Start from Google Flights home page. Do not navigate directly to search results URLs. First open https://www.google.com/travel/flights. Use on-page controls only after the homepage loads."
+    }
+  ]
+}

@@ -1,0 +1,3030 @@
+[
+  {
+    "id": "trace_001",
+    "domain": "www.google.com",
+    "goal": "Find one-way flights from Chicago (ORD) to Phoenix (PHX) on 2026-05-07 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFfZDQSCjIwMjYtMDUtMDdyDAgDEggvbS8wMXFkNkABSAFwAYIBCwj___________8B&hl=en",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFfZDQSCjIwMjYtMDUtMDdyDAgDEggvbS8wMXFkNkABSAFwAYIBCwj___________8B&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974134978,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFfZDQSCjIwMjYtMDUtMDdyDAgDEggvbS8wMXFkNkABSAFwAYIBCwj___________8B&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974134979,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 6,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFfZDQSCjIwMjYtMDUtMDdyDAgDEggvbS8wMXFkNkABSAFwAYIBCwj___________8B&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974134980,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 7,
+          "text": "Phoenix",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFfZDQSCjIwMjYtMDUtMDdyDAgDEggvbS8wMXFkNkABSAFwAYIBCwj___________8B&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974134981,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3582,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFfZDQSCjIwMjYtMDUtMDdyDAgDEggvbS8wMXFkNkABSAFwAYIBCwj___________8B&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974134982,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Phoenix Sky Harbor International Airport (PHX)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1112,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARojEgoyMDI2LTA1LTA3agwIAxIIL20vMDFfZDRyBwgBEgNQSFhAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAg&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974134983,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 4,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI2LTA1LTA3agwIAxIIL20vMDFfZDRyBwgBEgNQSFhAAUgBcAGCAQsI____________AZgBAg&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974134984,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776974134978,
+    "completedAt": 1776974229729,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_002",
+    "domain": "www.google.com",
+    "goal": "Find one-way flights from San Francisco (SFO) to Orlando (MCO) on 2026-05-09 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDU0ZPEgoyMDI2LTA1LTA5cgkIARIFTUNPcgIIAHABggELCP___________wGYAQI&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDU0ZPEgoyMDI2LTA1LTA5cgkIARIFTUNPcgIIAHABggELCP___________wGYAQI&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229758,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDU0ZPEgoyMDI2LTA1LTA5cgkIARIFTUNPcgIIAHABggELCP___________wGYAQI&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229759,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 596,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDU0ZPEgoyMDI2LTA1LTA5cgkIARIFTUNPcgIIAHABggELCP___________wGYAQI&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229760,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Change ticket type. Round trip"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 637,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDU0ZPEgoyMDI2LTA1LTA5cgkIARIFTUNPcgIIAHABggELCP___________wGYAQI&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229761,
+        "semanticTarget": {
+          "role": "option",
+          "name": "One way"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 18,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229762,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 19,
+          "text": "MCO",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229763,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 5251,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229764,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Orlando International Airport (MCO)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNNQ09AAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229765,
+        "semanticTarget": {
+          "role": "text",
+          "name": "Departure"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "coordinate_x": 1062,
+          "coordinate_y": 576,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNNQ09AAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229766,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 2619,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNNQ09AAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229767,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Saturday, May 9, 2026 , 151 US dollars"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1203,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNNQ09AAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229768,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Done. Search for one-way flights, departing on May 9, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1220,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARojEgoyMDI2LTA1LTA5agwIAhIIL20vMGQ2bHByBwgBEgNNQ09AAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974229769,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      }
+    ],
+    "startedAt": 1776974229758,
+    "completedAt": 1776974366126,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_003",
+    "domain": "www.google.com",
+    "goal": "Find one-way flights from San Francisco (SFO) to Houston (IAH) on 2026-05-11 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTExcg8IAhILCAESB1VuaXRlZHMSB0lBSHIHCAESA0lBSHABggELCP___________wFAAUgBmAEB&hl=en",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTExcg8IAhILCAESB1VuaXRlZHMSB0lBSHIHCAESA0lBSHABggELCP___________wFAAUgBmAEB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366157,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTExcg8IAhILCAESB1VuaXRlZHMSB0lBSHIHCAESA0lBSHABggELCP___________wFAAUgBmAEB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366158,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 611,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTExcg8IAhILCAESB1VuaXRlZHMSB0lBSHIHCAESA0lBSHABggELCP___________wFAAUgBmAEB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366159,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Change ticket type. Round trip"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 652,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTExcg8IAhILCAESB1VuaXRlZHMSB0lBSHIHCAESA0lBSHABggELCP___________wFAAUgBmAEB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366160,
+        "semanticTarget": {
+          "role": "option",
+          "name": "One way"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 19,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366161,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 19,
+          "text": "IAH",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366162,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 20,
+          "text": "IAH",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366163,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 5271,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366164,
+        "semanticTarget": {
+          "role": "option",
+          "name": "George Bush Intercontinental Airport (IAH)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 21,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNJQUhAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366165,
+        "semanticTarget": {
+          "role": "text",
+          "name": "Departure"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 2643,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNJQUhAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366166,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Monday, May 11, 2026 ????"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1218,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNJQUhAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366167,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Done. Search for one-way flights, departing on May 11, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1235,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARojEgoyMDI2LTA1LTExagwIAhIIL20vMGQ2bHByBwgBEgNJQUhAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974366168,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      }
+    ],
+    "startedAt": 1776974366157,
+    "completedAt": 1776974497173,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_004",
+    "domain": "www.google.com",
+    "goal": "Find one-way flights from Miami (MIA) to Seattle (SEA) on 2026-05-13 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTEzagcIARIDTUlBcgcIARIDU0VBQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTEzagcIARIDTUlBcgcIARIDU0VBQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974497206,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTEzagcIARIDTUlBcgcIARIDU0VBQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974497207,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776974497206,
+    "completedAt": 1776974542137,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_005",
+    "domain": "www.google.com",
+    "goal": "Find one-way flights from Las Vegas (LAS) to Seattle (SEA) on 2026-05-15 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMGRhdnkSCjIwMjYtMDUtMTVyDAgDEggvbS8wODBocRIAGAFwAYIBCwj____________BQAB&hl=en",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMGRhdnkSCjIwMjYtMDUtMTVyDAgDEggvbS8wODBocRIAGAFwAYIBCwj____________BQAB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542169,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMGRhdnkSCjIwMjYtMDUtMTVyDAgDEggvbS8wODBocRIAGAFwAYIBCwj____________BQAB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542170,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 611,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMGRhdnkSCjIwMjYtMDUtMTVyDAgDEggvbS8wODBocRIAGAFwAYIBCwj____________BQAB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542171,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Change ticket type. Round trip"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 652,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMGRhdnkSCjIwMjYtMDUtMTVyDAgDEggvbS8wODBocRIAGAFwAYIBCwj____________BQAB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542172,
+        "semanticTarget": {
+          "role": "option",
+          "name": "One way"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 16,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542173,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where from?"
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 17,
+          "text": "LAS",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542174,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where else?"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 4919,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542175,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Harry Reid International Airport (LAS)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 18,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDTEFTQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542176,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 19,
+          "text": "SEA",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDTEFTQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542177,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 5841,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDTEFTQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542178,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Seattle-Tacoma International Airport (SEA)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDTEFTcgcIARIDU0VBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542179,
+        "semanticTarget": {
+          "role": "text",
+          "name": "Departure"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 2659,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDTEFTcgcIARIDU0VBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542180,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Friday, May 15, 2026 ????"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1218,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDTEFTcgcIARIDU0VBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542181,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Done. Search for one-way flights, departing on May 15, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1235,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoeEgoyMDI2LTA1LTE1agcIARIDTEFTcgcIARIDU0VBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542182,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 4,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE1agcIARIDTEFTcgcIARIDU0VBQAFIAXABggELCP___________wGYAQI&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974542183,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776974542169,
+    "completedAt": 1776974691931,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_006",
+    "domain": "www.google.com",
+    "goal": "Find one-way flights from Atlanta (ATL) to Houston (IAH) on 2026-05-17 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE3agcIARIDQVRMcgcIARIDSUFIGAFyAggB&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE3agcIARIDQVRMcgcIARIDSUFIGAFyAggB&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974691965,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE3agcIARIDQVRMcgcIARIDSUFIGAFyAggB&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974691966,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776974691965,
+    "completedAt": 1776974727623,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_007",
+    "domain": "www.google.com",
+    "goal": "Find one-way flights from Boston (BOS) to San Francisco (SFO) on 2026-05-19 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA1LTE5cgwIAxIIL20vMDgwaDIaAQFIAXABggELCP___________wFAAQ",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA1LTE5cgwIAxIIL20vMDgwaDIaAQFIAXABggELCP___________wFAAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974727659,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA1LTE5cgwIAxIIL20vMDgwaDIaAQFIAXABggELCP___________wFAAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974727660,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3566,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA1LTE5cgwIAxIIL20vMDgwaDIaAQFIAXABggELCP___________wFAAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974727661,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Clear all filters"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 9,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI2LTA1LTE5agcIARIDQk9TcgwIAxIIL20vMDgwaDJAAUgBcAGCAQsI____________AZgBAg&tfu=EgYIABAAGAA",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974727662,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to?"
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 10,
+          "text": "San Francisco",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI2LTA1LTE5agcIARIDQk9TcgwIAxIIL20vMDgwaDJAAUgBcAGCAQsI____________AZgBAg&tfu=EgYIABAAGAA",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974727663,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where else?"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 31892,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI2LTA1LTE5agcIARIDQk9TcgwIAxIIL20vMDgwaDJAAUgBcAGCAQsI____________AZgBAg&tfu=EgYIABAAGAA",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974727664,
+        "semanticTarget": {
+          "role": "option",
+          "name": "San Francisco International Airport (SFO)"
+        }
+      }
+    ],
+    "startedAt": 1776974727659,
+    "completedAt": 1776974810093,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_008",
+    "domain": "www.google.com",
+    "goal": "Find one-way flights from Seattle (SEA) to Dallas (DFW) on 2026-05-21 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIxcg0IARIJEgNERlcYAiABKAFwAYIBCwj___________8BQAFIAZgBAQ",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIxcg0IARIJEgNERlcYAiABKAFwAYIBCwj___________8BQAFIAZgBAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974810129,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIxcg0IARIJEgNERlcYAiABKAFwAYIBCwj___________8BQAFIAZgBAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974810130,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 482,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIxcg0IARIJEgNERlcYAiABKAFwAYIBCwj___________8BQAFIAZgBAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974810131,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Change ticket type. Round trip"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 523,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIxcg0IARIJEgNERlcYAiABKAFwAYIBCwj___________8BQAFIAZgBAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974810132,
+        "semanticTarget": {
+          "role": "option",
+          "name": "One way"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 7,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoVEgoyMDI2LTA1LTIxagcIARIDU0VBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974810133,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 8,
+          "text": "DFW",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoVEgoyMDI2LTA1LTIxagcIARIDU0VBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974810134,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 4447,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoVEgoyMDI2LTA1LTIxagcIARIDU0VBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974810135,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Dallas Fort Worth International Airport (DFW)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1114,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoeEgoyMDI2LTA1LTIxagcIARIDU0VBcgcIARIDREZXQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974810136,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      }
+    ],
+    "startedAt": 1776974810129,
+    "completedAt": 1776974912958,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_009",
+    "domain": "www.google.com",
+    "goal": "Find a round-trip from Denver (DEN) to Seattle (SEA) on 2026-05-14 and 2026-05-17 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE0agcIARIDREVOcgcIARIDU0VBGh4SCjIwMjYtMDUtMTdqBwgBEgNTRUFyBwgBEgNERU4qAggBcAGCAQsI____________AUABSAF&hl=en",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE0agcIARIDREVOcgcIARIDU0VBGh4SCjIwMjYtMDUtMTdqBwgBEgNTRUFyBwgBEgNERU4qAggBcAGCAQsI____________AUABSAF&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974912993,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE0agcIARIDREVOcgcIARIDU0VBGh4SCjIwMjYtMDUtMTdqBwgBEgNTRUFyBwgBEgNERU4qAggBcAGCAQsI____________AUABSAF&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974912994,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776974912993,
+    "completedAt": 1776974960651,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_010",
+    "domain": "www.google.com",
+    "goal": "Find a round-trip from Minneapolis (MSP) to San Diego (SAN) on 2026-05-17 and 2026-05-21 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE3agcIARIDTVNQcgcIARIDU0FOGh4SCjIwMjYtMDUtMjFqBwgBEgNTQU5yBwgBEgNNU1ByBwgBEgNTQU5AAUgBcAGCAQsI____________ASAB&hl=en",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE3agcIARIDTVNQcgcIARIDU0FOGh4SCjIwMjYtMDUtMjFqBwgBEgNTQU5yBwgBEgNNU1ByBwgBEgNTQU5AAUgBcAGCAQsI____________ASAB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974960687,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE3agcIARIDTVNQcgcIARIDU0FOGh4SCjIwMjYtMDUtMjFqBwgBEgNTQU5yBwgBEgNNU1ByBwgBEgNTQU5AAUgBcAGCAQsI____________ASAB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776974960688,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776974960687,
+    "completedAt": 1776975002025,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_011",
+    "domain": "www.google.com",
+    "goal": "Find a round-trip from San Francisco (SFO) to Minneapolis (MSP) on 2026-05-20 and 2026-05-25 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTIwcgsIARIHEgNNU1AYASoLCAESBxIDTVNQGAFwAXILCAESBxIDTVNQGAE&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTIwcgsIARIHEgNNU1AYASoLCAESBxIDTVNQGAFwAXILCAESBxIDTVNQGAE&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975002059,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTIwcgsIARIHEgNNU1AYASoLCAESBxIDTVNQGAFwAXILCAESBxIDTVNQGAE&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975002060,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 18,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTIwcgsIARIHEgNNU1AYASoLCAESBxIDTVNQGAFwAXILCAESBxIDTVNQGAE&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975002061,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 19,
+          "text": "MSP",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTIwcgsIARIHEgNNU1AYASoLCAESBxIDTVNQGAFwAXILCAESBxIDTVNQGAE&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975002062,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3039,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0ZPEgoyMDI2LTA1LTIwcgsIARIHEgNNU1AYASoLCAESBxIDTVNQGAFwAXILCAESBxIDTVNQGAE&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975002063,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Minneapolis-Saint Paul International Airport (MSP)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNNU1AaF2oHCAESA01TUHIMCAISCC9tLzBkNmxwQAFIAXABggELCP___________wGYAQE&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975002064,
+        "semanticTarget": {
+          "role": "text",
+          "name": "Departure"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3330,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNNU1AaF2oHCAESA01TUHIMCAISCC9tLzBkNmxwQAFIAXABggELCP___________wGYAQE&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975002065,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Wednesday, May 20, 2026 ????"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3351,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNNU1AaF2oHCAESA01TUHIMCAISCC9tLzBkNmxwQAFIAXABggELCP___________wGYAQE&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975002066,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Monday, May 25, 2026 ????"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1220,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoXagwIAhIIL20vMGQ2bHByBwgBEgNNU1AaF2oHCAESA01TUHIMCAISCC9tLzBkNmxwQAFIAXABggELCP___________wGYAQE&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975002067,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Done. Search for round trip flights, departing on May 20, 2026 and returning on May 25, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1237,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARojEgoyMDI2LTA1LTIwagwIAhIIL20vMGQ2bHByBwgBEgNNU1AaIxIKMjAyNi0wNS0yNWoHCAESA01TUHIMCAISCC9tLzBkNmxwQAFIAXABggELCP___________wGYAQE&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975002068,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      }
+    ],
+    "startedAt": 1776975002059,
+    "completedAt": 1776975120352,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_012",
+    "domain": "www.google.com",
+    "goal": "Find a round-trip from Seattle (SEA) to San Diego (SAN) on 2026-05-23 and 2026-05-29 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIzcgcIARIDU0FOEgoyMDI2LTA1LTI5QAEYADACSAFQ____________AQFAAQ",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIzcgcIARIDU0FOEgoyMDI2LTA1LTI5QAEYADACSAFQ____________AQFAAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120385,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIzcgcIARIDU0FOEgoyMDI2LTA1LTI5QAEYADACSAFQ____________AQFAAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120386,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 17,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIzcgcIARIDU0FOEgoyMDI2LTA1LTI5QAEYADACSAFQ____________AQFAAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120387,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where from?"
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 18,
+          "text": "Seattle",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIzcgcIARIDU0FOEgoyMDI2LTA1LTI5QAEYADACSAFQ____________AQFAAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120388,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where else?"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 2734,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDU0VBEgoyMDI2LTA1LTIzcgcIARIDU0FOEgoyMDI2LTA1LTI5QAEYADACSAFQ____________AQFAAQ",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120389,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Seattle-Tacoma International Airport (SEA)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 19,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDU0VBGglyBwgBEgNTRUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120390,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 20,
+          "text": "San Diego",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDU0VBGglyBwgBEgNTRUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120391,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 5702,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDU0VBGglyBwgBEgNTRUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120392,
+        "semanticTarget": {
+          "role": "option",
+          "name": "San Diego International Airport (SAN)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 21,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDU0VBcgcIARIDU0FOGhJqBwgBEgNTQU5yBwgBEgNTRUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120393,
+        "semanticTarget": {
+          "role": "text",
+          "name": "Departure"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3109,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDU0VBcgcIARIDU0FOGhJqBwgBEgNTQU5yBwgBEgNTRUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120394,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Saturday, May 23, 2026 ????"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3134,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDU0VBcgcIARIDU0FOGhJqBwgBEgNTQU5yBwgBEgNTRUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120395,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Friday, May 29, 2026 ????"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1240,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDU0VBcgcIARIDU0FOGhJqBwgBEgNTQU5yBwgBEgNTRUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120396,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Done. Search for round trip flights, departing on May 23, 2026 and returning on May 29, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1257,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoeEgoyMDI2LTA1LTIzagcIARIDU0VBcgcIARIDU0FOGh4SCjIwMjYtMDUtMjlqBwgBEgNTQU5yBwgBEgNTRUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975120397,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      }
+    ],
+    "startedAt": 1776975120385,
+    "completedAt": 1776975260089,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_013",
+    "domain": "www.google.com",
+    "goal": "Find a round-trip from Minneapolis (MSP) to Atlanta (ATL) on 2026-05-26 and 2026-05-29 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTI2agcIARIDTVNQcgcIARIDQVRMGh4SCjIwMjYtMDUtMjlqBwgBEgNBVExyBwgBEgNNU1AqAggBcgIIAQ&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTI2agcIARIDTVNQcgcIARIDQVRMGh4SCjIwMjYtMDUtMjlqBwgBEgNBVExyBwgBEgNNU1AqAggBcgIIAQ&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975260125,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTI2agcIARIDTVNQcgcIARIDQVRMGh4SCjIwMjYtMDUtMjlqBwgBEgNBVExyBwgBEgNNU1AqAggBcgIIAQ&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975260126,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776975260125,
+    "completedAt": 1776975308935,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_014",
+    "domain": "www.google.com",
+    "goal": "Find a round-trip from Miami (MIA) to San Francisco (SFO) on 2026-05-29 and 2026-06-02 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUlBEgoyMDI2LTA1LTI5cgwIAxIIL20vMDZteGYaKGoMCAMSCC9tLzA2bXhmEgoyMDI2LTA2LTAycgcIARIDTUlBcAGCAQsI____________AUABSAGYAQE&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUlBEgoyMDI2LTA1LTI5cgwIAxIIL20vMDZteGYaKGoMCAMSCC9tLzA2bXhmEgoyMDI2LTA2LTAycgcIARIDTUlBcAGCAQsI____________AUABSAGYAQE&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308969,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUlBEgoyMDI2LTA1LTI5cgwIAxIIL20vMDZteGYaKGoMCAMSCC9tLzA2bXhmEgoyMDI2LTA2LTAycgcIARIDTUlBcAGCAQsI____________AUABSAGYAQE&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308970,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 16,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUlBEgoyMDI2LTA1LTI5cgwIAxIIL20vMDZteGYaKGoMCAMSCC9tLzA2bXhmEgoyMDI2LTA2LTAycgcIARIDTUlBcAGCAQsI____________AUABSAGYAQE&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308971,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where from?"
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 17,
+          "text": "Miami",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUlBEgoyMDI2LTA1LTI5cgwIAxIIL20vMDZteGYaKGoMCAMSCC9tLzA2bXhmEgoyMDI2LTA2LTAycgcIARIDTUlBcAGCAQsI____________AUABSAGYAQE&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308972,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where else?"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 2731,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUlBEgoyMDI2LTA1LTI5cgwIAxIIL20vMDZteGYaKGoMCAMSCC9tLzA2bXhmEgoyMDI2LTA2LTAycgcIARIDTUlBcAGCAQsI____________AUABSAGYAQE&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308973,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Miami International Airport (MIA)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 18,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDTUlBGglyBwgBEgNNSUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308974,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 19,
+          "text": "San Francisco",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDTUlBGglyBwgBEgNNSUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308975,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 5873,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDTUlBGglyBwgBEgNNSUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308976,
+        "semanticTarget": {
+          "role": "option",
+          "name": "San Francisco International Airport (SFO)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDTUlBcgcIARIDU0ZPGhJqBwgBEgNTRk9yBwgBEgNNSUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308977,
+        "semanticTarget": {
+          "role": "text",
+          "name": "Departure"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3305,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDTUlBcgcIARIDU0ZPGhJqBwgBEgNTRk9yBwgBEgNNSUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308978,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Friday, May 29, 2026 ????"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3336,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDTUlBcgcIARIDU0ZPGhJqBwgBEgNTRk9yBwgBEgNNSUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308979,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Tuesday, June 2, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1241,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDTUlBcgcIARIDU0ZPGhJqBwgBEgNTRk9yBwgBEgNNSUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308980,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Done. Search for round trip flights, departing on May 29, 2026 and returning on June 2, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1258,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoeEgoyMDI2LTA1LTI5agcIARIDTUlBcgcIARIDU0ZPGh4SCjIwMjYtMDYtMDJqBwgBEgNTRk9yBwgBEgNNSUFAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975308981,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      }
+    ],
+    "startedAt": 1776975308969,
+    "completedAt": 1776975461509,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_015",
+    "domain": "www.google.com",
+    "goal": "Find a round-trip from Boston (BOS) to Houston (IAH) on 2026-06-01 and 2026-06-06 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFjeGsSDQgDEgkvbS8wM2hyNXIaC2p1bi0wMS0yMDI2KAByDQgDEgkvbS8wM2hyNXIaCGp1bi0wNi0yMDI2SAFwAYIBCwj___________8BmAEB&hl=en",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFjeGsSDQgDEgkvbS8wM2hyNXIaC2p1bi0wMS0yMDI2KAByDQgDEgkvbS8wM2hyNXIaCGp1bi0wNi0yMDI2SAFwAYIBCwj___________8BmAEB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461547,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFjeGsSDQgDEgkvbS8wM2hyNXIaC2p1bi0wMS0yMDI2KAByDQgDEgkvbS8wM2hyNXIaCGp1bi0wNi0yMDI2SAFwAYIBCwj___________8BmAEB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461548,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 16,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFjeGsSDQgDEgkvbS8wM2hyNXIaC2p1bi0wMS0yMDI2KAByDQgDEgkvbS8wM2hyNXIaCGp1bi0wNi0yMDI2SAFwAYIBCwj___________8BmAEB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461549,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where from?"
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 17,
+          "text": "BOS",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFjeGsSDQgDEgkvbS8wM2hyNXIaC2p1bi0wMS0yMDI2KAByDQgDEgkvbS8wM2hyNXIaCGp1bi0wNi0yMDI2SAFwAYIBCwj___________8BmAEB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461550,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where else?"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 2713,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagwIAxIIL20vMDFjeGsSDQgDEgkvbS8wM2hyNXIaC2p1bi0wMS0yMDI2KAByDQgDEgkvbS8wM2hyNXIaCGp1bi0wNi0yMDI2SAFwAYIBCwj___________8BmAEB&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461551,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Boston Logan International Airport (BOS)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 18,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDQk9TGglyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461552,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 18,
+          "text": "IAH",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDQk9TGglyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461553,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 19,
+          "text": "IAH",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDQk9TGglyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461554,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 5791,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDQk9TGglyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461555,
+        "semanticTarget": {
+          "role": "option",
+          "name": "George Bush Intercontinental Airport (IAH)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDSUFIGhJqBwgBEgNJQUhyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461556,
+        "semanticTarget": {
+          "role": "text",
+          "name": "Departure"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3262,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDSUFIGhJqBwgBEgNJQUhyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461557,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Monday, June 1, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3282,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDSUFIGhJqBwgBEgNJQUhyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461558,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Saturday, June 6, 2026 ????"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1241,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDSUFIGhJqBwgBEgNJQUhyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461559,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Done. Search for round trip flights, departing on June 1, 2026 and returning on June 6, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1258,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoeEgoyMDI2LTA2LTAxagcIARIDQk9TcgcIARIDSUFIGh4SCjIwMjYtMDYtMDZqBwgBEgNJQUhyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461560,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "wait",
+        "input": {
+          "seconds": 4,
+          "action": "wait",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA2LTAxagcIARIDQk9TcgcIARIDSUFIGh4SCjIwMjYtMDYtMDZqBwgBEgNJQUhyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975461561,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776975461547,
+    "completedAt": 1776975616091,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_016",
+    "domain": "www.google.com",
+    "goal": "Find a round-trip from Boston (BOS) to Chicago (ORD) on 2026-06-04 and 2026-06-10 and report the cheapest option with airline, duration, and stops.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA2LTA0cgwIAxIIQ2hpY2Fnbw&tfu=CmxDalJJV0dRelIxbGxRbEZRVEhCUlFsbHlNVkZDUnkwdExTMHRMUzB0TFMxaVlXNHdiV0ZCUVZ3d0xrRkJRVUZCUm1SbGNYa3hVWEpzYjNGUVdFUUJBQWRCQVVGQlFVaE5WMFJSVmtGRFVWUllJQkFCGg&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA2LTA0cgwIAxIIQ2hpY2Fnbw&tfu=CmxDalJJV0dRelIxbGxRbEZRVEhCUlFsbHlNVkZDUnkwdExTMHRMUzB0TFMxaVlXNHdiV0ZCUVZ3d0xrRkJRVUZCUm1SbGNYa3hVWEpzYjNGUVdFUUJBQWRCQVVGQlFVaE5WMFJSVmtGRFVWUllJQkFCGg&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616138,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA2LTA0cgwIAxIIQ2hpY2Fnbw&tfu=CmxDalJJV0dRelIxbGxRbEZRVEhCUlFsbHlNVkZDUnkwdExTMHRMUzB0TFMxaVlXNHdiV0ZCUVZ3d0xrRkJRVUZCUm1SbGNYa3hVWEpzYjNGUVdFUUJBQWRCQVVGQlFVaE5WMFJSVmtGRFVWUllJQkFCGg&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616139,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 16,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA2LTA0cgwIAxIIQ2hpY2Fnbw&tfu=CmxDalJJV0dRelIxbGxRbEZRVEhCUlFsbHlNVkZDUnkwdExTMHRMUzB0TFMxaVlXNHdiV0ZCUVZ3d0xrRkJRVUZCUm1SbGNYa3hVWEpzYjNGUVdFUUJBQWRCQVVGQlFVaE5WMFJSVmtGRFVWUllJQkFCGg&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616140,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where from?"
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 17,
+          "text": "Boston",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA2LTA0cgwIAxIIQ2hpY2Fnbw&tfu=CmxDalJJV0dRelIxbGxRbEZRVEhCUlFsbHlNVkZDUnkwdExTMHRMUzB0TFMxaVlXNHdiV0ZCUVZ3d0xrRkJRVUZCUm1SbGNYa3hVWEpzYjNGUVdFUUJBQWRCQVVGQlFVaE5WMFJSVmtGRFVWUllJQkFCGg&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616141,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where else?"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 2710,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA2LTA0cgwIAxIIQ2hpY2Fnbw&tfu=CmxDalJJV0dRelIxbGxRbEZRVEhCUlFsbHlNVkZDUnkwdExTMHRMUzB0TFMxaVlXNHdiV0ZCUVZ3d0xrRkJRVUZCUm1SbGNYa3hVWEpzYjNGUVdFUUJBQWRCQVVGQlFVaE5WMFJSVmtGRFVWUllJQkFCGg&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616142,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Boston Logan International Airport (BOS)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 18,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDQk9TGglyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616143,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 19,
+          "text": "Chicago O'Hare",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDQk9TGglyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616144,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 5923,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDQk9TGglyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616145,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Chicago O'Hare International Airport (ORD)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDT1JEGhJqBwgBEgNPUkRyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616146,
+        "semanticTarget": {
+          "role": "text",
+          "name": "Departure"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "coordinate_x": 1152,
+          "coordinate_y": 608,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDT1JEGhJqBwgBEgNPUkRyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616147,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3412,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDT1JEGhJqBwgBEgNPUkRyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616148,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Thursday, June 4, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3436,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDT1JEGhJqBwgBEgNPUkRyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616149,
+        "semanticTarget": {
+          "role": "gridcell",
+          "name": "Wednesday, June 10, 2026 , 137 US dollars"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1203,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDT1JEGhJqBwgBEgNPUkRyBwgBEgNCT1NAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975616150,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Done. Search for round trip flights, departing on June 4, 2026 and returning on June 10, 2026"
+        }
+      }
+    ],
+    "startedAt": 1776975616138,
+    "completedAt": 1776975733362,
+    "taskSuccess": false
+  },
+  {
+    "id": "trace_017",
+    "domain": "www.google.com",
+    "goal": "Find nonstop one-way flights from Dallas (DFW) to San Francisco (SFO) on 2026-05-11 and report the cheapest option.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTExagcIARIDREZXcgcIARIDU0ZPQAFIAXABggELCP___________wGYAQI&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTExagcIARIDREZXcgcIARIDU0ZPQAFIAXABggELCP___________wGYAQI&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975733399,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTExagcIARIDREZXcgcIARIDU0ZPQAFIAXABggELCP___________wGYAQI&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975733400,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776975733399,
+    "completedAt": 1776975782951,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_018",
+    "domain": "www.google.com",
+    "goal": "Find nonstop one-way flights from Orlando (MCO) to Philadelphia (PHL) on 2026-05-13 and report the cheapest option.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUNPEgoyMDI2LTA1LTEzcgwIAxIIEgZub25zdG9wGgNQSExwAYIBCwj___________8BmAEB&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUNPEgoyMDI2LTA1LTEzcgwIAxIIEgZub25zdG9wGgNQSExwAYIBCwj___________8BmAEB&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782987,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUNPEgoyMDI2LTA1LTEzcgwIAxIIEgZub25zdG9wGgNQSExwAYIBCwj___________8BmAEB&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782988,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 636,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUNPEgoyMDI2LTA1LTEzcgwIAxIIEgZub25zdG9wGgNQSExwAYIBCwj___________8BmAEB&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782989,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Change ticket type. Round trip"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 677,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDTUNPEgoyMDI2LTA1LTEzcgwIAxIIEgZub25zdG9wGgNQSExwAYIBCwj___________8BmAEB&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782990,
+        "semanticTarget": {
+          "role": "option",
+          "name": "One way"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 18,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782991,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where from?"
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 19,
+          "text": "MCO",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782992,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where else?"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 4925,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782993,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Orlando International Airport (MCO)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDTUNPQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782994,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 20,
+          "text": "PHL",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDTUNPQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782995,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 21,
+          "text": "PHL",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDTUNPQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782996,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 5627,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDTUNPQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782997,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Philadelphia International Airport (PHL)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 22,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDTUNPcgcIARIDUEhMQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782998,
+        "semanticTarget": {
+          "role": "text",
+          "name": "Departure"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 2657,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDTUNPcgcIARIDUEhMQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975782999,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Wednesday, May 13, 2026 ????"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1243,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDTUNPcgcIARIDUEhMQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975783000,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Done. Search for one-way flights, departing on May 13, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1260,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoeEgoyMDI2LTA1LTEzagcIARIDTUNPcgcIARIDUEhMQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975783001,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      }
+    ],
+    "startedAt": 1776975782987,
+    "completedAt": 1776975947361,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_019",
+    "domain": "www.google.com",
+    "goal": "Find nonstop one-way flights from Boston (BOS) to Miami (MIA) on 2026-05-15 and report the cheapest option.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA1LTE1cgwIAxIIL20vMDUxX3EQARoAQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA1LTE1cgwIAxIIL20vMDUxX3EQARoAQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947402,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA1LTE1cgwIAxIIL20vMDUxX3EQARoAQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947403,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 634,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA1LTE1cgwIAxIIL20vMDUxX3EQARoAQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947404,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Change ticket type. Round trip"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 675,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhooagcIARIDQk9TEgoyMDI2LTA1LTE1cgwIAxIIL20vMDUxX3EQARoAQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947405,
+        "semanticTarget": {
+          "role": "option",
+          "name": "One way"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 16,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947406,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where from?"
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 17,
+          "text": "Boston",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947407,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where else?"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 4943,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoOagwIAhIIL20vMGQ2bHBAAUgBcAGCAQsI____________AZgBAg&tfu=KgIIAw&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947408,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Boston Logan International Airport (BOS)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 18,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDQk9TQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947409,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "javascript_tool",
+        "action": null,
+        "input": {
+          "index": 19,
+          "text": "Miami",
+          "clear": true
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDQk9TQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947410,
+        "semanticTarget": {
+          "role": "combobox",
+          "name": "Where to? "
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 5992,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDQk9TQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947411,
+        "semanticTarget": {
+          "role": "option",
+          "name": "Miami International Airport (MIA)"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDTUlBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947412,
+        "semanticTarget": {
+          "role": "text",
+          "name": "Departure"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 2665,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDTUlBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947413,
+        "semanticTarget": {
+          "role": "button",
+          "name": "Friday, May 15, 2026 ????"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1241,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoSagcIARIDQk9TcgcIARIDTUlBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947414,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Done. Search for one-way flights, departing on May 15, 2026"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 1258,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights?tfs=CBwQARoeEgoyMDI2LTA1LTE1agcIARIDQk9TcgcIARIDTUlBQAFIAXABggELCP___________wGYAQI&tfu=KgIIAw&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776975947415,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Search"
+        }
+      }
+    ],
+    "startedAt": 1776975947402,
+    "completedAt": 1776976103439,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_020",
+    "domain": "www.google.com",
+    "goal": "Find nonstop one-way flights from Houston (IAH) to Atlanta (ATL) on 2026-05-17 and report the cheapest option.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE3agcIARIDSUFIcgcIARIDQVRMGAFyBQgCEgFO&hl=en",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE3agcIARIDSUFIcgcIARIDQVRMGAFyBQgCEgFO&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776976103477,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE3agcIARIDSUFIcgcIARIDQVRMGAFyBQgCEgFO&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776976103478,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776976103477,
+    "completedAt": 1776976162955,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_021",
+    "domain": "www.google.com",
+    "goal": "Find nonstop one-way flights from Washington, DC (DCA) to San Francisco (SFO) on 2026-05-19 and report the cheapest option.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE5agcIARIDRENBcgcIARIDU0ZPQAFIAXABggELCP___________wGYAQI&hl=en",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE5agcIARIDRENBcgcIARIDU0ZPQAFIAXABggELCP___________wGYAQI&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776976162992,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE5agcIARIDRENBcgcIARIDU0ZPQAFIAXABggELCP___________wGYAQI&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776976162993,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 3530,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE5agcIARIDRENBcgcIARIDU0ZPQAFIAXABggELCP___________wGYAQI&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776976162994,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Stops, Not selected"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20026,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTE5agcIARIDRENBcgcIARIDU0ZPQAFIAXABggELCP___________wGYAQI&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776976162995,
+        "semanticTarget": {
+          "role": "DIV",
+          "name": "unknown"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 20016,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI2LTA1LTE5KAFqBwgBEgNEQ0FyBwgBEgNTRk9AAUgBcAGCAQsI____________AZgBAg&tfu=EgYIABAAGAA&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776976162996,
+        "semanticTarget": {
+          "role": "DIV",
+          "name": "unknown"
+        }
+      },
+      {
+        "tool": "computer",
+        "action": "click",
+        "input": {
+          "index": 19991,
+          "action": "click",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhogEgoyMDI2LTA1LTE5KABqBwgBEgNEQ0FyBwgBEgNTRk9AAUgBcAGCAQsI____________AZgBAg&tfu=EgYIABAAGAA&hl=en",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776976162997,
+        "semanticTarget": {
+          "role": "BUTTON",
+          "name": "Close dialog"
+        }
+      }
+    ],
+    "startedAt": 1776976162992,
+    "completedAt": 1776976294478,
+    "taskSuccess": true
+  },
+  {
+    "id": "trace_022",
+    "domain": "www.google.com",
+    "goal": "Find nonstop one-way flights from San Diego (SAN) to Boston (BOS) on 2026-05-21 and report the cheapest option.",
+    "events": [
+      {
+        "tool": "navigate",
+        "action": null,
+        "input": {
+          "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTIxagcIARIDU0FOcgcIARIDQk9TQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+          "new_tab": false,
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTIxagcIARIDU0FOcgcIARIDQk9TQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776976294515,
+        "semanticTarget": null
+      },
+      {
+        "tool": "computer",
+        "action": "screenshot",
+        "input": {
+          "action": "screenshot",
+          "tabId": 1
+        },
+        "url": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI2LTA1LTIxagcIARIDU0FOcgcIARIDQk9TQAFIAXABggELCP___________wGYAQI&hl=en&curr=USD",
+        "success": true,
+        "domain": "www.google.com",
+        "timestamp": 1776976294516,
+        "semanticTarget": null
+      }
+    ],
+    "startedAt": 1776976294515,
+    "completedAt": 1776976350853,
+    "taskSuccess": true
+  }
+]
