@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="640" viewBox="0 0 980 640">
+<rect x="0" y="0" width="980" height="640" fill="#f8fafc"/>
+<text x="30" y="42" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="700" fill="#0f172a">How Often Different Per-Task Costs Occur</text>
+
+<text x="30" y="70" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#334155">Histogram of all 80 task runs. Taller bars mean that price range happened more often.</text>
+<line x1="120" y1="510.00" x2="910" y2="510.00" stroke="#e2e8f0"/>
+<text x="110" y="514.00" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#475569">0</text>
+<line x1="120" y1="430.00" x2="910" y2="430.00" stroke="#e2e8f0"/>
+<text x="110" y="434.00" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#475569">4</text>
+<line x1="120" y1="350.00" x2="910" y2="350.00" stroke="#e2e8f0"/>
+<text x="110" y="354.00" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#475569">8</text>
+<line x1="120" y1="270.00" x2="910" y2="270.00" stroke="#e2e8f0"/>
+<text x="110" y="274.00" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#475569">11</text>
+<line x1="120" y1="190.00" x2="910" y2="190.00" stroke="#e2e8f0"/>
+<text x="110" y="194.00" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#475569">15</text>
+<line x1="120" y1="110.00" x2="910" y2="110.00" stroke="#e2e8f0"/>
+<text x="110" y="114.00" text-anchor="end" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#475569">19</text>
+<rect x="121.00" y="467.89" width="37.50" height="42.11" fill="#2563eb" opacity="0.80"/>
+<rect x="160.50" y="383.68" width="37.50" height="126.32" fill="#2563eb" opacity="0.80"/>
+<rect x="200.00" y="110.00" width="37.50" height="400.00" fill="#2563eb" opacity="0.80"/>
+<rect x="239.50" y="404.74" width="37.50" height="105.26" fill="#2563eb" opacity="0.80"/>
+<rect x="279.00" y="467.89" width="37.50" height="42.11" fill="#2563eb" opacity="0.80"/>
+<rect x="318.50" y="467.89" width="37.50" height="42.11" fill="#2563eb" opacity="0.80"/>
+<rect x="358.00" y="446.84" width="37.50" height="63.16" fill="#2563eb" opacity="0.80"/>
+<rect x="397.50" y="467.89" width="37.50" height="42.11" fill="#2563eb" opacity="0.80"/>
+<rect x="437.00" y="320.53" width="37.50" height="189.47" fill="#2563eb" opacity="0.80"/>
+<rect x="476.50" y="278.42" width="37.50" height="231.58" fill="#2563eb" opacity="0.80"/>
+<rect x="516.00" y="404.74" width="37.50" height="105.26" fill="#2563eb" opacity="0.80"/>
+<rect x="555.50" y="467.89" width="37.50" height="42.11" fill="#2563eb" opacity="0.80"/>
+<rect x="595.00" y="510.00" width="37.50" height="0.00" fill="#2563eb" opacity="0.80"/>
+<rect x="634.50" y="425.79" width="37.50" height="84.21" fill="#2563eb" opacity="0.80"/>
+<rect x="674.00" y="446.84" width="37.50" height="63.16" fill="#2563eb" opacity="0.80"/>
+<rect x="713.50" y="488.95" width="37.50" height="21.05" fill="#2563eb" opacity="0.80"/>
+<rect x="753.00" y="488.95" width="37.50" height="21.05" fill="#2563eb" opacity="0.80"/>
+<rect x="792.50" y="510.00" width="37.50" height="0.00" fill="#2563eb" opacity="0.80"/>
+<rect x="832.00" y="467.89" width="37.50" height="42.11" fill="#2563eb" opacity="0.80"/>
+<rect x="871.50" y="488.95" width="37.50" height="21.05" fill="#2563eb" opacity="0.80"/>
+<rect x="911.00" y="510.00" width="37.50" height="0.00" fill="#2563eb" opacity="0.80"/>
+<line x1="120.00" y1="510" x2="120.00" y2="516" stroke="#334155"/>
+<text x="120.00" y="534" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#334155">$0.05</text>
+<line x1="218.75" y1="510" x2="218.75" y2="516" stroke="#334155"/>
+<text x="218.75" y="534" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#334155">$0.17</text>
+<line x1="317.50" y1="510" x2="317.50" y2="516" stroke="#334155"/>
+<text x="317.50" y="534" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#334155">$0.30</text>
+<line x1="416.25" y1="510" x2="416.25" y2="516" stroke="#334155"/>
+<text x="416.25" y="534" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#334155">$0.42</text>
+<line x1="515.00" y1="510" x2="515.00" y2="516" stroke="#334155"/>
+<text x="515.00" y="534" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#334155">$0.55</text>
+<line x1="613.75" y1="510" x2="613.75" y2="516" stroke="#334155"/>
+<text x="613.75" y="534" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#334155">$0.68</text>
+<line x1="712.50" y1="510" x2="712.50" y2="516" stroke="#334155"/>
+<text x="712.50" y="534" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#334155">$0.80</text>
+<line x1="811.25" y1="510" x2="811.25" y2="516" stroke="#334155"/>
+<text x="811.25" y="534" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#334155">$0.93</text>
+<line x1="910.00" y1="510" x2="910.00" y2="516" stroke="#334155"/>
+<text x="910.00" y="534" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#334155">$1.05</text>
+<line x1="411.07" y1="110" x2="411.07" y2="510" stroke="#dc2626" stroke-width="3" stroke-dasharray="7,5"/>
+<text x="419.07" y="134" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#dc2626">Median: $0.42</text>
+<line x1="660.36" y1="110" x2="660.36" y2="510" stroke="#7c3aed" stroke-width="3" stroke-dasharray="7,5"/>
+<text x="668.36" y="134" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#7c3aed">90th percentile: $0.73</text>
+<text x="30" y="585" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#334155">Interpretation: most tasks cluster around ~20 to ~60 cents each, with fewer higher-cost runs.</text>
+</svg>
